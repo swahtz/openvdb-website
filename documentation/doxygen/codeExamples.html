@@ -17,6 +17,15 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -180,7 +189,7 @@ Contents</h1>
 <div class="line">{</div>
 <div class="line">    <span class="comment">// Initialize the OpenVDB library.  This must be called at least</span></div>
 <div class="line">    <span class="comment">// once per program and may safely be called multiple times.</span></div>
-<div class="line">    <a class="code hl_function" href="namespaceopenvdb_1_1v13__0.html#a5fb8281b837e5b8a3883fa2c097018c1">openvdb::initialize</a>();</div>
+<div class="line">    <a class="code hl_function" href="namespaceopenvdb_1_1v13__0.html#a25a40b6614565f755233080a384c35f1">openvdb::initialize</a>();</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Create an empty floating-point grid with background value 0.</span></div>
 <div class="line">    <a class="code hl_typedef" href="classopenvdb_1_1v13__0_1_1Grid.html#afc0f397bf0d1638f08250c19bc02d39e">openvdb::FloatGrid::Ptr</a> grid = <a class="code hl_function" href="classopenvdb_1_1v13__0_1_1Grid.html#afed9748b2280ee9155aa1033cc583bc7">openvdb::FloatGrid::create</a>();</div>
@@ -229,7 +238,7 @@ Contents</h1>
 <div class="ttc" id="aclassopenvdb_1_1v13__0_1_1math_1_1Coord_html"><div class="ttname"><a href="classopenvdb_1_1v13__0_1_1math_1_1Coord.html">openvdb::v13_0::math::Coord</a></div><div class="ttdoc">Signed (x, y, z) 32-bit integer coordinates.</div><div class="ttdef"><b>Definition</b> Coord.h:26</div></div>
 <div class="ttc" id="aclassopenvdb_1_1v13__0_1_1math_1_1Coord_html_abcfa3833e73de42b7dcc1dfb82e73647"><div class="ttname"><a href="classopenvdb_1_1v13__0_1_1math_1_1Coord.html#abcfa3833e73de42b7dcc1dfb82e73647">openvdb::v13_0::math::Coord::min</a></div><div class="ttdeci">static Coord min()</div><div class="ttdoc">Return the smallest possible coordinate.</div><div class="ttdef"><b>Definition</b> Coord.h:44</div></div>
 <div class="ttc" id="aclassopenvdb_1_1v13__0_1_1math_1_1Coord_html_ad980beb19efd25513ebe6ec3c7cbf1e1"><div class="ttname"><a href="classopenvdb_1_1v13__0_1_1math_1_1Coord.html#ad980beb19efd25513ebe6ec3c7cbf1e1">openvdb::v13_0::math::Coord::max</a></div><div class="ttdeci">static Coord max()</div><div class="ttdoc">Return the largest possible coordinate.</div><div class="ttdef"><b>Definition</b> Coord.h:47</div></div>
-<div class="ttc" id="anamespaceopenvdb_1_1v13__0_html_a5fb8281b837e5b8a3883fa2c097018c1"><div class="ttname"><a href="namespaceopenvdb_1_1v13__0.html#a5fb8281b837e5b8a3883fa2c097018c1">openvdb::v13_0::initialize</a></div><div class="ttdeci">OPENVDB_IMPORT void initialize()</div><div class="ttdoc">Global registration of native Grid, Transform, Metadata and Point attribute types....</div></div>
+<div class="ttc" id="anamespaceopenvdb_1_1v13__0_html_a25a40b6614565f755233080a384c35f1"><div class="ttname"><a href="namespaceopenvdb_1_1v13__0.html#a25a40b6614565f755233080a384c35f1">openvdb::v13_0::initialize</a></div><div class="ttdeci">void initialize()</div><div class="ttdoc">Global registration of native Grid, Transform, Metadata and Point attribute types....</div></div>
 <div class="ttc" id="aopenvdb_8h_html"><div class="ttname"><a href="openvdb_8h.html">openvdb.h</a></div></div>
 </div><!-- fragment --><p> Output: </p><div class="fragment"><div class="line">Testing random access:</div>
 <div class="line">Grid[1000, -200000000, 30000000] = 1</div>
@@ -245,7 +254,7 @@ Creating and writing a grid</h1>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">int</span> main()</div>
 <div class="line">{</div>
-<div class="line">    <a class="code hl_function" href="namespaceopenvdb_1_1v13__0.html#a5fb8281b837e5b8a3883fa2c097018c1">openvdb::initialize</a>();</div>
+<div class="line">    <a class="code hl_function" href="namespaceopenvdb_1_1v13__0.html#a25a40b6614565f755233080a384c35f1">openvdb::initialize</a>();</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Create a shared pointer to a newly-allocated grid of a built-in type:</span></div>
 <div class="line">    <span class="comment">// in this case, a FloatGrid, which stores one single-precision floating point</span></div>
@@ -296,7 +305,7 @@ Creating and writing a grid</h1>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">int</span> main()</div>
 <div class="line">{</div>
-<div class="line">    <a class="code hl_function" href="namespaceopenvdb_1_1v13__0.html#a5fb8281b837e5b8a3883fa2c097018c1">openvdb::initialize</a>();</div>
+<div class="line">    <a class="code hl_function" href="namespaceopenvdb_1_1v13__0.html#a25a40b6614565f755233080a384c35f1">openvdb::initialize</a>();</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Create a FloatGrid and populate it with a narrow-band</span></div>
 <div class="line">    <span class="comment">// signed distance field of a sphere.</span></div>
@@ -382,7 +391,7 @@ Reading and modifying a grid</h1>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="openvdb_8h.html">openvdb/openvdb.h</a>&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="ChangeBackground_8h.html">openvdb/tools/ChangeBackground.h</a>&gt;</span></div>
 <div class="line"> </div>
-<div class="line"><a class="code hl_function" href="namespaceopenvdb_1_1v13__0.html#a5fb8281b837e5b8a3883fa2c097018c1">openvdb::initialize</a>();</div>
+<div class="line"><a class="code hl_function" href="namespaceopenvdb_1_1v13__0.html#a25a40b6614565f755233080a384c35f1">openvdb::initialize</a>();</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Create a VDB file object.</span></div>
 <div class="line">openvdb::io::File file(<span class="stringliteral">&quot;mygrids.vdb&quot;</span>);</div>
@@ -439,14 +448,14 @@ Reading and modifying a grid</h1>
 <div class="ttc" id="aChangeBackground_8h_html"><div class="ttname"><a href="ChangeBackground_8h.html">ChangeBackground.h</a></div><div class="ttdoc">Efficient multi-threaded replacement of the background values in tree.</div></div>
 <div class="ttc" id="aclassopenvdb_1_1v13__0_1_1Grid_html_a13619aa65f687f53c08ed0b0123fd4de"><div class="ttname"><a href="classopenvdb_1_1v13__0_1_1Grid.html#a13619aa65f687f53c08ed0b0123fd4de">openvdb::v13_0::Grid&lt; FloatTree &gt;::ValueOffIter</a></div><div class="ttdeci">typename FloatTree::ValueOffIter ValueOffIter</div><div class="ttdef"><b>Definition</b> Grid.h:584</div></div>
 <div class="ttc" id="aclassopenvdb_1_1v13__0_1_1Grid_html_aa20792587df8cc92cff821e68e70ace7"><div class="ttname"><a href="classopenvdb_1_1v13__0_1_1Grid.html#aa20792587df8cc92cff821e68e70ace7">openvdb::v13_0::Grid&lt; FloatTree &gt;::ValueOnIter</a></div><div class="ttdeci">typename FloatTree::ValueOnIter ValueOnIter</div><div class="ttdef"><b>Definition</b> Grid.h:582</div></div>
-<div class="ttc" id="anamespaceopenvdb_1_1v13__0_html_a564f2c19a93045913ef45ce282c920d3"><div class="ttname"><a href="namespaceopenvdb_1_1v13__0.html#a564f2c19a93045913ef45ce282c920d3">openvdb::v13_0::gridPtrCast</a></div><div class="ttdeci">GridType::Ptr gridPtrCast(const GridBase::Ptr &amp;grid)</div><div class="ttdoc">Cast a generic grid pointer to a pointer to a grid of a concrete class.</div><div class="ttdef"><b>Definition</b> Grid.h:998</div></div>
+<div class="ttc" id="anamespaceopenvdb_1_1v13__0_html_a564f2c19a93045913ef45ce282c920d3"><div class="ttname"><a href="namespaceopenvdb_1_1v13__0.html#a564f2c19a93045913ef45ce282c920d3">openvdb::v13_0::gridPtrCast</a></div><div class="ttdeci">GridType::Ptr gridPtrCast(const GridBase::Ptr &amp;grid)</div><div class="ttdoc">Cast a generic grid pointer to a pointer to a grid of a concrete class.</div><div class="ttdef"><b>Definition</b> Grid.h:1000</div></div>
 </div><!-- fragment --><h1 class="doxsection"><a class="anchor" id="sStreamIO"></a>
 Stream I/O</h1>
 <p>The <a class="el" href="classopenvdb_1_1v13__0_1_1io_1_1Stream.html">io::Stream</a> class allows grids to be written to and read from streams that do not support random access, with the restriction that all grids must be written or read at once. (With <a class="el" href="classopenvdb_1_1v13__0_1_1io_1_1File.html">io::File</a>, grids can be read individually by name, provided that they were originally written with <b>io::File</b>, rather than streamed to a file.)</p>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="openvdb_8h.html">openvdb/openvdb.h</a>&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="Stream_8h.html">openvdb/io/Stream.h</a>&gt;</span></div>
 <div class="line"> </div>
-<div class="line"><a class="code hl_function" href="namespaceopenvdb_1_1v13__0.html#a5fb8281b837e5b8a3883fa2c097018c1">openvdb::initialize</a>();</div>
+<div class="line"><a class="code hl_function" href="namespaceopenvdb_1_1v13__0.html#a25a40b6614565f755233080a384c35f1">openvdb::initialize</a>();</div>
 <div class="line"> </div>
 <div class="line"><a class="code hl_typedef" href="namespaceopenvdb_1_1v13__0.html#a8290647a1d16e177501c207ea20fee7a">openvdb::GridPtrVecPtr</a> grids(<span class="keyword">new</span> GridPtrVec);</div>
 <div class="line">grids-&gt;push_back(...);</div>
@@ -665,7 +674,7 @@ Iterator Range</h2>
 <div class="line"><span class="keywordtype">int</span></div>
 <div class="line">main()</div>
 <div class="line">{</div>
-<div class="line">    <a class="code hl_function" href="namespaceopenvdb_1_1v13__0.html#a5fb8281b837e5b8a3883fa2c097018c1">openvdb::initialize</a>();</div>
+<div class="line">    <a class="code hl_function" href="namespaceopenvdb_1_1v13__0.html#a25a40b6614565f755233080a384c35f1">openvdb::initialize</a>();</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Generate a level set grid.</span></div>
 <div class="line">    <a class="code hl_typedef" href="classopenvdb_1_1v13__0_1_1Grid.html#afc0f397bf0d1638f08250c19bc02d39e">openvdb::FloatGrid::Ptr</a> grid =</div>
@@ -1110,7 +1119,7 @@ Calling Grid methods</h2>
 <div class="line"><span class="keywordtype">int</span> main()</div>
 <div class="line">{</div>
 <div class="line">    <span class="comment">// Initialize grid types and point attributes types.</span></div>
-<div class="line">    <a class="code hl_function" href="namespaceopenvdb_1_1v13__0.html#a5fb8281b837e5b8a3883fa2c097018c1">openvdb::initialize</a>();</div>
+<div class="line">    <a class="code hl_function" href="namespaceopenvdb_1_1v13__0.html#a25a40b6614565f755233080a384c35f1">openvdb::initialize</a>();</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Create a vector with four point positions.</span></div>
 <div class="line">    std::vector&lt;openvdb::Vec3R&gt; positions;</div>
@@ -1206,7 +1215,7 @@ Calling Grid methods</h2>
 <div class="line">}</div>
 <div class="ttc" id="aPointConversion_8h_html"><div class="ttname"><a href="PointConversion_8h.html">PointConversion.h</a></div><div class="ttdoc">Convert points and attributes to and from VDB Point Data grids.</div></div>
 <div class="ttc" id="aPointCount_8h_html"><div class="ttname"><a href="PointCount_8h.html">PointCount.h</a></div><div class="ttdoc">Methods for counting points in VDB Point grids.</div></div>
-<div class="ttc" id="anamespaceopenvdb_1_1v13__0_1_1math_html_a98d94999010cb92dfb5f652c353d1d82"><div class="ttname"><a href="namespaceopenvdb_1_1v13__0_1_1math.html#a98d94999010cb92dfb5f652c353d1d82">openvdb::v13_0::math::Vec3d</a></div><div class="ttdeci">Vec3&lt; double &gt; Vec3d</div><div class="ttdef"><b>Definition</b> Vec3.h:665</div></div>
+<div class="ttc" id="anamespaceopenvdb_1_1v13__0_1_1math_html_a98d94999010cb92dfb5f652c353d1d82"><div class="ttname"><a href="namespaceopenvdb_1_1v13__0_1_1math.html#a98d94999010cb92dfb5f652c353d1d82">openvdb::v13_0::math::Vec3d</a></div><div class="ttdeci">Vec3&lt; double &gt; Vec3d</div><div class="ttdef"><b>Definition</b> Vec3.h:708</div></div>
 <div class="ttc" id="anamespaceopenvdb_1_1v13__0_html_ac69cfd22ec6d99378ea1e829dc42781e"><div class="ttname"><a href="namespaceopenvdb_1_1v13__0.html#ac69cfd22ec6d99378ea1e829dc42781e">openvdb::v13_0::Index64</a></div><div class="ttdeci">uint64_t Index64</div><div class="ttdef"><b>Definition</b> Types.h:33</div></div>
 </div><!-- fragment --><p> Output: </p><div class="fragment"><div class="line">VoxelSize=3.34716</div>
 <div class="line">PointCount=4</div>
@@ -1228,7 +1237,7 @@ Converting Point Attributes</h1>
 <div class="line"><span class="keywordtype">int</span> main()</div>
 <div class="line">{</div>
 <div class="line">    <span class="comment">// Initialize grid types and point attributes types.</span></div>
-<div class="line">    <a class="code hl_function" href="namespaceopenvdb_1_1v13__0.html#a5fb8281b837e5b8a3883fa2c097018c1">openvdb::initialize</a>();</div>
+<div class="line">    <a class="code hl_function" href="namespaceopenvdb_1_1v13__0.html#a25a40b6614565f755233080a384c35f1">openvdb::initialize</a>();</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Create a vector with four point positions.</span></div>
 <div class="line">    std::vector&lt;openvdb::Vec3R&gt; positions;</div>
@@ -1359,7 +1368,7 @@ Random Point Generation</h1>
 <div class="line"><span class="keywordtype">int</span> main()</div>
 <div class="line">{</div>
 <div class="line">    <span class="comment">// Initialize grid types and point attributes types.</span></div>
-<div class="line">    <a class="code hl_function" href="namespaceopenvdb_1_1v13__0.html#a5fb8281b837e5b8a3883fa2c097018c1">openvdb::initialize</a>();</div>
+<div class="line">    <a class="code hl_function" href="namespaceopenvdb_1_1v13__0.html#a25a40b6614565f755233080a384c35f1">openvdb::initialize</a>();</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Generate a level set grid.</span></div>
 <div class="line">    <a class="code hl_typedef" href="classopenvdb_1_1v13__0_1_1Grid.html#afc0f397bf0d1638f08250c19bc02d39e">openvdb::FloatGrid::Ptr</a> sphereGrid =</div>
@@ -1789,7 +1798,7 @@ Advecting Points</h2>
 <div class="line"><span class="comment">// Advect points in-place using gravity velocity grid</span></div>
 <div class="line">openvdb::points::advectPoints(*points, *gravity,</div>
 <div class="line">    <span class="comment">/*integrationOrder=*/</span>4, <span class="comment">/*dt=*/</span>1.0/24.0, <span class="comment">/*timeSteps=*/</span>1);</div>
-<div class="ttc" id="anamespaceopenvdb_1_1v13__0_1_1math_html_ae60b991a87c83e25ec51e0576209be11"><div class="ttname"><a href="namespaceopenvdb_1_1v13__0_1_1math.html#ae60b991a87c83e25ec51e0576209be11">openvdb::v13_0::math::Vec3s</a></div><div class="ttdeci">Vec3&lt; float &gt; Vec3s</div><div class="ttdef"><b>Definition</b> Vec3.h:664</div></div>
+<div class="ttc" id="anamespaceopenvdb_1_1v13__0_1_1math_html_ae60b991a87c83e25ec51e0576209be11"><div class="ttname"><a href="namespaceopenvdb_1_1v13__0_1_1math.html#ae60b991a87c83e25ec51e0576209be11">openvdb::v13_0::math::Vec3s</a></div><div class="ttdeci">Vec3&lt; float &gt; Vec3s</div><div class="ttdef"><b>Definition</b> Vec3.h:707</div></div>
 </div><!-- fragment --><h2 class="doxsection"><a class="anchor" id="sPointCustomDeformer"></a>
 Moving Points with a Custom Deformer</h2>
 <p>A custom deformer generates the new position of each existing point in a point set. This can use any number of mechanisms to achieve this such as a static value, a hard-coded list of positions, a function that uses the existing position to compute the new one or a function that uses the index of the point within the leaf array in some other way. This example simply takes the input position and adds a Y offset. Note that it is also possible to configure a custom deformer to operate in index-space.</p>

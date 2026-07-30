@@ -17,6 +17,15 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -1011,9 +1020,9 @@ $(function(){initNavTree('TypeList_8h_source.html','',''); });
 <div class="line"><a id="l00882" name="l00882"></a><span class="lineno">  882</span><span class="comment"></span> </div>
 <div class="line"><a id="l00883" name="l00883"></a><span class="lineno">  883</span><span class="comment">    /// @brief  Run a function on the first element in the underlying</span></div>
 <div class="line"><a id="l00884" name="l00884"></a><span class="lineno">  884</span><span class="comment">    ///   std::tuple that satisfies the provided predicate. Effectively</span></div>
-<div class="line"><a id="l00885" name="l00885"></a><span class="lineno">  885</span><span class="comment">    ///   calls op(std::get&lt;I&gt;(mTuple)) when pred(I) returns true, then exits,</span></div>
-<div class="line"><a id="l00886" name="l00886"></a><span class="lineno">  886</span><span class="comment">    ///   where I = [0,Size). Does not support returning a value.</span></div>
-<div class="line"><a id="l00887" name="l00887"></a><span class="lineno">  887</span><span class="comment">    /// @note  This is mainly useful to avoid the overhead of calling std::get&lt;I&gt;</span></div>
+<div class="line"><a id="l00885" name="l00885"></a><span class="lineno">  885</span><span class="comment">    ///   calls `op(std::get&lt;I&gt;(mTuple))` when `pred(I)` returns true, then exits,</span></div>
+<div class="line"><a id="l00886" name="l00886"></a><span class="lineno">  886</span><span class="comment">    ///   where `I = [0,Size)`. Does not support returning a value.</span></div>
+<div class="line"><a id="l00887" name="l00887"></a><span class="lineno">  887</span><span class="comment">    /// @note  This is mainly useful to avoid the overhead of calling `std::get&lt;I&gt;`</span></div>
 <div class="line"><a id="l00888" name="l00888"></a><span class="lineno">  888</span><span class="comment">    ///   on every element when only a single unknown element needs processing.</span></div>
 <div class="line"><a id="l00889" name="l00889"></a><span class="lineno">  889</span><span class="comment">    ///</span></div>
 <div class="line"><a id="l00890" name="l00890"></a><span class="lineno">  890</span><span class="comment">    /// @param pred  Predicate to run on each index, should return true/false</span></div>
@@ -1044,8 +1053,8 @@ $(function(){initNavTree('TypeList_8h_source.html','',''); });
 <div class="line"><a id="l00913" name="l00913"></a><span class="lineno">  913</span><span class="comment"></span> </div>
 <div class="line"><a id="l00914" name="l00914"></a><span class="lineno">  914</span><span class="comment">    /// @brief  Run a function on the first element in the underlying</span></div>
 <div class="line"><a id="l00915" name="l00915"></a><span class="lineno">  915</span><span class="comment">    ///   std::tuple that satisfies the provided predicate. Effectively</span></div>
-<div class="line"><a id="l00916" name="l00916"></a><span class="lineno">  916</span><span class="comment">    ///   calls op(std::get&lt;I&gt;(mTuple)) when pred(I) returns true, then exits,</span></div>
-<div class="line"><a id="l00917" name="l00917"></a><span class="lineno">  917</span><span class="comment">    ///   where I = [0,Size). Supports returning a value, but a default return</span></div>
+<div class="line"><a id="l00916" name="l00916"></a><span class="lineno">  916</span><span class="comment">    ///   calls `op(std::get&lt;I&gt;(mTuple))` when `pred(I)` returns true, then exits,</span></div>
+<div class="line"><a id="l00917" name="l00917"></a><span class="lineno">  917</span><span class="comment">    ///   where `I = [0,Size)`. Supports returning a value, but a default return</span></div>
 <div class="line"><a id="l00918" name="l00918"></a><span class="lineno">  918</span><span class="comment">    ///   value must be provided.</span></div>
 <div class="line"><a id="l00919" name="l00919"></a><span class="lineno">  919</span><span class="comment">    ///</span></div>
 <div class="line"><a id="l00920" name="l00920"></a><span class="lineno">  920</span><span class="comment">    /// @param pred  Predicate to run on each index, should return true/false</span></div>
@@ -1114,7 +1123,7 @@ $(function(){initNavTree('TypeList_8h_source.html','',''); });
 <div class="line"><a id="l00978" name="l00978"></a><span class="lineno">  978</span> </div>
 <div class="line"><a id="l00979" name="l00979"></a><span class="lineno">  979</span> </div>
 <div class="line"><a id="l00980" name="l00980"></a><span class="lineno">  980</span><span class="preprocessor">#endif </span><span class="comment">// OPENVDB_TYPELIST_HAS_BEEN_INCLUDED</span></div>
-<div class="ttc" id="aPlatform_8h_html_a857e437e165109054fd5c6ec359a00c2"><div class="ttname"><a href="Platform_8h.html#a857e437e165109054fd5c6ec359a00c2">OPENVDB_FORCE_INLINE</a></div><div class="ttdeci">#define OPENVDB_FORCE_INLINE</div><div class="ttdef"><b>Definition</b> Platform.h:126</div></div>
+<div class="ttc" id="aPlatform_8h_html_a857e437e165109054fd5c6ec359a00c2"><div class="ttname"><a href="Platform_8h.html#a857e437e165109054fd5c6ec359a00c2">OPENVDB_FORCE_INLINE</a></div><div class="ttdeci">#define OPENVDB_FORCE_INLINE</div><div class="ttdef"><b>Definition</b> Platform.h:113</div></div>
 <div class="ttc" id="aTypeList_8h_html_ac9fb0b4e99c1085c096d438b7552237d"><div class="ttname"><a href="TypeList_8h.html#ac9fb0b4e99c1085c096d438b7552237d">OPENVDB_TYPELIST_FORCE_INLINE</a></div><div class="ttdeci">#define OPENVDB_TYPELIST_FORCE_INLINE</div><div class="ttdef"><b>Definition</b> TypeList.h:31</div></div>
 <div class="ttc" id="anamespaceopenvdb_1_1v13__0_html_a1d6d50711273f3889375a79ef3c183c7"><div class="ttname"><a href="namespaceopenvdb_1_1v13__0.html#a1d6d50711273f3889375a79ef3c183c7">openvdb::v13_0::foreachIndex</a></div><div class="ttdeci">OPENVDB_FORCE_INLINE auto foreachIndex(OpT op)</div><div class="ttdef"><b>Definition</b> TypeList.h:558</div></div>
 <div class="ttc" id="anamespaceopenvdb_1_1v13__0_html_a75d1d1799f33222e27cff304955dd249"><div class="ttname"><a href="namespaceopenvdb_1_1v13__0.html#a75d1d1799f33222e27cff304955dd249">openvdb::v13_0::evalFirstIndex</a></div><div class="ttdeci">OPENVDB_FORCE_INLINE RetT evalFirstIndex(OpT op, const RetT def=RetT())</div><div class="ttdef"><b>Definition</b> TypeList.h:564</div></div>
@@ -1162,7 +1171,7 @@ $(function(){initNavTree('TypeList_8h_source.html','',''); });
 <div class="ttc" id="astructopenvdb_1_1v13__0_1_1TypeList_html_ac827f965b7c116214aef55fee9e0fa36"><div class="ttname"><a href="structopenvdb_1_1v13__0_1_1TypeList.html#ac827f965b7c116214aef55fee9e0fa36">openvdb::v13_0::TypeList&lt; FloatGrid, DoubleGrid &gt;::Append</a></div><div class="ttdeci">typename typelist_internal::TSAppendImpl&lt; Self, TypesToAppend... &gt;::type Append</div><div class="ttdef"><b>Definition</b> TypeList.h:654</div></div>
 <div class="ttc" id="astructopenvdb_1_1v13__0_1_1TypeList_html_ae2a2a78c6013b4e10319e59f74dbb1d9"><div class="ttname"><a href="structopenvdb_1_1v13__0_1_1TypeList.html#ae2a2a78c6013b4e10319e59f74dbb1d9">openvdb::v13_0::TypeList&lt; FloatGrid, DoubleGrid &gt;::Self</a></div><div class="ttdeci">TypeList Self</div><div class="ttdef"><b>Definition</b> TypeList.h:578</div></div>
 <div class="ttc" id="aversion_8h_8in_html_a00be3835cb8ad1ded8abd821fad20fc0"><div class="ttname"><a href="version_8h_8in.html#a00be3835cb8ad1ded8abd821fad20fc0">OPENVDB_VERSION_NAME</a></div><div class="ttdeci">#define OPENVDB_VERSION_NAME</div><div class="ttdoc">The version namespace name for this library version.</div><div class="ttdef"><b>Definition</b> version.h.in:121</div></div>
-<div class="ttc" id="aversion_8h_8in_html_a2dde157791cd7558cdf886489256ba14"><div class="ttname"><a href="version_8h_8in.html#a2dde157791cd7558cdf886489256ba14">OPENVDB_USE_VERSION_NAMESPACE</a></div><div class="ttdeci">#define OPENVDB_USE_VERSION_NAMESPACE</div><div class="ttdef"><b>Definition</b> version.h.in:218</div></div>
+<div class="ttc" id="aversion_8h_8in_html_a2dde157791cd7558cdf886489256ba14"><div class="ttname"><a href="version_8h_8in.html#a2dde157791cd7558cdf886489256ba14">OPENVDB_USE_VERSION_NAMESPACE</a></div><div class="ttdeci">#define OPENVDB_USE_VERSION_NAMESPACE</div><div class="ttdef"><b>Definition</b> version.h.in:284</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->

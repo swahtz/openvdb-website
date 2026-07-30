@@ -17,6 +17,15 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -953,26 +962,26 @@ Container Access</h2>
 <dl class="section user"><dt></dt><dd><div class="fragment"><div class="line">vec4i a = { 6, 7, 8, 9 };</div>
 <div class="line"><span class="keywordtype">int</span> b = a.z; <span class="comment">// get the the third elements value (8)</span></div>
 </div><!-- fragment --> <center>     <p class="formulaDsp">
-<img class="formulaDsp" alt="\[A=\begin{bmatrix}
+\[A=\begin{bmatrix}
 a_{0}\quad a_{1}\quad a_{2}
 \end{bmatrix}
-\]" src="form_3.png"/>
+\]
 </p>
  <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadCenter">Component  </th><th class="markdownTableHeadCenter">Access Index  </th><th class="markdownTableHeadCenter">Result  </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyCenter"><span class="tt">A.x</span>  </td><td class="markdownTableBodyCenter">0  </td><td class="markdownTableBodyCenter"><img class="formulaInl" alt="$ a_{0} $" src="form_4.png"/>  </td></tr>
+<td class="markdownTableBodyCenter"><span class="tt">A.x</span>  </td><td class="markdownTableBodyCenter">0  </td><td class="markdownTableBodyCenter">\( a_{0} \)  </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyCenter"><span class="tt">A.r</span>  </td><td class="markdownTableBodyCenter">0  </td><td class="markdownTableBodyCenter"><img class="formulaInl" alt="$ a_{0} $" src="form_4.png"/>  </td></tr>
+<td class="markdownTableBodyCenter"><span class="tt">A.r</span>  </td><td class="markdownTableBodyCenter">0  </td><td class="markdownTableBodyCenter">\( a_{0} \)  </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyCenter"><span class="tt">A.y</span>  </td><td class="markdownTableBodyCenter">1  </td><td class="markdownTableBodyCenter"><img class="formulaInl" alt="$ a_{1} $" src="form_5.png"/>  </td></tr>
+<td class="markdownTableBodyCenter"><span class="tt">A.y</span>  </td><td class="markdownTableBodyCenter">1  </td><td class="markdownTableBodyCenter">\( a_{1} \)  </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyCenter"><span class="tt">A.g</span>  </td><td class="markdownTableBodyCenter">1  </td><td class="markdownTableBodyCenter"><img class="formulaInl" alt="$ a_{1} $" src="form_5.png"/>  </td></tr>
+<td class="markdownTableBodyCenter"><span class="tt">A.g</span>  </td><td class="markdownTableBodyCenter">1  </td><td class="markdownTableBodyCenter">\( a_{1} \)  </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyCenter"><span class="tt">A.z</span>  </td><td class="markdownTableBodyCenter">2  </td><td class="markdownTableBodyCenter"><img class="formulaInl" alt="$ a_{2} $" src="form_6.png"/>  </td></tr>
+<td class="markdownTableBodyCenter"><span class="tt">A.z</span>  </td><td class="markdownTableBodyCenter">2  </td><td class="markdownTableBodyCenter">\( a_{2} \)  </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyCenter"><span class="tt">A.b</span>  </td><td class="markdownTableBodyCenter">2  </td><td class="markdownTableBodyCenter"><img class="formulaInl" alt="$ a_{2} $" src="form_6.png"/>  </td></tr>
+<td class="markdownTableBodyCenter"><span class="tt">A.b</span>  </td><td class="markdownTableBodyCenter">2  </td><td class="markdownTableBodyCenter">\( a_{2} \)  </td></tr>
 </table>
 </center> </dd></dl>
 <dl class="section user"><dt></dt><dd>This operator can provide more immediately readability when working with expressions that focus on colour or Cartesian coordinate systems. <a class="anchor" id="axvecaccessop"></a></dd></dl>
@@ -1008,17 +1017,17 @@ a_{0}\quad a_{1}\quad a_{2}
 <dl class="section user"><dt></dt><dd><table class="doxtable">
 <tr style="text-align:center">
 <td style="border:none" colspan="3"><p class="formulaDsp">
-<img class="formulaDsp" alt="\[{
+\[{
 A=\begin{bmatrix}
 a_{00}\quad a_{01}\quad a_{02}\\
 a_{10}\quad a_{11}\quad a_{12}\\
 a_{20}\quad a_{21}\quad a_{22}\\
 \end{bmatrix}
 }
-\]" src="form_7.png"/>
+\]
 </p>
  </td><td style="border:none"></td><td style="border:none" colspan="3"><p class="formulaDsp">
-<img class="formulaDsp" alt="\[{
+\[{
 A=\begin{bmatrix}
 a_{00}\quad a_{01}\quad a_{02}\quad a_{03}\\
 a_{10}\quad a_{11}\quad a_{12}\quad a_{13}\\
@@ -1026,43 +1035,43 @@ a_{20}\quad a_{21}\quad a_{22}\quad a_{23}\\
 a_{30}\quad a_{31}\quad a_{32}\quad a_{33}\\
 \end{bmatrix}
 }
-\]" src="form_8.png"/>
+\]
 </p>
  </td></tr>
 <tr style="text-align:center">
 <th>Access [a]</th><th>Access [a,b]</th><th style="border-right-style:none;">Result</th><td style="border:none" rowspan="17"></td><th>Access [a]</th><th>Access [a,b]</th><th>Result</th></tr>
 <tr style="text-align:center">
-<td><span class="tt">A[0]</span></td><td><span class="tt">A[0,0]</span></td><td><img class="formulaInl" alt="$ a_{00} $" src="form_9.png"/></td><td><span class="tt">A[0]</span></td><td><span class="tt">A[0,0]</span></td><td><img class="formulaInl" alt="$ a_{00} $" src="form_9.png"/></td></tr>
+<td><span class="tt">A[0]</span></td><td><span class="tt">A[0,0]</span></td><td>\( a_{00} \)</td><td><span class="tt">A[0]</span></td><td><span class="tt">A[0,0]</span></td><td>\( a_{00} \)</td></tr>
 <tr style="text-align:center">
-<td><span class="tt">A[1]</span></td><td><span class="tt">A[0,1]</span></td><td><img class="formulaInl" alt="$ a_{01} $" src="form_10.png"/></td><td><span class="tt">A[1]</span></td><td><span class="tt">A[0,1]</span></td><td><img class="formulaInl" alt="$ a_{01} $" src="form_10.png"/></td></tr>
+<td><span class="tt">A[1]</span></td><td><span class="tt">A[0,1]</span></td><td>\( a_{01} \)</td><td><span class="tt">A[1]</span></td><td><span class="tt">A[0,1]</span></td><td>\( a_{01} \)</td></tr>
 <tr style="text-align:center">
-<td><span class="tt">A[2]</span></td><td><span class="tt">A[0,2]</span></td><td><img class="formulaInl" alt="$ a_{02} $" src="form_11.png"/></td><td><span class="tt">A[2]</span></td><td><span class="tt">A[0,2]</span></td><td><img class="formulaInl" alt="$ a_{02} $" src="form_11.png"/></td></tr>
+<td><span class="tt">A[2]</span></td><td><span class="tt">A[0,2]</span></td><td>\( a_{02} \)</td><td><span class="tt">A[2]</span></td><td><span class="tt">A[0,2]</span></td><td>\( a_{02} \)</td></tr>
 <tr style="text-align:center">
-<td><span class="tt">A[3]</span></td><td><span class="tt">A[1,0]</span></td><td><img class="formulaInl" alt="$ a_{10} $" src="form_12.png"/></td><td><span class="tt">A[3]</span></td><td><span class="tt">A[0,3]</span></td><td><img class="formulaInl" alt="$ a_{03} $" src="form_13.png"/></td></tr>
+<td><span class="tt">A[3]</span></td><td><span class="tt">A[1,0]</span></td><td>\( a_{10} \)</td><td><span class="tt">A[3]</span></td><td><span class="tt">A[0,3]</span></td><td>\( a_{03} \)</td></tr>
 <tr style="text-align:center">
-<td><span class="tt">A[4]</span></td><td><span class="tt">A[1,1]</span></td><td><img class="formulaInl" alt="$ a_{10} $" src="form_12.png"/></td><td><span class="tt">A[4]</span></td><td><span class="tt">A[1,0]</span></td><td><img class="formulaInl" alt="$ a_{10} $" src="form_12.png"/></td></tr>
+<td><span class="tt">A[4]</span></td><td><span class="tt">A[1,1]</span></td><td>\( a_{10} \)</td><td><span class="tt">A[4]</span></td><td><span class="tt">A[1,0]</span></td><td>\( a_{10} \)</td></tr>
 <tr style="text-align:center">
-<td><span class="tt">A[5]</span></td><td><span class="tt">A[1,2]</span></td><td><img class="formulaInl" alt="$ a_{12} $" src="form_14.png"/></td><td><span class="tt">A[5]</span></td><td><span class="tt">A[1,1]</span></td><td><img class="formulaInl" alt="$ a_{11} $" src="form_15.png"/></td></tr>
+<td><span class="tt">A[5]</span></td><td><span class="tt">A[1,2]</span></td><td>\( a_{12} \)</td><td><span class="tt">A[5]</span></td><td><span class="tt">A[1,1]</span></td><td>\( a_{11} \)</td></tr>
 <tr style="text-align:center">
-<td><span class="tt">A[6]</span></td><td><span class="tt">A[2,0]</span></td><td><img class="formulaInl" alt="$ a_{20} $" src="form_16.png"/></td><td><span class="tt">A[6]</span></td><td><span class="tt">A[1,2]</span></td><td><img class="formulaInl" alt="$ a_{12} $" src="form_14.png"/></td></tr>
+<td><span class="tt">A[6]</span></td><td><span class="tt">A[2,0]</span></td><td>\( a_{20} \)</td><td><span class="tt">A[6]</span></td><td><span class="tt">A[1,2]</span></td><td>\( a_{12} \)</td></tr>
 <tr style="text-align:center">
-<td><span class="tt">A[7]</span></td><td><span class="tt">A[2,1]</span></td><td><img class="formulaInl" alt="$ a_{21} $" src="form_17.png"/></td><td><span class="tt">A[7]</span></td><td><span class="tt">A[1,3]</span></td><td><img class="formulaInl" alt="$ a_{13} $" src="form_18.png"/></td></tr>
+<td><span class="tt">A[7]</span></td><td><span class="tt">A[2,1]</span></td><td>\( a_{21} \)</td><td><span class="tt">A[7]</span></td><td><span class="tt">A[1,3]</span></td><td>\( a_{13} \)</td></tr>
 <tr style="text-align:center">
-<td><span class="tt">A[8]</span></td><td><span class="tt">A[2,2]</span></td><td><img class="formulaInl" alt="$ a_{22} $" src="form_19.png"/></td><td><span class="tt">A[8]</span></td><td><span class="tt">A[2,0]</span></td><td><img class="formulaInl" alt="$ a_{20} $" src="form_16.png"/></td></tr>
+<td><span class="tt">A[8]</span></td><td><span class="tt">A[2,2]</span></td><td>\( a_{22} \)</td><td><span class="tt">A[8]</span></td><td><span class="tt">A[2,0]</span></td><td>\( a_{20} \)</td></tr>
 <tr style="text-align:center">
-<td style="border:right;" colspan="4" rowspan="7"></td><td><span class="tt">A[9]</span></td><td><span class="tt">A[2,1]</span></td><td><img class="formulaInl" alt="$ a_{21} $" src="form_17.png"/></td></tr>
+<td style="border:right;" colspan="4" rowspan="7"></td><td><span class="tt">A[9]</span></td><td><span class="tt">A[2,1]</span></td><td>\( a_{21} \)</td></tr>
 <tr style="text-align:center">
-<td><span class="tt">A[10]</span></td><td><span class="tt">A[2,2]</span></td><td><img class="formulaInl" alt="$ a_{22} $" src="form_19.png"/></td></tr>
+<td><span class="tt">A[10]</span></td><td><span class="tt">A[2,2]</span></td><td>\( a_{22} \)</td></tr>
 <tr style="text-align:center">
-<td><span class="tt">A[11]</span></td><td><span class="tt">A[2,3]</span></td><td><img class="formulaInl" alt="$ a_{23} $" src="form_20.png"/></td></tr>
+<td><span class="tt">A[11]</span></td><td><span class="tt">A[2,3]</span></td><td>\( a_{23} \)</td></tr>
 <tr style="text-align:center">
-<td><span class="tt">A[12]</span></td><td><span class="tt">A[3,0]</span></td><td><img class="formulaInl" alt="$ a_{30} $" src="form_21.png"/></td></tr>
+<td><span class="tt">A[12]</span></td><td><span class="tt">A[3,0]</span></td><td>\( a_{30} \)</td></tr>
 <tr style="text-align:center">
-<td><span class="tt">A[13]</span></td><td><span class="tt">A[3,1]</span></td><td><img class="formulaInl" alt="$ a_{31} $" src="form_22.png"/></td></tr>
+<td><span class="tt">A[13]</span></td><td><span class="tt">A[3,1]</span></td><td>\( a_{31} \)</td></tr>
 <tr style="text-align:center">
-<td><span class="tt">A[14]</span></td><td><span class="tt">A[3,2]</span></td><td><img class="formulaInl" alt="$ a_{32} $" src="form_23.png"/></td></tr>
+<td><span class="tt">A[14]</span></td><td><span class="tt">A[3,2]</span></td><td>\( a_{32} \)</td></tr>
 <tr style="text-align:center">
-<td><span class="tt">A[15]</span></td><td><span class="tt">A[3,3]</span></td><td><img class="formulaInl" alt="$ a_{33} $" src="form_24.png"/></td></tr>
+<td><span class="tt">A[15]</span></td><td><span class="tt">A[3,3]</span></td><td>\( a_{33} \)</td></tr>
 </table>
 </dd></dl>
 <h2 class="doxsection"><a class="anchor" id="axopother"></a>

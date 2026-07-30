@@ -17,6 +17,15 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -265,7 +274,7 @@ template&lt;typename Vec3T&gt; </div>
 </dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">ijk</td><td>3D vector to be mapped - typically floating point index coordinates </td></tr>
+    <tr><td class="paramname">xyz</td><td>3D vector to be mapped - typically floating point index coordinates </td></tr>
   </table>
   </dd>
 </dl>
@@ -335,7 +344,7 @@ template&lt;typename Vec3T&gt; </div>
 </dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">ijk</td><td>3D vector to be mapped - typically floating point index coordinates </td></tr>
+    <tr><td class="paramname">xyz</td><td>3D vector to be mapped - typically floating point index coordinates </td></tr>
   </table>
   </dd>
 </dl>
@@ -378,7 +387,7 @@ template&lt;typename Vec3T&gt; </div>
 </dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">ijk</td><td>3D vector to be mapped - typically floating point index coordinates </td></tr>
+    <tr><td class="paramname">xyz</td><td>3D vector to be mapped - typically floating point index coordinates </td></tr>
   </table>
   </dd>
 </dl>

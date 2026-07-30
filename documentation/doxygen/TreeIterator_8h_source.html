@@ -17,6 +17,15 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -1676,7 +1685,7 @@ $(function(){initNavTree('TreeIterator_8h_source.html','',''); });
 <div class="line"><a id="l01370" name="l01370"></a><span class="lineno"> 1370</span><span class="preprocessor">#endif </span><span class="comment">// OPENVDB_TREE_TREEITERATOR_HAS_BEEN_INCLUDED</span></div>
 <div class="ttc" id="aAssert_8h_html"><div class="ttname"><a href="Assert_8h.html">Assert.h</a></div></div>
 <div class="ttc" id="aAssert_8h_html_a9b706542bb9f44d82cd273d74e722c35"><div class="ttname"><a href="Assert_8h.html#a9b706542bb9f44d82cd273d74e722c35">OPENVDB_ASSERT</a></div><div class="ttdeci">#define OPENVDB_ASSERT(X)</div><div class="ttdef"><b>Definition</b> Assert.h:41</div></div>
-<div class="ttc" id="aCNanoVDB_8h_html_a7e9c30baccb96ccd0d941b1c799ff1ef"><div class="ttname"><a href="CNanoVDB_8h.html#a7e9c30baccb96ccd0d941b1c799ff1ef">ROOT_LEVEL</a></div><div class="ttdeci">#define ROOT_LEVEL</div><div class="ttdef"><b>Definition</b> CNanoVDB.h:56</div></div>
+<div class="ttc" id="aCNanoVDB_8h_html_a7e9c30baccb96ccd0d941b1c799ff1ef"><div class="ttname"><a href="CNanoVDB_8h.html#a7e9c30baccb96ccd0d941b1c799ff1ef">ROOT_LEVEL</a></div><div class="ttdeci">#define ROOT_LEVEL</div><div class="ttdef"><b>Definition</b> CNanoVDB.h:72</div></div>
 <div class="ttc" id="aclassopenvdb_1_1v13__0_1_1Coord_html_abcfa3833e73de42b7dcc1dfb82e73647"><div class="ttname"><a href="classopenvdb_1_1v13__0_1_1Coord.html#abcfa3833e73de42b7dcc1dfb82e73647">openvdb::v13_0::Coord::min</a></div><div class="ttdeci">static Coord min()</div><div class="ttdoc">Return the smallest possible coordinate.</div><div class="ttdef"><b>Definition</b> Coord.h:44</div></div>
 <div class="ttc" id="aclassopenvdb_1_1v13__0_1_1math_1_1CoordBBox_html"><div class="ttname"><a href="classopenvdb_1_1v13__0_1_1math_1_1CoordBBox.html">openvdb::v13_0::math::CoordBBox</a></div><div class="ttdoc">Axis-aligned bounding box of signed integer coordinates.</div><div class="ttdef"><b>Definition</b> Coord.h:252</div></div>
 <div class="ttc" id="aclassopenvdb_1_1v13__0_1_1math_1_1CoordBBox_html_a7132dc61617b69ed3c447021b1f7c12c"><div class="ttname"><a href="classopenvdb_1_1v13__0_1_1math_1_1CoordBBox.html#a7132dc61617b69ed3c447021b1f7c12c">openvdb::v13_0::math::CoordBBox::min</a></div><div class="ttdeci">const Coord &amp; min() const</div><div class="ttdef"><b>Definition</b> Coord.h:324</div></div>
@@ -1949,7 +1958,7 @@ $(function(){initNavTree('TreeIterator_8h_source.html','',''); });
 <div class="ttc" id="astructopenvdb_1_1v13__0_1_1tree_1_1iter_1_1InvertedTree_html_ab3773598ec5a6b9d42e3de221960e9e3"><div class="ttname"><a href="structopenvdb_1_1v13__0_1_1tree_1_1iter_1_1InvertedTree.html#ab3773598ec5a6b9d42e3de221960e9e3">openvdb::v13_0::tree::iter::InvertedTree::Type</a></div><div class="ttdeci">typename SubtreeT::template Append&lt; HeadT &gt; Type</div><div class="ttdef"><b>Definition</b> TreeIterator.h:35</div></div>
 <div class="ttc" id="astructopenvdb_1_1v13__0_1_1tree_1_1iter_1_1InvertedTree_html_ad81895d388160c58103826820a801231"><div class="ttname"><a href="structopenvdb_1_1v13__0_1_1tree_1_1iter_1_1InvertedTree.html#ad81895d388160c58103826820a801231">openvdb::v13_0::tree::iter::InvertedTree::SubtreeT</a></div><div class="ttdeci">typename InvertedTree&lt; typename HeadT::ChildNodeType, HeadLevel-1 &gt;::Type SubtreeT</div><div class="ttdef"><b>Definition</b> TreeIterator.h:34</div></div>
 <div class="ttc" id="aversion_8h_8in_html_a00be3835cb8ad1ded8abd821fad20fc0"><div class="ttname"><a href="version_8h_8in.html#a00be3835cb8ad1ded8abd821fad20fc0">OPENVDB_VERSION_NAME</a></div><div class="ttdeci">#define OPENVDB_VERSION_NAME</div><div class="ttdoc">The version namespace name for this library version.</div><div class="ttdef"><b>Definition</b> version.h.in:121</div></div>
-<div class="ttc" id="aversion_8h_8in_html_a2dde157791cd7558cdf886489256ba14"><div class="ttname"><a href="version_8h_8in.html#a2dde157791cd7558cdf886489256ba14">OPENVDB_USE_VERSION_NAMESPACE</a></div><div class="ttdeci">#define OPENVDB_USE_VERSION_NAMESPACE</div><div class="ttdef"><b>Definition</b> version.h.in:218</div></div>
+<div class="ttc" id="aversion_8h_8in_html_a2dde157791cd7558cdf886489256ba14"><div class="ttname"><a href="version_8h_8in.html#a2dde157791cd7558cdf886489256ba14">OPENVDB_USE_VERSION_NAMESPACE</a></div><div class="ttdeci">#define OPENVDB_USE_VERSION_NAMESPACE</div><div class="ttdef"><b>Definition</b> version.h.in:284</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->

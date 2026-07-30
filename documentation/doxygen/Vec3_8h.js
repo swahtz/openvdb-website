@@ -8,6 +8,8 @@ var Vec3_8h =
     [ "openvdb::v13_0::math::Vec3ui", "namespaceopenvdb_1_1v13__0_1_1math.html#a84157f190439e8ab1886e774fbf7b5fe", null ],
     [ "openvdb::v13_0::math::Abs", "namespaceopenvdb_1_1v13__0_1_1math.html#ac052e69f6c2eeb68da1fa526c571c75e", null ],
     [ "openvdb::v13_0::math::angle", "namespaceopenvdb_1_1v13__0_1_1math.html#a47b3878380f64f4348127ef1f6ecea5e", null ],
+    [ "openvdb::v13_0::math::cwiseGreaterThan", "namespaceopenvdb_1_1v13__0_1_1math.html#a2f5eed71ae18bbbd33ae24caf0c1358d", null ],
+    [ "openvdb::v13_0::math::cwiseLessThan", "namespaceopenvdb_1_1v13__0_1_1math.html#a03970ffd7595b80e9a36b13d92b5138b", null ],
     [ "openvdb::v13_0::math::Exp", "namespaceopenvdb_1_1v13__0_1_1math.html#a435ad5ae916b5afb488374cc829efe37", null ],
     [ "openvdb::v13_0::math::isApproxEqual", "namespaceopenvdb_1_1v13__0_1_1math.html#ae8b0831b37872da2db607fd1c7e49645", null ],
     [ "openvdb::v13_0::math::isApproxEqual", "namespaceopenvdb_1_1v13__0_1_1math.html#af6ed720859f98c0c88c68eb1ea29bf10", null ],
@@ -25,6 +27,8 @@ var Vec3_8h =
     [ "openvdb::v13_0::math::operator/", "namespaceopenvdb_1_1v13__0_1_1math.html#add2451fa1c8332cb40980d57dd977727", null ],
     [ "openvdb::v13_0::math::operator/", "namespaceopenvdb_1_1v13__0_1_1math.html#a9d40329e4a6e9fbfb734910438c66098", null ],
     [ "openvdb::v13_0::math::operator/", "namespaceopenvdb_1_1v13__0_1_1math.html#a03d9d4cfa148e2cef4a73a1bc885e7a2", null ],
+    [ "openvdb::v13_0::math::operator<", "namespaceopenvdb_1_1v13__0_1_1math.html#a0fe17b880af5ae9039f0210b0395e6c5", null ],
     [ "openvdb::v13_0::math::operator==", "namespaceopenvdb_1_1v13__0_1_1math.html#a13f27bba62bf7f0e67781d9a898f37e7", null ],
+    [ "openvdb::v13_0::math::operator>", "namespaceopenvdb_1_1v13__0_1_1math.html#aec7350758fe48ae79032dd561205248f", null ],
     [ "openvdb::v13_0::math::orthonormalize", "namespaceopenvdb_1_1v13__0_1_1math.html#a43e0c0b35fd653f1fd8510cb68e6822f", null ]
 ];

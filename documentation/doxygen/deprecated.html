@@ -17,6 +17,15 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -110,45 +119,48 @@ $(function(){initNavTree('deprecated.html','',''); });
 <div class="contents">
 <div class="textblock"><dl class="reflist">
 <dt>Member <a class="el" href="structopenvdb_1_1v13__0_1_1ax_1_1codegen_1_1CFunctionBase.html#a63efe3f44116e72bed2c9c6f7b916fe9">CFunctionBase::fold</a>  (const std::vector&lt; llvm::Value * &gt; &amp;, llvm::LLVMContext &amp;) const</dt>
-<dd><a class="anchor" id="_deprecated000034"></a>  </dd>
+<dd><a class="anchor" id="_deprecated000035"></a>  </dd>
 <dt>Member <a class="el" href="structopenvdb_1_1v13__0_1_1points_1_1EllipsoidSettings.html#a020a5ed16757011c234ad22ec7d3e20b">EllipsoidSettings&lt; AttributeTs, RadiusAttributeT, FilterT &gt;::rotation</a>  </dt>
-<dd><a class="anchor" id="_deprecated000001"></a>"Use EllipsoidSettings::xform" <br  />
+<dd><a class="anchor" id="_deprecated000002"></a>"Use EllipsoidSettings::xform" <br  />
   </dd>
 <dt>Member <a class="el" href="structopenvdb_1_1v13__0_1_1ax_1_1codegen_1_1Function.html#a8260c8666f1cbbb10279dd0f7b44e643">Function::call</a>  (const std::vector&lt; llvm::Value * &gt; &amp;args, llvm::IRBuilder&lt;&gt; &amp;B, const bool cast) const</dt>
-<dd><a class="anchor" id="_deprecated000026"></a>"Function::call which takes llvm::Value's and " "supports casting is incompatible with LLVM 16+ and will be removed." <br  />
+<dd><a class="anchor" id="_deprecated000027"></a>"Function::call which takes llvm::Value's and " "supports casting is incompatible with LLVM 16+ and will be removed." <br  />
   </dd>
 <dt>Member <a class="el" href="structopenvdb_1_1v13__0_1_1ax_1_1codegen_1_1Function.html#a851def4e79a8080add2df87bdf87a32a">Function::hasParamAttribute</a>  (const size_t i, const llvm::Attribute::AttrKind &amp;kind) const</dt>
-<dd><a class="anchor" id="_deprecated000028"></a>"This method incorrectly returns the attributes " "of the function set by the FunctionBuilder, not by the codegen. To " "inspect function attributes, retrieve the created function from the " "llvm::Module." <br  />
+<dd><a class="anchor" id="_deprecated000029"></a>"This method incorrectly returns the attributes " "of the function set by the FunctionBuilder, not by the codegen. To " "inspect function attributes, retrieve the created function from the " "llvm::Module." <br  />
   </dd>
 <dt>Member <a class="el" href="structopenvdb_1_1v13__0_1_1ax_1_1codegen_1_1Function.html#a8bc9b930270e06477d777256c1e060d9">Function::match</a>  (const std::vector&lt; llvm::Type * &gt; &amp;inputs, llvm::LLVMContext &amp;C) const</dt>
-<dd><a class="anchor" id="_deprecated000027"></a>"Switch to AX's internal ArgInfo types for LLVM 16 onwards" <br  />
+<dd><a class="anchor" id="_deprecated000028"></a>"Switch to AX's internal ArgInfo types for LLVM 16 onwards" <br  />
   </dd>
 <dt>Member <a class="el" href="structopenvdb_1_1v13__0_1_1ax_1_1codegen_1_1Function.html#af6187793e0d3c6b1098b1d037e5b9530">Function::setArgumentNames</a>  (std::vector&lt; const char * &gt; names)</dt>
-<dd><a class="anchor" id="_deprecated000029"></a>"Use the FunctionBuilder to construct Functions" <br  />
-  </dd>
-<dt>Member <a class="el" href="structopenvdb_1_1v13__0_1_1ax_1_1codegen_1_1Function.html#a130dc8b5cf81200428494e2d63384483">Function::setDependencies</a>  (std::vector&lt; const char * &gt; deps)</dt>
 <dd><a class="anchor" id="_deprecated000030"></a>"Use the FunctionBuilder to construct Functions" <br  />
   </dd>
-<dt>Member <a class="el" href="structopenvdb_1_1v13__0_1_1ax_1_1codegen_1_1Function.html#a6fb0a8f2ddba1d3d98741894a5db5f03">Function::setFnAttributes</a>  (const std::vector&lt; llvm::Attribute::AttrKind &gt; &amp;in)</dt>
+<dt>Member <a class="el" href="structopenvdb_1_1v13__0_1_1ax_1_1codegen_1_1Function.html#a130dc8b5cf81200428494e2d63384483">Function::setDependencies</a>  (std::vector&lt; const char * &gt; deps)</dt>
 <dd><a class="anchor" id="_deprecated000031"></a>"Use the FunctionBuilder to construct Functions" <br  />
   </dd>
-<dt>Member <a class="el" href="structopenvdb_1_1v13__0_1_1ax_1_1codegen_1_1Function.html#a359ce980d9f1de2430296ca2f3e42409">Function::setParamAttributes</a>  (const size_t i, const std::vector&lt; llvm::Attribute::AttrKind &gt; &amp;in)</dt>
-<dd><a class="anchor" id="_deprecated000033"></a>"Use the FunctionBuilder to construct Functions" <br  />
-  </dd>
-<dt>Member <a class="el" href="structopenvdb_1_1v13__0_1_1ax_1_1codegen_1_1Function.html#a51952659e55f5546f5e3d8f6a4e56eb3">Function::setRetAttributes</a>  (const std::vector&lt; llvm::Attribute::AttrKind &gt; &amp;in)</dt>
+<dt>Member <a class="el" href="structopenvdb_1_1v13__0_1_1ax_1_1codegen_1_1Function.html#a6fb0a8f2ddba1d3d98741894a5db5f03">Function::setFnAttributes</a>  (const std::vector&lt; llvm::Attribute::AttrKind &gt; &amp;in)</dt>
 <dd><a class="anchor" id="_deprecated000032"></a>"Use the FunctionBuilder to construct Functions" <br  />
   </dd>
+<dt>Member <a class="el" href="structopenvdb_1_1v13__0_1_1ax_1_1codegen_1_1Function.html#a359ce980d9f1de2430296ca2f3e42409">Function::setParamAttributes</a>  (const size_t i, const std::vector&lt; llvm::Attribute::AttrKind &gt; &amp;in)</dt>
+<dd><a class="anchor" id="_deprecated000034"></a>"Use the FunctionBuilder to construct Functions" <br  />
+  </dd>
+<dt>Member <a class="el" href="structopenvdb_1_1v13__0_1_1ax_1_1codegen_1_1Function.html#a51952659e55f5546f5e3d8f6a4e56eb3">Function::setRetAttributes</a>  (const std::vector&lt; llvm::Attribute::AttrKind &gt; &amp;in)</dt>
+<dd><a class="anchor" id="_deprecated000033"></a>"Use the FunctionBuilder to construct Functions" <br  />
+  </dd>
 <dt>Member <a class="el" href="structopenvdb_1_1v13__0_1_1ax_1_1codegen_1_1Function.html#ab2b6bacd57c3ab5d930fc96e1319977d">Function::types</a>  (std::vector&lt; llvm::Type * &gt; &amp;, llvm::LLVMContext &amp;) const =0</dt>
-<dd><a class="anchor" id="_deprecated000025"></a>"Switch to AX's internal ArgInfo types for LLVM 16 onwards" <br  />
+<dd><a class="anchor" id="_deprecated000026"></a>"Switch to AX's internal ArgInfo types for LLVM 16 onwards" <br  />
   </dd>
 <dt>Member <a class="el" href="structopenvdb_1_1v13__0_1_1ax_1_1codegen_1_1FunctionGroup.html#aaa05b4f454fedf3e625d5ff1155f8e57">FunctionGroup::execute</a>  (const std::vector&lt; llvm::Value * &gt; &amp;args, llvm::IRBuilder&lt;&gt; &amp;B) const</dt>
-<dd><a class="anchor" id="_deprecated000036"></a>"FunctionGroup::execute which takes llvm::Value's and " "supports argument matching/casting is incompatible with LLVM 16+ and will be " "removed." <br  />
-  </dd>
-<dt>Member <a class="el" href="structopenvdb_1_1v13__0_1_1ax_1_1codegen_1_1FunctionGroup.html#adb6edc58a749ac18e50223ec48fb5b43">FunctionGroup::execute</a>  (const std::vector&lt; llvm::Value * &gt; &amp;args, llvm::IRBuilder&lt;&gt; &amp;B, llvm::Value *&amp;result) const</dt>
 <dd><a class="anchor" id="_deprecated000037"></a>"FunctionGroup::execute which takes llvm::Value's and " "supports argument matching/casting is incompatible with LLVM 16+ and will be " "removed." <br  />
   </dd>
+<dt>Member <a class="el" href="structopenvdb_1_1v13__0_1_1ax_1_1codegen_1_1FunctionGroup.html#adb6edc58a749ac18e50223ec48fb5b43">FunctionGroup::execute</a>  (const std::vector&lt; llvm::Value * &gt; &amp;args, llvm::IRBuilder&lt;&gt; &amp;B, llvm::Value *&amp;result) const</dt>
+<dd><a class="anchor" id="_deprecated000038"></a>"FunctionGroup::execute which takes llvm::Value's and " "supports argument matching/casting is incompatible with LLVM 16+ and will be " "removed." <br  />
+  </dd>
 <dt>Member <a class="el" href="structopenvdb_1_1v13__0_1_1ax_1_1codegen_1_1FunctionGroup.html#a824032018bcbf98c0feb287d458be062">FunctionGroup::match</a>  (const std::vector&lt; llvm::Type * &gt; &amp;types, llvm::LLVMContext &amp;C, <a class="el" href="structopenvdb_1_1v13__0_1_1ax_1_1codegen_1_1Function.html#aee8c90b86fef2410c5903bcdd9df708c" title="The result type from calls to Function::match.">Function::SignatureMatch</a> *type=nullptr) const</dt>
-<dd><a class="anchor" id="_deprecated000035"></a>"Switch to AX's internal ArgInfo types for LLVM 16 onwards" <br  />
+<dd><a class="anchor" id="_deprecated000036"></a>"Switch to AX's internal ArgInfo types for LLVM 16 onwards" <br  />
+  </dd>
+<dt>Member <a class="el" href="classopenvdb_1_1v13__0_1_1tree_1_1InternalNode.html#ae7a5e4f46465ad6bdf132b2967b324f2">InternalNode&lt; _ChildNodeType, Log2Dim &gt;::nodeCount</a>  (std::vector&lt; Index32 &gt; &amp;vec) const</dt>
+<dd><a class="anchor" id="_deprecated000006"></a>"Use input type std::vector&lt;Index64&gt; for nodeCount." <br  />
   </dd>
 <dt>Member <a class="el" href="classopenvdb_1_1v13__0_1_1tree_1_1LeafNode.html#ac3885f366af0670259670275a4e4afde">LeafNode&lt; T, Log2Dim &gt;::nodeCount</a>  (std::vector&lt; Index32 &gt; &amp;) const</dt>
 <dd><a class="anchor" id="_deprecated000004"></a>"Use input type std::vector&lt;Index64&gt; for nodeCount." <br  />
@@ -180,22 +192,22 @@ $(function(){initNavTree('deprecated.html','',''); });
 <dt>Member <a class="el" href="namespaceopenvdb_1_1v13__0_1_1ax_1_1codegen.html#a6e071cb438c1c2f9e19984457c7867d5">openvdb::v13_0::ax::codegen::ir_load</a>  (llvm::IRBuilder&lt;&gt; &amp;B, llvm::Value *ptr, const char *Name="")</dt>
 <dd><a class="anchor" id="_deprecated000010"></a>  </dd>
 <dt>Member <a class="el" href="namespaceopenvdb_1_1v13__0_1_1ax_1_1codegen.html#a4ddb10635251f8f3b8988a1d9f9886bd">openvdb::v13_0::ax::codegen::printSignature</a>  (std::ostream &amp;os, const std::vector&lt; llvm::Type * &gt; &amp;types, const llvm::Type *returnType, const char *name=nullptr, const std::vector&lt; const char * &gt; &amp;names={}, const bool axTypes=false)</dt>
-<dd><a class="anchor" id="_deprecated000024"></a>"Switch to AX's internal ArgInfo types for LLVM 16 onwards" <br  />
+<dd><a class="anchor" id="_deprecated000025"></a>"Switch to AX's internal ArgInfo types for LLVM 16 onwards" <br  />
   </dd>
 <dt>Member <a class="el" href="namespaceopenvdb_1_1v13__0_1_1ax_1_1codegen.html#a6ea6b1eaeb31e098fb2bfe2d983b3ddd">openvdb::v13_0::ax::codegen::scalarToMatrix</a>  (llvm::Value *scalar, llvm::IRBuilder&lt;&gt; &amp;builder, const size_t dim=3)</dt>
 <dd><a class="anchor" id="_deprecated000023"></a>  </dd>
 <dt>Member <a class="el" href="classhoudini__utils_1_1ParmFactory.html#a8edc118f4e21ece0925df673e358d573">ParmFactory::setChoiceList</a>  (PRM_ChoiceListType typ, const std::vector&lt; std::string &gt; &amp;items, bool paired=false)</dt>
-<dd><a class="anchor" id="_deprecated000008"></a>Use <a class="el" href="classhoudini__utils_1_1ParmFactory.html#a40f41b6cc7a11d752ec04243b5331ec5" title="Specify a menu type and a list of token, label, token, label,... pairs for this parameter.">setChoiceListItems()</a> instead. Using unpaired items may mean less typing now, but it prevents you from reordering or deleting entries later.  </dd>
+<dd><a class="anchor" id="_deprecated000007"></a>Use <a class="el" href="classhoudini__utils_1_1ParmFactory.html#a40f41b6cc7a11d752ec04243b5331ec5" title="Specify a menu type and a list of token, label, token, label,... pairs for this parameter.">setChoiceListItems()</a> instead. Using unpaired items may mean less typing now, but it prevents you from reordering or deleting entries later.  </dd>
 <dt>Member <a class="el" href="classhoudini__utils_1_1ParmFactory.html#ae4ad6edabd7ef4c6b5401a41e2be6ee7">ParmFactory::setChoiceList</a>  (PRM_ChoiceListType typ, const char *const *items, bool paired=false)</dt>
-<dd><a class="anchor" id="_deprecated000009"></a>Use <a class="el" href="classhoudini__utils_1_1ParmFactory.html#a40f41b6cc7a11d752ec04243b5331ec5" title="Specify a menu type and a list of token, label, token, label,... pairs for this parameter.">setChoiceListItems()</a> instead. Using unpaired items may mean less typing now, but it prevents you from reordering or deleting entries later.  </dd>
+<dd><a class="anchor" id="_deprecated000008"></a>Use <a class="el" href="classhoudini__utils_1_1ParmFactory.html#a40f41b6cc7a11d752ec04243b5331ec5" title="Specify a menu type and a list of token, label, token, label,... pairs for this parameter.">setChoiceListItems()</a> instead. Using unpaired items may mean less typing now, but it prevents you from reordering or deleting entries later.  </dd>
 <dt>Member <a class="el" href="structopenvdb_1_1v13__0_1_1points_1_1PcaAttributes.html#a020a5ed16757011c234ad22ec7d3e20b">PcaAttributes::rotation</a>  </dt>
-<dd><a class="anchor" id="_deprecated000002"></a>"Use PcaAttributes::xform" <br  />
+<dd><a class="anchor" id="_deprecated000001"></a>"Use PcaAttributes::xform" <br  />
   </dd>
 <dt>Member <a class="el" href="classopenvdb_1_1v13__0_1_1tree_1_1RootNode.html#ae7a5e4f46465ad6bdf132b2967b324f2">RootNode&lt; ChildType &gt;::nodeCount</a>  (std::vector&lt; Index32 &gt; &amp;vec) const</dt>
-<dd><a class="anchor" id="_deprecated000007"></a>"Use input type std::vector&lt;Index64&gt; for nodeCount." <br  />
+<dd><a class="anchor" id="_deprecated000009"></a>"Use input type std::vector&lt;Index64&gt; for nodeCount." <br  />
   </dd>
 <dt>Member <a class="el" href="classopenvdb_1_1v13__0_1_1ax_1_1VolumeExecutable.html#a2153ec6bf69ce734f8eddcf64c1487e1">VolumeExecutable::getTreeExecutionLevel</a>  () const</dt>
-<dd><a class="anchor" id="_deprecated000038"></a>"Use getTreeExecutionLevel(Index&amp;, Index&amp;)" <br  />
+<dd><a class="anchor" id="_deprecated000024"></a>"Use getTreeExecutionLevel(Index&amp;, Index&amp;)" <br  />
  </dd>
 </dl>
 </div></div><!-- contents -->

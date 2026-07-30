@@ -17,6 +17,15 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -268,14 +277,14 @@ $(function(){initNavTree('OpenSimplexNoise_8h_source.html','',''); });
 <div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>}</div>
 <div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span> </div>
 <div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span><span class="preprocessor">#endif </span><span class="comment">// OPENVDB_AX_MATH_OPEN_SIMPLEX_NOISE_HAS_BEEN_INCLUDED</span></div>
-<div class="ttc" id="aPlatform_8h_html_a4054a06b412a2c4f17ad97328fccd2cd"><div class="ttname"><a href="Platform_8h.html#a4054a06b412a2c4f17ad97328fccd2cd">OPENVDB_AX_API</a></div><div class="ttdeci">#define OPENVDB_AX_API</div><div class="ttdef"><b>Definition</b> Platform.h:312</div></div>
-<div class="ttc" id="aPlatform_8h_html_a4f7375e7791cade4ae486a8ebb68056f"><div class="ttname"><a href="Platform_8h.html#a4f7375e7791cade4ae486a8ebb68056f">OPENVDB_NO_TYPE_CONVERSION_WARNING_BEGIN</a></div><div class="ttdeci">#define OPENVDB_NO_TYPE_CONVERSION_WARNING_BEGIN</div><div class="ttdoc">Bracket code with OPENVDB_NO_TYPE_CONVERSION_WARNING_BEGIN/_END, to inhibit warnings about type conve...</div><div class="ttdef"><b>Definition</b> Platform.h:244</div></div>
-<div class="ttc" id="aPlatform_8h_html_ac13c11880cf8b8dd311a72e5a05b295d"><div class="ttname"><a href="Platform_8h.html#ac13c11880cf8b8dd311a72e5a05b295d">OPENVDB_NO_TYPE_CONVERSION_WARNING_END</a></div><div class="ttdeci">#define OPENVDB_NO_TYPE_CONVERSION_WARNING_END</div><div class="ttdef"><b>Definition</b> Platform.h:245</div></div>
+<div class="ttc" id="aPlatform_8h_html_a4054a06b412a2c4f17ad97328fccd2cd"><div class="ttname"><a href="Platform_8h.html#a4054a06b412a2c4f17ad97328fccd2cd">OPENVDB_AX_API</a></div><div class="ttdeci">#define OPENVDB_AX_API</div><div class="ttdef"><b>Definition</b> Platform.h:299</div></div>
+<div class="ttc" id="aPlatform_8h_html_a4f7375e7791cade4ae486a8ebb68056f"><div class="ttname"><a href="Platform_8h.html#a4f7375e7791cade4ae486a8ebb68056f">OPENVDB_NO_TYPE_CONVERSION_WARNING_BEGIN</a></div><div class="ttdeci">#define OPENVDB_NO_TYPE_CONVERSION_WARNING_BEGIN</div><div class="ttdoc">Bracket code with OPENVDB_NO_TYPE_CONVERSION_WARNING_BEGIN/_END, to inhibit warnings about type conve...</div><div class="ttdef"><b>Definition</b> Platform.h:231</div></div>
+<div class="ttc" id="aPlatform_8h_html_ac13c11880cf8b8dd311a72e5a05b295d"><div class="ttname"><a href="Platform_8h.html#ac13c11880cf8b8dd311a72e5a05b295d">OPENVDB_NO_TYPE_CONVERSION_WARNING_END</a></div><div class="ttdeci">#define OPENVDB_NO_TYPE_CONVERSION_WARNING_END</div><div class="ttdef"><b>Definition</b> Platform.h:232</div></div>
 <div class="ttc" id="anamespaceopenvdb_1_1v13__0_1_1ax_1_1math_html"><div class="ttname"><a href="namespaceopenvdb_1_1v13__0_1_1ax_1_1math.html">openvdb::v13_0::ax::math</a></div><div class="ttdef"><b>Definition</b> OpenSimplexNoise.h:31</div></div>
 <div class="ttc" id="anamespaceopenvdb_1_1v13__0_1_1ax_1_1math_html_aa6c8fdf528f38439630c418fec01d038"><div class="ttname"><a href="namespaceopenvdb_1_1v13__0_1_1ax_1_1math.html#aa6c8fdf528f38439630c418fec01d038">openvdb::v13_0::ax::math::curlnoise</a></div><div class="ttdeci">void curlnoise(double(*out)[3], const double(*in)[3])</div><div class="ttdef"><b>Definition</b> OpenSimplexNoise.h:34</div></div>
 <div class="ttc" id="anamespaceopenvdb_html"><div class="ttname"><a href="namespaceopenvdb.html">openvdb</a></div><div class="ttdef"><b>Definition</b> Exceptions.h:13</div></div>
 <div class="ttc" id="aversion_8h_8in_html_a00be3835cb8ad1ded8abd821fad20fc0"><div class="ttname"><a href="version_8h_8in.html#a00be3835cb8ad1ded8abd821fad20fc0">OPENVDB_VERSION_NAME</a></div><div class="ttdeci">#define OPENVDB_VERSION_NAME</div><div class="ttdoc">The version namespace name for this library version.</div><div class="ttdef"><b>Definition</b> version.h.in:121</div></div>
-<div class="ttc" id="aversion_8h_8in_html_a2dde157791cd7558cdf886489256ba14"><div class="ttname"><a href="version_8h_8in.html#a2dde157791cd7558cdf886489256ba14">OPENVDB_USE_VERSION_NAMESPACE</a></div><div class="ttdeci">#define OPENVDB_USE_VERSION_NAMESPACE</div><div class="ttdef"><b>Definition</b> version.h.in:218</div></div>
+<div class="ttc" id="aversion_8h_8in_html_a2dde157791cd7558cdf886489256ba14"><div class="ttname"><a href="version_8h_8in.html#a2dde157791cd7558cdf886489256ba14">OPENVDB_USE_VERSION_NAMESPACE</a></div><div class="ttdeci">#define OPENVDB_USE_VERSION_NAMESPACE</div><div class="ttdef"><b>Definition</b> version.h.in:284</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->

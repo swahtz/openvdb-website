@@ -17,6 +17,15 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -221,7 +230,7 @@ $(function(){initNavTree('DelayedLoadMetadata_8h_source.html','',''); });
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span><span class="preprocessor">#endif </span><span class="comment">// OPENVDB_DELAYED_LOAD_METADATA_HAS_BEEN_INCLUDED</span></div>
 <div class="ttc" id="aMetadata_8h_html"><div class="ttname"><a href="Metadata_8h.html">Metadata.h</a></div></div>
-<div class="ttc" id="aPlatform_8h_html_a78ead02913edfee18be9d5982b788611"><div class="ttname"><a href="Platform_8h.html#a78ead02913edfee18be9d5982b788611">OPENVDB_API</a></div><div class="ttdeci">#define OPENVDB_API</div><div class="ttdef"><b>Definition</b> Platform.h:291</div></div>
+<div class="ttc" id="aPlatform_8h_html_a78ead02913edfee18be9d5982b788611"><div class="ttname"><a href="Platform_8h.html#a78ead02913edfee18be9d5982b788611">OPENVDB_API</a></div><div class="ttdeci">#define OPENVDB_API</div><div class="ttdef"><b>Definition</b> Platform.h:278</div></div>
 <div class="ttc" id="aclassopenvdb_1_1v13__0_1_1Metadata_html_a20ed44ba04640e7899bc99dc9e06846d"><div class="ttname"><a href="classopenvdb_1_1v13__0_1_1Metadata.html#a20ed44ba04640e7899bc99dc9e06846d">openvdb::v13_0::Metadata::Metadata</a></div><div class="ttdeci">Metadata()</div><div class="ttdef"><b>Definition</b> Metadata.h:30</div></div>
 <div class="ttc" id="aclassopenvdb_1_1v13__0_1_1Metadata_html_a6e8722817dee3ec246918f5c239b39ed"><div class="ttname"><a href="classopenvdb_1_1v13__0_1_1Metadata.html#a6e8722817dee3ec246918f5c239b39ed">openvdb::v13_0::Metadata::registerType</a></div><div class="ttdeci">static void registerType(const Name &amp;typeName, Metadata::Ptr(*createMetadata)())</div><div class="ttdoc">Register the given metadata type along with a factory function.</div></div>
 <div class="ttc" id="aclassopenvdb_1_1v13__0_1_1Metadata_html_aa9b76271b1a77807fa6910d6bbe7c467"><div class="ttname"><a href="classopenvdb_1_1v13__0_1_1Metadata.html#aa9b76271b1a77807fa6910d6bbe7c467">openvdb::v13_0::Metadata::isRegisteredType</a></div><div class="ttdeci">static bool isRegisteredType(const Name &amp;typeName)</div><div class="ttdoc">Return true if the given type is known by the metadata type registry.</div></div>
@@ -260,7 +269,7 @@ $(function(){initNavTree('DelayedLoadMetadata_8h_source.html','',''); });
 <div class="ttc" id="anamespaceopenvdb_1_1v13__0_html_ad71c1f3b8d46b57fd328d48cee283c1f"><div class="ttname"><a href="namespaceopenvdb_1_1v13__0.html#ad71c1f3b8d46b57fd328d48cee283c1f">openvdb::v13_0::SharedPtr</a></div><div class="ttdeci">std::shared_ptr&lt; T &gt; SharedPtr</div><div class="ttdef"><b>Definition</b> Types.h:95</div></div>
 <div class="ttc" id="anamespaceopenvdb_html"><div class="ttname"><a href="namespaceopenvdb.html">openvdb</a></div><div class="ttdef"><b>Definition</b> Exceptions.h:13</div></div>
 <div class="ttc" id="aversion_8h_8in_html_a00be3835cb8ad1ded8abd821fad20fc0"><div class="ttname"><a href="version_8h_8in.html#a00be3835cb8ad1ded8abd821fad20fc0">OPENVDB_VERSION_NAME</a></div><div class="ttdeci">#define OPENVDB_VERSION_NAME</div><div class="ttdoc">The version namespace name for this library version.</div><div class="ttdef"><b>Definition</b> version.h.in:121</div></div>
-<div class="ttc" id="aversion_8h_8in_html_a2dde157791cd7558cdf886489256ba14"><div class="ttname"><a href="version_8h_8in.html#a2dde157791cd7558cdf886489256ba14">OPENVDB_USE_VERSION_NAMESPACE</a></div><div class="ttdeci">#define OPENVDB_USE_VERSION_NAMESPACE</div><div class="ttdef"><b>Definition</b> version.h.in:218</div></div>
+<div class="ttc" id="aversion_8h_8in_html_a2dde157791cd7558cdf886489256ba14"><div class="ttname"><a href="version_8h_8in.html#a2dde157791cd7558cdf886489256ba14">OPENVDB_USE_VERSION_NAMESPACE</a></div><div class="ttdeci">#define OPENVDB_USE_VERSION_NAMESPACE</div><div class="ttdef"><b>Definition</b> version.h.in:284</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->

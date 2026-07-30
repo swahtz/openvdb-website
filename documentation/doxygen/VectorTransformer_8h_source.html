@@ -17,6 +17,15 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -286,7 +295,7 @@ $(function(){initNavTree('VectorTransformer_8h_source.html','',''); });
 <div class="ttc" id="aclassopenvdb_1_1v13__0_1_1math_1_1Mat4_html_a51869ac13b8ea5b8bb3b6b53f8b5b358"><div class="ttname"><a href="classopenvdb_1_1v13__0_1_1math_1_1Mat4.html#a51869ac13b8ea5b8bb3b6b53f8b5b358">openvdb::v13_0::math::Mat4::inverse</a></div><div class="ttdeci">Mat4 inverse(T tolerance=0) const</div><div class="ttdef"><b>Definition</b> Mat4.h:485</div></div>
 <div class="ttc" id="aclassopenvdb_1_1v13__0_1_1math_1_1Mat4_html_a61d6055231797f552096372438c15373"><div class="ttname"><a href="classopenvdb_1_1v13__0_1_1math_1_1Mat4.html#a61d6055231797f552096372438c15373">openvdb::v13_0::math::Mat4::transpose</a></div><div class="ttdeci">Mat4 transpose() const</div><div class="ttdef"><b>Definition</b> Mat4.h:472</div></div>
 <div class="ttc" id="aclassopenvdb_1_1v13__0_1_1math_1_1Vec3_html_ae37fa555d3e29bc5ee4b0c813f86f18d"><div class="ttname"><a href="classopenvdb_1_1v13__0_1_1math_1_1Vec3.html#ae37fa555d3e29bc5ee4b0c813f86f18d">openvdb::v13_0::math::Vec3::normalize</a></div><div class="ttdeci">bool normalize(T eps=T(1.0e-7))</div><div class="ttdoc">this = normalized this</div><div class="ttdef"><b>Definition</b> Vec3.h:363</div></div>
-<div class="ttc" id="anamespaceopenvdb_1_1v13__0_1_1math_html_a98d94999010cb92dfb5f652c353d1d82"><div class="ttname"><a href="namespaceopenvdb_1_1v13__0_1_1math.html#a98d94999010cb92dfb5f652c353d1d82">openvdb::v13_0::math::Vec3d</a></div><div class="ttdeci">Vec3&lt; double &gt; Vec3d</div><div class="ttdef"><b>Definition</b> Vec3.h:665</div></div>
+<div class="ttc" id="anamespaceopenvdb_1_1v13__0_1_1math_html_a98d94999010cb92dfb5f652c353d1d82"><div class="ttname"><a href="namespaceopenvdb_1_1v13__0_1_1math.html#a98d94999010cb92dfb5f652c353d1d82">openvdb::v13_0::math::Vec3d</a></div><div class="ttdeci">Vec3&lt; double &gt; Vec3d</div><div class="ttdef"><b>Definition</b> Vec3.h:708</div></div>
 <div class="ttc" id="anamespaceopenvdb_1_1v13__0_1_1math_html_abaf7f913bf1752b9157259ffa32704ca"><div class="ttname"><a href="namespaceopenvdb_1_1v13__0_1_1math.html#abaf7f913bf1752b9157259ffa32704ca">openvdb::v13_0::math::Mat4d</a></div><div class="ttdeci">Mat4&lt; double &gt; Mat4d</div><div class="ttdef"><b>Definition</b> Mat4.h:1355</div></div>
 <div class="ttc" id="anamespaceopenvdb_1_1v13__0_1_1tools_html_a642190ccc3febe94d8b07ac37f892349"><div class="ttname"><a href="namespaceopenvdb_1_1v13__0_1_1tools.html#a642190ccc3febe94d8b07ac37f892349">openvdb::v13_0::tools::transformVectors</a></div><div class="ttdeci">void transformVectors(GridType &amp;, const Mat4d &amp;)</div><div class="ttdoc">Apply an affine transform to the voxel values of a vector-valued grid in accordance with the grid&#39;s v...</div><div class="ttdef"><b>Definition</b> VectorTransformer.h:126</div></div>
 <div class="ttc" id="anamespaceopenvdb_1_1v13__0_html_ae93f92d10730a52ed3b207d5811f6a6e"><div class="ttname"><a href="namespaceopenvdb_1_1v13__0.html#ae93f92d10730a52ed3b207d5811f6a6e">openvdb::v13_0::VecType</a></div><div class="ttdeci">VecType</div><div class="ttdef"><b>Definition</b> Types.h:554</div></div>
@@ -309,8 +318,8 @@ $(function(){initNavTree('VectorTransformer_8h_source.html','',''); });
 <div class="ttc" id="astructopenvdb_1_1v13__0_1_1tools_1_1MatMul_html_a5c83e050fc2b2e0f06288f74cde5d715"><div class="ttname"><a href="structopenvdb_1_1v13__0_1_1tools_1_1MatMul.html#a5c83e050fc2b2e0f06288f74cde5d715">openvdb::v13_0::tools::MatMul::mat</a></div><div class="ttdeci">const Mat4d mat</div><div class="ttdef"><b>Definition</b> VectorTransformer.h:48</div></div>
 <div class="ttc" id="astructopenvdb_1_1v13__0_1_1tools_1_1MatMul_html_a87214a5219106ea9a0189bee8da5f4da"><div class="ttname"><a href="structopenvdb_1_1v13__0_1_1tools_1_1MatMul.html#a87214a5219106ea9a0189bee8da5f4da">openvdb::v13_0::tools::MatMul::operator()</a></div><div class="ttdeci">void operator()(const TreeIterT &amp;it) const</div><div class="ttdef"><b>Definition</b> VectorTransformer.h:51</div></div>
 <div class="ttc" id="aversion_8h_8in_html_a00be3835cb8ad1ded8abd821fad20fc0"><div class="ttname"><a href="version_8h_8in.html#a00be3835cb8ad1ded8abd821fad20fc0">OPENVDB_VERSION_NAME</a></div><div class="ttdeci">#define OPENVDB_VERSION_NAME</div><div class="ttdoc">The version namespace name for this library version.</div><div class="ttdef"><b>Definition</b> version.h.in:121</div></div>
-<div class="ttc" id="aversion_8h_8in_html_a2dde157791cd7558cdf886489256ba14"><div class="ttname"><a href="version_8h_8in.html#a2dde157791cd7558cdf886489256ba14">OPENVDB_USE_VERSION_NAMESPACE</a></div><div class="ttdeci">#define OPENVDB_USE_VERSION_NAMESPACE</div><div class="ttdef"><b>Definition</b> version.h.in:218</div></div>
-<div class="ttc" id="aversion_8h_8in_html_a7d027e8f99ea64bd389bf3015fe6eada"><div class="ttname"><a href="version_8h_8in.html#a7d027e8f99ea64bd389bf3015fe6eada">OPENVDB_VEC3_TREE_INSTANTIATE</a></div><div class="ttdeci">#define OPENVDB_VEC3_TREE_INSTANTIATE(Function)</div><div class="ttdef"><b>Definition</b> version.h.in:164</div></div>
+<div class="ttc" id="aversion_8h_8in_html_a2dde157791cd7558cdf886489256ba14"><div class="ttname"><a href="version_8h_8in.html#a2dde157791cd7558cdf886489256ba14">OPENVDB_USE_VERSION_NAMESPACE</a></div><div class="ttdeci">#define OPENVDB_USE_VERSION_NAMESPACE</div><div class="ttdef"><b>Definition</b> version.h.in:284</div></div>
+<div class="ttc" id="aversion_8h_8in_html_a7d027e8f99ea64bd389bf3015fe6eada"><div class="ttname"><a href="version_8h_8in.html#a7d027e8f99ea64bd389bf3015fe6eada">OPENVDB_VEC3_TREE_INSTANTIATE</a></div><div class="ttdeci">#define OPENVDB_VEC3_TREE_INSTANTIATE(Function)</div><div class="ttdef"><b>Definition</b> version.h.in:230</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->

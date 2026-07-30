@@ -17,6 +17,15 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -163,6 +172,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:afbffbd5616a3399e308ce61a38c57595"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the specified bit on.  <br /></td></tr>
 <tr class="memitem:a41ef30b8914a1ffbeb1eb65d9b292f06" id="r_a41ef30b8914a1ffbeb1eb65d9b292f06"><td class="memItemLeft" align="right" valign="top"><a class="el" href="nanovdb_2nanovdb_2util_2Util_8h.html#a551e5ea2539324048f4b47c00ab67d55">__hostdev__</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a41ef30b8914a1ffbeb1eb65d9b292f06">setOff</a> (uint32_t n)</td></tr>
 <tr class="memdesc:a41ef30b8914a1ffbeb1eb65d9b292f06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the specified bit off.  <br /></td></tr>
+<tr class="memitem:a1ba80ebb74c73ad158651da8fc157ec3" id="r_a1ba80ebb74c73ad158651da8fc157ec3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="nanovdb_2nanovdb_2util_2Util_8h.html#a551e5ea2539324048f4b47c00ab67d55">__hostdev__</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1ba80ebb74c73ad158651da8fc157ec3">setOnAtomic</a> (uint32_t n)</td></tr>
+<tr class="memitem:a1a78873e9532a8162ce2e054b3dc4143" id="r_a1a78873e9532a8162ce2e054b3dc4143"><td class="memItemLeft" align="right" valign="top"><a class="el" href="nanovdb_2nanovdb_2util_2Util_8h.html#a551e5ea2539324048f4b47c00ab67d55">__hostdev__</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1a78873e9532a8162ce2e054b3dc4143">setOffAtomic</a> (uint32_t n)</td></tr>
+<tr class="memitem:a085ce787f90c25b2de09cda0398a2c37" id="r_a085ce787f90c25b2de09cda0398a2c37"><td class="memItemLeft" align="right" valign="top"><a class="el" href="nanovdb_2nanovdb_2util_2Util_8h.html#a551e5ea2539324048f4b47c00ab67d55">__hostdev__</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a085ce787f90c25b2de09cda0398a2c37">setAtomic</a> (uint32_t n, bool on)</td></tr>
 <tr class="memitem:a17fb876458f1f0dd0de74e273bb7f92e" id="r_a17fb876458f1f0dd0de74e273bb7f92e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="nanovdb_2nanovdb_2util_2Util_8h.html#a551e5ea2539324048f4b47c00ab67d55">__hostdev__</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a17fb876458f1f0dd0de74e273bb7f92e">set</a> (uint32_t n, bool on)</td></tr>
 <tr class="memdesc:a17fb876458f1f0dd0de74e273bb7f92e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the specified bit on or off.  <br /></td></tr>
 <tr class="memitem:a1f5cf096d1d42580e7890639d27bc94e" id="r_a1f5cf096d1d42580e7890639d27bc94e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="nanovdb_2nanovdb_2util_2Util_8h.html#a551e5ea2539324048f4b47c00ab67d55">__hostdev__</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1f5cf096d1d42580e7890639d27bc94e">setOn</a> ()</td></tr>
@@ -1045,6 +1057,37 @@ template&lt;uint32_t LOG2DIM&gt; </div>
 
 </div>
 </div>
+<a id="a085ce787f90c25b2de09cda0398a2c37" name="a085ce787f90c25b2de09cda0398a2c37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a085ce787f90c25b2de09cda0398a2c37">&#9670;&#160;</a></span>setAtomic()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;uint32_t LOG2DIM&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="nanovdb_2nanovdb_2util_2Util_8h.html#a551e5ea2539324048f4b47c00ab67d55">__hostdev__</a> void setAtomic </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>n</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>on</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a44082a977c90fa203f36f1c12553aa74" name="a44082a977c90fa203f36f1c12553aa74"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a44082a977c90fa203f36f1c12553aa74">&#9670;&#160;</a></span>setOff() <span class="overload">[1/2]</span></h2>
 
@@ -1103,6 +1146,33 @@ template&lt;uint32_t LOG2DIM&gt; </div>
 
 </div>
 </div>
+<a id="a1a78873e9532a8162ce2e054b3dc4143" name="a1a78873e9532a8162ce2e054b3dc4143"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a78873e9532a8162ce2e054b3dc4143">&#9670;&#160;</a></span>setOffAtomic()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;uint32_t LOG2DIM&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="nanovdb_2nanovdb_2util_2Util_8h.html#a551e5ea2539324048f4b47c00ab67d55">__hostdev__</a> void setOffAtomic </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>n</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a1f5cf096d1d42580e7890639d27bc94e" name="a1f5cf096d1d42580e7890639d27bc94e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1f5cf096d1d42580e7890639d27bc94e">&#9670;&#160;</a></span>setOn() <span class="overload">[1/2]</span></h2>
 
@@ -1158,6 +1228,33 @@ template&lt;uint32_t LOG2DIM&gt; </div>
 </div><div class="memdoc">
 
 <p>Set the specified bit on. </p>
+
+</div>
+</div>
+<a id="a1ba80ebb74c73ad158651da8fc157ec3" name="a1ba80ebb74c73ad158651da8fc157ec3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ba80ebb74c73ad158651da8fc157ec3">&#9670;&#160;</a></span>setOnAtomic()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;uint32_t LOG2DIM&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="nanovdb_2nanovdb_2util_2Util_8h.html#a551e5ea2539324048f4b47c00ab67d55">__hostdev__</a> void setOnAtomic </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>n</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>

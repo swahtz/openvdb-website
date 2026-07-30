@@ -75,6 +75,7 @@ var classnanovdb_1_1LeafNode =
     [ "valueMask", "classnanovdb_1_1LeafNode.html#ae1e668335477615fbdfb31432def8309", null ],
     [ "variance", "classnanovdb_1_1LeafNode.html#a4f3b4fda9d5193dd69c9406dab3c9a5f", null ],
     [ "voxelCount", "classnanovdb_1_1LeafNode.html#af79903e5db35fa088abf8124969f72ee", null ],
+    [ "InternalNode", "classnanovdb_1_1LeafNode.html#a5fc7cbf1929731e78733e1b476142b8a", null ],
     [ "ReadAccessor", "classnanovdb_1_1LeafNode.html#a403aee572e05c787c316dbf9f12a9235", null ],
     [ "RootNode", "classnanovdb_1_1LeafNode.html#aff4f5e7209d5ad66394519639bd989f8", null ],
     [ "DIM", "classnanovdb_1_1LeafNode.html#a63a6059ef67cec0e73613f908d3fdc4f", null ],

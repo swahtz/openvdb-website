@@ -17,6 +17,15 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -824,7 +833,6 @@ template&lt;typename ValueT, typename U = BufferT&gt; </div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">n</td><td>Index of the grid pointer to be returned </td></tr>
-    <tr><td class="paramname">verbose</td><td>if non-zero error messages will be printed in case something failed </td></tr>
   </table>
   </dd>
 </dl>
@@ -1486,7 +1494,7 @@ template&lt;typename BufferT = HostBuffer&gt; </div>
 <p>Read a raw grid buffer from a file. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">filename</td><td>string name of the input file containing a raw grid buffer </td></tr>
+    <tr><td class="paramname">fileName</td><td>string name of the input file containing a raw grid buffer </td></tr>
     <tr><td class="paramname">pool</td><td>optional pool from which to allocate the new grid buffer </td></tr>
   </table>
   </dd>
@@ -1531,7 +1539,7 @@ template&lt;typename BufferT = HostBuffer&gt; </div>
 <p>Read a specific grid from a file containing a raw grid buffer. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">filename</td><td>string name of the input file containing a raw grid buffer </td></tr>
+    <tr><td class="paramname">fileName</td><td>string name of the input file containing a raw grid buffer </td></tr>
     <tr><td class="paramname">gridName</td><td>string name of the grid to be read </td></tr>
     <tr><td class="paramname">pool</td><td>optional pool from which to allocate the new grid buffer </td></tr>
   </table>
@@ -1583,7 +1591,7 @@ template&lt;typename BufferT = HostBuffer&gt; </div>
 <p>Read a specific grid from a file containing a raw grid buffer. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">filename</td><td>string name of the input file containing a raw grid buffer </td></tr>
+    <tr><td class="paramname">fileName</td><td>string name of the input file containing a raw grid buffer </td></tr>
     <tr><td class="paramname">n</td><td>zero-based index of the grid to be read </td></tr>
     <tr><td class="paramname">pool</td><td>optional pool from which to allocate the new grid buffer </td></tr>
   </table>

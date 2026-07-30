@@ -12,6 +12,7 @@ var dir_f9ca77ac9acdbd6a209f5e94183bcf27 =
     [ "HostBuffer.h", "util_2HostBuffer_8h.html", null ],
     [ "Invoke.h", "Invoke_8h.html", "Invoke_8h" ],
     [ "IO.h", "IO_8h.html", null ],
+    [ "MaskPrefixSum.h", "MaskPrefixSum_8h.html", "MaskPrefixSum_8h" ],
     [ "MorphologyHelpers.h", "MorphologyHelpers_8h.html", "MorphologyHelpers_8h" ],
     [ "NanoToOpenVDB.h", "NanoToOpenVDB_8h.html", null ],
     [ "NodeManager.h", "nanovdb_2nanovdb_2util_2NodeManager_8h.html", null ],

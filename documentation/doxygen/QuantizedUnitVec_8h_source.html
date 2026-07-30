@@ -17,6 +17,15 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -238,17 +247,17 @@ $(function(){initNavTree('QuantizedUnitVec_8h_source.html','',''); });
 <div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span> </div>
 <div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span><span class="preprocessor">#endif </span><span class="comment">// OPENVDB_MATH_QUANTIZED_UNIT_VEC_HAS_BEEN_INCLUDED</span></div>
 <div class="ttc" id="aPlatform_8h_html"><div class="ttname"><a href="Platform_8h.html">Platform.h</a></div></div>
-<div class="ttc" id="aPlatform_8h_html_a78ead02913edfee18be9d5982b788611"><div class="ttname"><a href="Platform_8h.html#a78ead02913edfee18be9d5982b788611">OPENVDB_API</a></div><div class="ttdeci">#define OPENVDB_API</div><div class="ttdef"><b>Definition</b> Platform.h:291</div></div>
+<div class="ttc" id="aPlatform_8h_html_a78ead02913edfee18be9d5982b788611"><div class="ttname"><a href="Platform_8h.html#a78ead02913edfee18be9d5982b788611">OPENVDB_API</a></div><div class="ttdeci">#define OPENVDB_API</div><div class="ttdef"><b>Definition</b> Platform.h:278</div></div>
 <div class="ttc" id="aVec3_8h_html"><div class="ttname"><a href="Vec3_8h.html">Vec3.h</a></div></div>
 <div class="ttc" id="aclassopenvdb_1_1v13__0_1_1math_1_1QuantizedUnitVec_html_a380d7f4c5f08c980f560bdd3584f70d5"><div class="ttname"><a href="classopenvdb_1_1v13__0_1_1math_1_1QuantizedUnitVec.html#a380d7f4c5f08c980f560bdd3584f70d5">openvdb::v13_0::math::QuantizedUnitVec::unpack</a></div><div class="ttdeci">static Vec3s unpack(const uint16_t data)</div><div class="ttdef"><b>Definition</b> QuantizedUnitVec.h:86</div></div>
 <div class="ttc" id="aclassopenvdb_1_1v13__0_1_1math_1_1QuantizedUnitVec_html_a3e937c6d40286b0fdeed1af9808414e2"><div class="ttname"><a href="classopenvdb_1_1v13__0_1_1math_1_1QuantizedUnitVec.html#a3e937c6d40286b0fdeed1af9808414e2">openvdb::v13_0::math::QuantizedUnitVec::flipSignBits</a></div><div class="ttdeci">static void flipSignBits(uint16_t &amp;)</div><div class="ttdef"><b>Definition</b> QuantizedUnitVec.h:112</div></div>
 <div class="ttc" id="aclassopenvdb_1_1v13__0_1_1math_1_1QuantizedUnitVec_html_ad941c3e631b49b5726346754818f444a"><div class="ttname"><a href="classopenvdb_1_1v13__0_1_1math_1_1QuantizedUnitVec.html#ad941c3e631b49b5726346754818f444a">openvdb::v13_0::math::QuantizedUnitVec::pack</a></div><div class="ttdeci">static uint16_t pack(const Vec3&lt; T &gt; &amp;vec)</div><div class="ttdef"><b>Definition</b> QuantizedUnitVec.h:48</div></div>
 <div class="ttc" id="aclassopenvdb_1_1v13__0_1_1math_1_1Vec3_html"><div class="ttname"><a href="classopenvdb_1_1v13__0_1_1math_1_1Vec3.html">openvdb::v13_0::math::Vec3</a></div><div class="ttdef"><b>Definition</b> Vec3.h:25</div></div>
 <div class="ttc" id="anamespaceopenvdb_1_1v13__0_1_1math_html_ad35876c555c6cc47dabbeaaf2e46f9ed"><div class="ttname"><a href="namespaceopenvdb_1_1v13__0_1_1math.html#ad35876c555c6cc47dabbeaaf2e46f9ed">openvdb::v13_0::math::isZero</a></div><div class="ttdeci">bool isZero(const Type &amp;x)</div><div class="ttdoc">Return true if x is exactly equal to zero.</div><div class="ttdef"><b>Definition</b> Math.h:350</div></div>
-<div class="ttc" id="anamespaceopenvdb_1_1v13__0_1_1math_html_ae60b991a87c83e25ec51e0576209be11"><div class="ttname"><a href="namespaceopenvdb_1_1v13__0_1_1math.html#ae60b991a87c83e25ec51e0576209be11">openvdb::v13_0::math::Vec3s</a></div><div class="ttdeci">Vec3&lt; float &gt; Vec3s</div><div class="ttdef"><b>Definition</b> Vec3.h:664</div></div>
+<div class="ttc" id="anamespaceopenvdb_1_1v13__0_1_1math_html_ae60b991a87c83e25ec51e0576209be11"><div class="ttname"><a href="namespaceopenvdb_1_1v13__0_1_1math.html#ae60b991a87c83e25ec51e0576209be11">openvdb::v13_0::math::Vec3s</a></div><div class="ttdeci">Vec3&lt; float &gt; Vec3s</div><div class="ttdef"><b>Definition</b> Vec3.h:707</div></div>
 <div class="ttc" id="anamespaceopenvdb_html"><div class="ttname"><a href="namespaceopenvdb.html">openvdb</a></div><div class="ttdef"><b>Definition</b> Exceptions.h:13</div></div>
 <div class="ttc" id="aversion_8h_8in_html_a00be3835cb8ad1ded8abd821fad20fc0"><div class="ttname"><a href="version_8h_8in.html#a00be3835cb8ad1ded8abd821fad20fc0">OPENVDB_VERSION_NAME</a></div><div class="ttdeci">#define OPENVDB_VERSION_NAME</div><div class="ttdoc">The version namespace name for this library version.</div><div class="ttdef"><b>Definition</b> version.h.in:121</div></div>
-<div class="ttc" id="aversion_8h_8in_html_a2dde157791cd7558cdf886489256ba14"><div class="ttname"><a href="version_8h_8in.html#a2dde157791cd7558cdf886489256ba14">OPENVDB_USE_VERSION_NAMESPACE</a></div><div class="ttdeci">#define OPENVDB_USE_VERSION_NAMESPACE</div><div class="ttdef"><b>Definition</b> version.h.in:218</div></div>
+<div class="ttc" id="aversion_8h_8in_html_a2dde157791cd7558cdf886489256ba14"><div class="ttname"><a href="version_8h_8in.html#a2dde157791cd7558cdf886489256ba14">OPENVDB_USE_VERSION_NAMESPACE</a></div><div class="ttdeci">#define OPENVDB_USE_VERSION_NAMESPACE</div><div class="ttdef"><b>Definition</b> version.h.in:284</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->

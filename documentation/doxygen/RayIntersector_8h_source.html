@@ -17,6 +17,15 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -846,10 +855,10 @@ $(function(){initNavTree('RayIntersector_8h_source.html','',''); });
 <div class="ttc" id="aGrid_8h_html"><div class="ttname"><a href="Grid_8h.html">Grid.h</a></div></div>
 <div class="ttc" id="aMath_8h_html"><div class="ttname"><a href="Math_8h.html">Math.h</a></div><div class="ttdoc">General-purpose arithmetic and comparison routines, most of which accept arbitrary value types (or at...</div></div>
 <div class="ttc" id="aMorphology_8h_html"><div class="ttname"><a href="Morphology_8h.html">Morphology.h</a></div><div class="ttdoc">Implementation of morphological dilation and erosion.</div></div>
-<div class="ttc" id="aPlatform_8h_html_aa4a2916120921a779c15e6182c8d8118"><div class="ttname"><a href="Platform_8h.html#aa4a2916120921a779c15e6182c8d8118">OPENVDB_NO_UNREACHABLE_CODE_WARNING_END</a></div><div class="ttdeci">#define OPENVDB_NO_UNREACHABLE_CODE_WARNING_END</div><div class="ttdef"><b>Definition</b> Platform.h:164</div></div>
-<div class="ttc" id="aPlatform_8h_html_ac8dadf7b858eb1987194e570f80bff79"><div class="ttname"><a href="Platform_8h.html#ac8dadf7b858eb1987194e570f80bff79">OPENVDB_NO_UNREACHABLE_CODE_WARNING_BEGIN</a></div><div class="ttdeci">#define OPENVDB_NO_UNREACHABLE_CODE_WARNING_BEGIN</div><div class="ttdef"><b>Definition</b> Platform.h:163</div></div>
+<div class="ttc" id="aPlatform_8h_html_aa4a2916120921a779c15e6182c8d8118"><div class="ttname"><a href="Platform_8h.html#aa4a2916120921a779c15e6182c8d8118">OPENVDB_NO_UNREACHABLE_CODE_WARNING_END</a></div><div class="ttdeci">#define OPENVDB_NO_UNREACHABLE_CODE_WARNING_END</div><div class="ttdef"><b>Definition</b> Platform.h:151</div></div>
+<div class="ttc" id="aPlatform_8h_html_ac8dadf7b858eb1987194e570f80bff79"><div class="ttname"><a href="Platform_8h.html#ac8dadf7b858eb1987194e570f80bff79">OPENVDB_NO_UNREACHABLE_CODE_WARNING_BEGIN</a></div><div class="ttdeci">#define OPENVDB_NO_UNREACHABLE_CODE_WARNING_BEGIN</div><div class="ttdef"><b>Definition</b> Platform.h:150</div></div>
 <div class="ttc" id="aclassopenvdb_1_1v13__0_1_1TopologyCopy_html"><div class="ttname"><a href="classopenvdb_1_1v13__0_1_1TopologyCopy.html">openvdb::v13_0::TopologyCopy</a></div><div class="ttdoc">Tag dispatch class that distinguishes topology copy constructors from deep copy constructors.</div><div class="ttdef"><b>Definition</b> Types.h:754</div></div>
-<div class="ttc" id="aclassopenvdb_1_1v13__0_1_1math_1_1BoxStencil_html"><div class="ttname"><a href="classopenvdb_1_1v13__0_1_1math_1_1BoxStencil.html">openvdb::v13_0::math::BoxStencil</a></div><div class="ttdef"><b>Definition</b> Stencils.h:301</div></div>
+<div class="ttc" id="aclassopenvdb_1_1v13__0_1_1math_1_1BoxStencil_html"><div class="ttname"><a href="classopenvdb_1_1v13__0_1_1math_1_1BoxStencil.html">openvdb::v13_0::math::BoxStencil</a></div><div class="ttdef"><b>Definition</b> Stencils.h:298</div></div>
 <div class="ttc" id="aclassopenvdb_1_1v13__0_1_1math_1_1CoordBBox_html"><div class="ttname"><a href="classopenvdb_1_1v13__0_1_1math_1_1CoordBBox.html">openvdb::v13_0::math::CoordBBox</a></div><div class="ttdoc">Axis-aligned bounding box of signed integer coordinates.</div><div class="ttdef"><b>Definition</b> Coord.h:252</div></div>
 <div class="ttc" id="aclassopenvdb_1_1v13__0_1_1math_1_1Ray_html"><div class="ttname"><a href="classopenvdb_1_1v13__0_1_1math_1_1Ray.html">openvdb::v13_0::math::Ray</a></div><div class="ttdef"><b>Definition</b> Ray.h:28</div></div>
 <div class="ttc" id="aclassopenvdb_1_1v13__0_1_1math_1_1Ray_html_a715f0349ead194214a4f14dc08ff7a20"><div class="ttname"><a href="classopenvdb_1_1v13__0_1_1math_1_1Ray.html#a715f0349ead194214a4f14dc08ff7a20">openvdb::v13_0::math::Ray::worldToIndex</a></div><div class="ttdeci">Ray worldToIndex(const GridType &amp;grid) const</div><div class="ttdoc">Return a new ray in the index space of the specified grid, assuming the existing ray is represented i...</div><div class="ttdef"><b>Definition</b> Ray.h:172</div></div>
@@ -927,7 +936,7 @@ $(function(){initNavTree('RayIntersector_8h_source.html','',''); });
 <div class="ttc" id="astructopenvdb_1_1v13__0_1_1math_1_1LevelSetHDDA_html"><div class="ttname"><a href="structopenvdb_1_1v13__0_1_1math_1_1LevelSetHDDA.html">openvdb::v13_0::math::LevelSetHDDA</a></div><div class="ttdoc">Helper class that implements Hierarchical Digital Differential Analyzers and is specialized for ray i...</div><div class="ttdef"><b>Definition</b> DDA.h:146</div></div>
 <div class="ttc" id="astructopenvdb_1_1v13__0_1_1math_1_1LevelSetHDDA_html_a74d6a62e70d129db0329a4d6db757fc3"><div class="ttname"><a href="structopenvdb_1_1v13__0_1_1math_1_1LevelSetHDDA.html#a74d6a62e70d129db0329a4d6db757fc3">openvdb::v13_0::math::LevelSetHDDA::test</a></div><div class="ttdeci">static bool test(TesterT &amp;tester)</div><div class="ttdef"><b>Definition</b> DDA.h:151</div></div>
 <div class="ttc" id="aversion_8h_8in_html_a00be3835cb8ad1ded8abd821fad20fc0"><div class="ttname"><a href="version_8h_8in.html#a00be3835cb8ad1ded8abd821fad20fc0">OPENVDB_VERSION_NAME</a></div><div class="ttdeci">#define OPENVDB_VERSION_NAME</div><div class="ttdoc">The version namespace name for this library version.</div><div class="ttdef"><b>Definition</b> version.h.in:121</div></div>
-<div class="ttc" id="aversion_8h_8in_html_a2dde157791cd7558cdf886489256ba14"><div class="ttname"><a href="version_8h_8in.html#a2dde157791cd7558cdf886489256ba14">OPENVDB_USE_VERSION_NAMESPACE</a></div><div class="ttdeci">#define OPENVDB_USE_VERSION_NAMESPACE</div><div class="ttdef"><b>Definition</b> version.h.in:218</div></div>
+<div class="ttc" id="aversion_8h_8in_html_a2dde157791cd7558cdf886489256ba14"><div class="ttname"><a href="version_8h_8in.html#a2dde157791cd7558cdf886489256ba14">OPENVDB_USE_VERSION_NAMESPACE</a></div><div class="ttdeci">#define OPENVDB_USE_VERSION_NAMESPACE</div><div class="ttdef"><b>Definition</b> version.h.in:284</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->

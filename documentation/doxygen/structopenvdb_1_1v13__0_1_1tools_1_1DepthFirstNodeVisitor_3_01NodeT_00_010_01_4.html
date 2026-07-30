@@ -17,6 +17,15 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -118,8 +127,8 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:afbf202443b9dca7d6df5645ab1ebe661" id="r_afbf202443b9dca7d6df5645ab1ebe661"><td class="memTemplParams" colspan="2">template&lt;typename OpT&gt; </td></tr>
-<tr class="memitem:afbf202443b9dca7d6df5645ab1ebe661 template"><td class="memItemLeft" align="right" valign="top">static size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afbf202443b9dca7d6df5645ab1ebe661">visit</a> (NodeT &amp;node, OpT &amp;op, size_t idx=0)</td></tr>
+<tr class="memitem:adbef5ae9a69ee53fb2af0e0dfa0eb4bf" id="r_adbef5ae9a69ee53fb2af0e0dfa0eb4bf"><td class="memTemplParams" colspan="2">template&lt;typename OpT&gt; </td></tr>
+<tr class="memitem:adbef5ae9a69ee53fb2af0e0dfa0eb4bf template"><td class="memItemLeft" align="right" valign="top">static size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adbef5ae9a69ee53fb2af0e0dfa0eb4bf">visit</a> (NodeT &amp;node, OpT &amp;op, size_t idx=0, bool=true)</td></tr>
 </table>
 <a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">Member Typedef Documentation</h2>
 <a id="aac9578a84b4540e55c46b4c261922264" name="aac9578a84b4540e55c46b4c261922264"></a>
@@ -151,8 +160,8 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
-<a id="afbf202443b9dca7d6df5645ab1ebe661" name="afbf202443b9dca7d6df5645ab1ebe661"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afbf202443b9dca7d6df5645ab1ebe661">&#9670;&#160;</a></span>visit()</h2>
+<a id="adbef5ae9a69ee53fb2af0e0dfa0eb4bf" name="adbef5ae9a69ee53fb2af0e0dfa0eb4bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbef5ae9a69ee53fb2af0e0dfa0eb4bf">&#9670;&#160;</a></span>visit()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -177,7 +186,12 @@ template&lt;typename OpT&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>idx</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>&#160;)</td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>idx</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em></em></span><span class="paramdefsep"> = </span><span class="paramdefval">true</span>&#160;)</td>
         </tr>
       </table>
   </td>

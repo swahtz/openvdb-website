@@ -17,6 +17,15 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -282,7 +291,7 @@ $(function(){initNavTree('PointAttribute_8h_source.html','',''); });
 <div class="ttc" id="aPointDataGrid_8h_html"><div class="ttname"><a href="PointDataGrid_8h.html">PointDataGrid.h</a></div><div class="ttdoc">Attribute-owned data structure for points. Point attributes are stored in leaf nodes and ordered by v...</div></div>
 <div class="ttc" id="aclassopenvdb_1_1v13__0_1_1Metadata_html"><div class="ttname"><a href="classopenvdb_1_1v13__0_1_1Metadata.html">openvdb::v13_0::Metadata</a></div><div class="ttdoc">Base class for storing metadata information in a grid.</div><div class="ttdef"><b>Definition</b> Metadata.h:25</div></div>
 <div class="ttc" id="aclassopenvdb_1_1v13__0_1_1TypedMetadata_html"><div class="ttname"><a href="classopenvdb_1_1v13__0_1_1TypedMetadata.html">openvdb::v13_0::TypedMetadata</a></div><div class="ttdoc">Templated metadata class to hold specific types.</div><div class="ttdef"><b>Definition</b> Metadata.h:123</div></div>
-<div class="ttc" id="anamespacenanovdb_html_a141c0fdf5a91c32310d552d4c357699ba7a1920d61156abc05a60135aefe8bc67"><div class="ttname"><a href="namespacenanovdb.html#a141c0fdf5a91c32310d552d4c357699ba7a1920d61156abc05a60135aefe8bc67">nanovdb::PointType::Default</a></div><div class="ttdeci">@ Default</div><div class="ttdef"><b>Definition</b> NanoVDB.h:397</div></div>
+<div class="ttc" id="anamespacenanovdb_html_a141c0fdf5a91c32310d552d4c357699ba7a1920d61156abc05a60135aefe8bc67"><div class="ttname"><a href="namespacenanovdb.html#a141c0fdf5a91c32310d552d4c357699ba7a1920d61156abc05a60135aefe8bc67">nanovdb::PointType::Default</a></div><div class="ttdeci">@ Default</div><div class="ttdef"><b>Definition</b> NanoVDB.h:404</div></div>
 <div class="ttc" id="anamespaceopenvdb_1_1v13__0_1_1points_1_1index_html"><div class="ttname"><a href="namespaceopenvdb_1_1v13__0_1_1points_1_1index.html">openvdb::v13_0::points::index</a></div><div class="ttdef"><b>Definition</b> IndexIterator.h:35</div></div>
 <div class="ttc" id="anamespaceopenvdb_1_1v13__0_1_1points_html_a467b8eefb87ca02fa0f017c40c08d674"><div class="ttname"><a href="namespaceopenvdb_1_1v13__0_1_1points.html#a467b8eefb87ca02fa0f017c40c08d674">openvdb::v13_0::points::compactAttributes</a></div><div class="ttdeci">void compactAttributes(PointDataTreeT &amp;tree)</div><div class="ttdoc">Compact attributes in a VDB tree (if possible).</div></div>
 <div class="ttc" id="anamespaceopenvdb_1_1v13__0_1_1points_html_a630071eb13957e9c9683fafb845ec9ce"><div class="ttname"><a href="namespaceopenvdb_1_1v13__0_1_1points.html#a630071eb13957e9c9683fafb845ec9ce">openvdb::v13_0::points::dropAttribute</a></div><div class="ttdeci">void dropAttribute(PointDataTreeT &amp;tree, const size_t &amp;index)</div><div class="ttdoc">Drop one attribute from the VDB tree (convenience method).</div></div>
@@ -299,7 +308,7 @@ $(function(){initNavTree('PointAttribute_8h_source.html','',''); });
 <div class="ttc" id="aopenvdb_8h_html"><div class="ttname"><a href="openvdb_8h.html">openvdb.h</a></div></div>
 <div class="ttc" id="astructopenvdb_1_1v13__0_1_1points_1_1NullCodec_html"><div class="ttname"><a href="structopenvdb_1_1v13__0_1_1points_1_1NullCodec.html">openvdb::v13_0::points::NullCodec</a></div><div class="ttdef"><b>Definition</b> AttributeArray.h:437</div></div>
 <div class="ttc" id="aversion_8h_8in_html_a00be3835cb8ad1ded8abd821fad20fc0"><div class="ttname"><a href="version_8h_8in.html#a00be3835cb8ad1ded8abd821fad20fc0">OPENVDB_VERSION_NAME</a></div><div class="ttdeci">#define OPENVDB_VERSION_NAME</div><div class="ttdoc">The version namespace name for this library version.</div><div class="ttdef"><b>Definition</b> version.h.in:121</div></div>
-<div class="ttc" id="aversion_8h_8in_html_a2dde157791cd7558cdf886489256ba14"><div class="ttname"><a href="version_8h_8in.html#a2dde157791cd7558cdf886489256ba14">OPENVDB_USE_VERSION_NAMESPACE</a></div><div class="ttdeci">#define OPENVDB_USE_VERSION_NAMESPACE</div><div class="ttdef"><b>Definition</b> version.h.in:218</div></div>
+<div class="ttc" id="aversion_8h_8in_html_a2dde157791cd7558cdf886489256ba14"><div class="ttname"><a href="version_8h_8in.html#a2dde157791cd7558cdf886489256ba14">OPENVDB_USE_VERSION_NAMESPACE</a></div><div class="ttdeci">#define OPENVDB_USE_VERSION_NAMESPACE</div><div class="ttdef"><b>Definition</b> version.h.in:284</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->

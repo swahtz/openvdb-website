@@ -17,6 +17,15 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -121,23 +130,9 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:ad6282bb1e3459f5dd68786c640572252" id="r_ad6282bb1e3459f5dd68786c640572252"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structcnanovdb__Vec3F.html">cnanovdb_Vec3F</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad6282bb1e3459f5dd68786c640572252">mMaximum</a></td></tr>
 <tr class="memitem:a97181a4552f4240ece7960f12ddf7c8e" id="r_a97181a4552f4240ece7960f12ddf7c8e"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a97181a4552f4240ece7960f12ddf7c8e">mAverage</a></td></tr>
 <tr class="memitem:a4518d8f98f7460166325c5b43c823605" id="r_a4518d8f98f7460166325c5b43c823605"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4518d8f98f7460166325c5b43c823605">mStdDevi</a></td></tr>
-<tr class="memitem:a1d84277d9fba352d389960306f0fc5bf" id="r_a1d84277d9fba352d389960306f0fc5bf"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1d84277d9fba352d389960306f0fc5bf">_reserved</a> [(-(sizeof(<a class="el" href="structcnanovdb__coord.html">cnanovdb_coord</a>) *2+sizeof(uint32_t)+sizeof(<a class="el" href="structcnanovdb__Vec3F.html">cnanovdb_Vec3F</a>) *3+sizeof(float) *2) &amp;((32) -1))/4]</td></tr>
+<tr class="memitem:a60cc5aad4013157e2e7434d6de450656" id="r_a60cc5aad4013157e2e7434d6de450656"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a60cc5aad4013157e2e7434d6de450656">reserved</a> [6]</td></tr>
 </table>
 <a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
-<a id="a1d84277d9fba352d389960306f0fc5bf" name="a1d84277d9fba352d389960306f0fc5bf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1d84277d9fba352d389960306f0fc5bf">&#9670;&#160;</a></span>_reserved</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint32_t _reserved[(-(sizeof(<a class="el" href="structcnanovdb__coord.html">cnanovdb_coord</a>) *2+sizeof(uint32_t)+sizeof(<a class="el" href="structcnanovdb__Vec3F.html">cnanovdb_Vec3F</a>) *3+sizeof(float) *2) &amp;((32) -1))/4]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a97181a4552f4240ece7960f12ddf7c8e" name="a97181a4552f4240ece7960f12ddf7c8e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a97181a4552f4240ece7960f12ddf7c8e">&#9670;&#160;</a></span>mAverage</h2>
 
@@ -244,6 +239,20 @@ Public Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">uint32_t mTableSize</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a60cc5aad4013157e2e7434d6de450656" name="a60cc5aad4013157e2e7434d6de450656"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60cc5aad4013157e2e7434d6de450656">&#9670;&#160;</a></span>reserved</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t reserved[6]</td>
         </tr>
       </table>
 </div><div class="memdoc">

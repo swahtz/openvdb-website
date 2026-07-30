@@ -1,6 +1,5 @@
 var structcnanovdb__node0F =
 [
-    [ "_reserved", "structcnanovdb__node0F.html#af890d7bf07b71c07eab3d2a0bbd712e4", null ],
     [ "mAverage", "structcnanovdb__node0F.html#a97181a4552f4240ece7960f12ddf7c8e", null ],
     [ "mBBox_min", "structcnanovdb__node0F.html#aba9e59125aa66f2496d27901d16e7b8b", null ],
     [ "mBBoxDif", "structcnanovdb__node0F.html#a8c701f7c839ee80047597decc435e3e7", null ],

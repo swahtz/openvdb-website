@@ -24,6 +24,7 @@ var classnanovdb_1_1ReadAccessor_3_01BuildT_00_01LEVEL0_00_01LEVEL1_00_01_1_01_4
     [ "probeValue", "classnanovdb_1_1ReadAccessor_3_01BuildT_00_01LEVEL0_00_01LEVEL1_00_01-1_01_4.html#a98c1e6a17ca8ec4e2ebd072f3b78a680", null ],
     [ "root", "classnanovdb_1_1ReadAccessor_3_01BuildT_00_01LEVEL0_00_01LEVEL1_00_01-1_01_4.html#afcf8466c416c574a78f1861e69c020c5", null ],
     [ "set", "classnanovdb_1_1ReadAccessor_3_01BuildT_00_01LEVEL0_00_01LEVEL1_00_01-1_01_4.html#a21516d7aef49cf3bf45a2d06102cf4ea", null ],
+    [ "InternalNode", "classnanovdb_1_1ReadAccessor_3_01BuildT_00_01LEVEL0_00_01LEVEL1_00_01-1_01_4.html#a5fc7cbf1929731e78733e1b476142b8a", null ],
     [ "LeafNode", "classnanovdb_1_1ReadAccessor_3_01BuildT_00_01LEVEL0_00_01LEVEL1_00_01-1_01_4.html#ac5b8d8876f050bc8f682fb105bdcebf3", null ],
     [ "RootNode", "classnanovdb_1_1ReadAccessor_3_01BuildT_00_01LEVEL0_00_01LEVEL1_00_01-1_01_4.html#aff4f5e7209d5ad66394519639bd989f8", null ],
     [ "CacheLevels", "classnanovdb_1_1ReadAccessor_3_01BuildT_00_01LEVEL0_00_01LEVEL1_00_01-1_01_4.html#aea7e2ecd5af159193cd1a3284d927779", null ]

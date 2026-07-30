@@ -17,6 +17,15 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -178,6 +187,7 @@ Macros</h2></td></tr>
 <tr class="memitem:a75e2d5456e52f5c9703fc88479472e55" id="r_a75e2d5456e52f5c9703fc88479472e55"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a75e2d5456e52f5c9703fc88479472e55">__global__</a></td></tr>
 <tr class="memitem:ad54e07d96efd9a36dfca1a9f27776d62" id="r_ad54e07d96efd9a36dfca1a9f27776d62"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad54e07d96efd9a36dfca1a9f27776d62">__device__</a></td></tr>
 <tr class="memitem:a803050db3c78e0db3ea59a0c35499622" id="r_a803050db3c78e0db3ea59a0c35499622"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a803050db3c78e0db3ea59a0c35499622">__host__</a></td></tr>
+<tr class="memitem:a20b30ba86aa53ca12682d9258d792bb3" id="r_a20b30ba86aa53ca12682d9258d792bb3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a20b30ba86aa53ca12682d9258d792bb3">NANOVDB_RESTRICT</a>&#160;&#160;&#160;__restrict__</td></tr>
 <tr class="memitem:a2bedaa6389282b408e38375ddc049d4a" id="r_a2bedaa6389282b408e38375ddc049d4a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2bedaa6389282b408e38375ddc049d4a">NANOVDB_HOSTDEV_DISABLE_WARNING</a></td></tr>
 <tr class="memitem:ae38ae5d91a2537aea03144f126048b3d" id="r_ae38ae5d91a2537aea03144f126048b3d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae38ae5d91a2537aea03144f126048b3d">NANOVDB_OFFSETOF</a>(CLASS,  MEMBER)</td></tr>
 <tr class="memdesc:ae38ae5d91a2537aea03144f126048b3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines macros that issues warnings for deprecated header files.  <br /></td></tr>
@@ -247,6 +257,10 @@ Functions</h2></td></tr>
 <tr class="memitem:a87413e92058cb81b8fe42e102cd36ab2" id="r_a87413e92058cb81b8fe42e102cd36ab2"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenanovdb_1_1util.html#a87413e92058cb81b8fe42e102cd36ab2">findHighestOn</a> (uint64_t v)</td></tr>
 <tr class="memdesc:a87413e92058cb81b8fe42e102cd36ab2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the index of the highest, i.e. most significant, on bit in the specified 64 bit word.  <br /></td></tr>
 <tr class="memitem:a0cf31f0377ddc583b6407691b69bdb2f" id="r_a0cf31f0377ddc583b6407691b69bdb2f"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenanovdb_1_1util.html#a0cf31f0377ddc583b6407691b69bdb2f">countOn</a> (uint64_t v)</td></tr>
+<tr class="memitem:aa05f485d523728abe2e6bb926b496c40" id="r_aa05f485d523728abe2e6bb926b496c40"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenanovdb_1_1util.html#aa05f485d523728abe2e6bb926b496c40">atomicOr</a> (uint64_t *target, uint64_t mask)</td></tr>
+<tr class="memdesc:aa05f485d523728abe2e6bb926b496c40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Atomically ORs <em class="arg">mask</em> into the 64-bit word at <em class="arg">target</em> (relaxed ordering). Returns the old value. Callable from both host and device code.  <br /></td></tr>
+<tr class="memitem:ac135d88a977e129e28babb21176ebb5f" id="r_ac135d88a977e129e28babb21176ebb5f"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenanovdb_1_1util.html#ac135d88a977e129e28babb21176ebb5f">atomicAnd</a> (uint64_t *target, uint64_t mask)</td></tr>
+<tr class="memdesc:ac135d88a977e129e28babb21176ebb5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Atomically ANDs <em class="arg">mask</em> into the 64-bit word at <em class="arg">target</em> (relaxed ordering). Returns the old value. Callable from both host and device code.  <br /></td></tr>
 <tr class="memitem:ae9b773d887ae5eb938f18c3c557c8d45" id="r_ae9b773d887ae5eb938f18c3c557c8d45"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenanovdb.html#ae9b773d887ae5eb938f18c3c557c8d45">FindLowestOn</a> (uint32_t v)</td></tr>
 <tr class="memitem:abcb7a465c460c2eedab4a8b59af63ca7" id="r_abcb7a465c460c2eedab4a8b59af63ca7"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenanovdb.html#abcb7a465c460c2eedab4a8b59af63ca7">FindLowestOn</a> (uint64_t v)</td></tr>
 <tr class="memitem:a658495d0ebb6118f9703edf79645fe94" id="r_a658495d0ebb6118f9703edf79645fe94"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacenanovdb.html#a658495d0ebb6118f9703edf79645fe94">FindHighestOn</a> (uint32_t v)</td></tr>
@@ -383,6 +397,20 @@ Variables</h2></td></tr>
 <div class="line">NANOVDB_DEPRECATED_HEADER(<span class="stringliteral">&quot;This header file is deprecated, please use &lt;nanovdb/path/Alternative.h&gt; instead&quot;</span>)</div>
 <div class="ttc" id="ananovdb_2nanovdb_2util_2Util_8h_html"><div class="ttname"><a href="nanovdb_2nanovdb_2util_2Util_8h.html">Util.h</a></div><div class="ttdoc">Utility functions.</div></div>
 </div><!-- fragment --> 
+</div>
+</div>
+<a id="a20b30ba86aa53ca12682d9258d792bb3" name="a20b30ba86aa53ca12682d9258d792bb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20b30ba86aa53ca12682d9258d792bb3">&#9670;&#160;</a></span>NANOVDB_RESTRICT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NANOVDB_RESTRICT&#160;&#160;&#160;__restrict__</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
 </div>
 </div>
 </div><!-- contents -->

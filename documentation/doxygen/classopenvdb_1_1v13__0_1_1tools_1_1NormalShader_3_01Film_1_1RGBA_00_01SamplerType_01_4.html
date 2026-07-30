@@ -17,6 +17,15 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -121,7 +130,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae0a18c3aef26625fa5b0b6d9fbeb4031" id="r_ae0a18c3aef26625fa5b0b6d9fbeb4031"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae0a18c3aef26625fa5b0b6d9fbeb4031">NormalShader</a> (const <a class="el" href="classopenvdb_1_1v13__0_1_1tools_1_1NormalShader.html">NormalShader</a> &amp;)=default</td></tr>
 <tr class="memitem:af7dccd4e83a8ae26b9a7d41fa670e22d" id="r_af7dccd4e83a8ae26b9a7d41fa670e22d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af7dccd4e83a8ae26b9a7d41fa670e22d">~NormalShader</a> () override=default</td></tr>
 <tr class="memitem:ae7654e36bae6b7497192a47cb0e14117" id="r_ae7654e36bae6b7497192a47cb0e14117"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structopenvdb_1_1v13__0_1_1tools_1_1Film_1_1RGBA.html">Film::RGBA</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae7654e36bae6b7497192a47cb0e14117">operator()</a> (const <a class="el" href="namespaceopenvdb_1_1v13__0.html#ab8753c49a176ce809a70ac12896682e3">Vec3R</a> &amp;, const <a class="el" href="namespaceopenvdb_1_1v13__0.html#ab8753c49a176ce809a70ac12896682e3">Vec3R</a> &amp;normal, const <a class="el" href="namespaceopenvdb_1_1v13__0.html#ab8753c49a176ce809a70ac12896682e3">Vec3R</a> &amp;) const override</td></tr>
-<tr class="memdesc:ae7654e36bae6b7497192a47cb0e14117"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the interface of the virtual function that returns a RGB color.  <br /></td></tr>
+<tr class="memdesc:ae7654e36bae6b7497192a47cb0e14117"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the constant color modulated by the surface normal; position and ray direction are unused.  <br /></td></tr>
 <tr class="memitem:a60c75862de1054847f63ae4579eb1098" id="r_a60c75862de1054847f63ae4579eb1098"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classopenvdb_1_1v13__0_1_1tools_1_1BaseShader.html">BaseShader</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a60c75862de1054847f63ae4579eb1098">copy</a> () const override</td></tr>
 </table>
 <a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">Member Typedef Documentation</h2>
@@ -265,17 +274,17 @@ template&lt;typename SamplerType&gt; </div>
         <tr>
           <td class="memname"><a class="el" href="structopenvdb_1_1v13__0_1_1tools_1_1Film_1_1RGBA.html">Film::RGBA</a> operator() </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespaceopenvdb_1_1v13__0.html#ab8753c49a176ce809a70ac12896682e3">Vec3R</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>xyz</em></span>, </td>
+          <td class="paramtype">const <a class="el" href="namespaceopenvdb_1_1v13__0.html#ab8753c49a176ce809a70ac12896682e3">Vec3R</a> &amp;</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="namespaceopenvdb_1_1v13__0.html#ab8753c49a176ce809a70ac12896682e3">Vec3R</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>nml</em></span>, </td>
+          <td class="paramtype">const <a class="el" href="namespaceopenvdb_1_1v13__0.html#ab8753c49a176ce809a70ac12896682e3">Vec3R</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>normal</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="namespaceopenvdb_1_1v13__0.html#ab8753c49a176ce809a70ac12896682e3">Vec3R</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>dir</em></span>&#160;) const</td>
+          <td class="paramtype">const <a class="el" href="namespaceopenvdb_1_1v13__0.html#ab8753c49a176ce809a70ac12896682e3">Vec3R</a> &amp;</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;) const</td>
         </tr>
       </table>
   </td>
@@ -285,15 +294,7 @@ template&lt;typename SamplerType&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Defines the interface of the virtual function that returns a RGB color. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">xyz</td><td>World position of the intersection point. </td></tr>
-    <tr><td class="paramname">nml</td><td>Normal in world space at the intersection point. </td></tr>
-    <tr><td class="paramname">dir</td><td>Direction of the ray in world space. </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Return the constant color modulated by the surface normal; position and ray direction are unused. </p>
 
 <p>Implements <a class="el" href="classopenvdb_1_1v13__0_1_1tools_1_1BaseShader.html#a638bffd471802ef321f8c95087f0682e">BaseShader</a>.</p>
 

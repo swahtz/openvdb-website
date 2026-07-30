@@ -17,6 +17,15 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -133,7 +142,7 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memdesc:a37fdab3245bdf482be42fb117bfd1023"><td class="mdescLeft">&#160;</td><td class="mdescRight">Import all eight values from <em class="arg">inTree</em> to support tri-linear interpolation.  <br /></td></tr>
 <tr class="memitem:ac0de9215eb4e792f1cc2a1e3d9d5569a" id="r_ac0de9215eb4e792f1cc2a1e3d9d5569a"><td class="memTemplParams" colspan="2">template&lt;class ValueT, size_t N&gt; </td></tr>
 <tr class="memitem:ac0de9215eb4e792f1cc2a1e3d9d5569a template"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac0de9215eb4e792f1cc2a1e3d9d5569a">extrema</a> (ValueT(&amp;data)[N][N][N], ValueT &amp;vMin, ValueT &amp;vMax)</td></tr>
-<tr class="memdesc:ac0de9215eb4e792f1cc2a1e3d9d5569a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find the minimum and maximum values of the eight cell values in @ data.  <br /></td></tr>
+<tr class="memdesc:ac0de9215eb4e792f1cc2a1e3d9d5569a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find the minimum and maximum values of the eight cell values in @ data. The default <em>component wise</em> less than comparison operator is used.  <br /></td></tr>
 <tr class="memitem:a8cb99ca3a192bf933bc987a484894734" id="r_a8cb99ca3a192bf933bc987a484894734"><td class="memTemplParams" colspan="2">template&lt;class ValueT, size_t N&gt; </td></tr>
 <tr class="memitem:a8cb99ca3a192bf933bc987a484894734 template"><td class="memItemLeft" align="right" valign="top">static ValueT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8cb99ca3a192bf933bc987a484894734">trilinearInterpolation</a> (ValueT(&amp;data)[N][N][N], const <a class="el" href="namespaceopenvdb_1_1v13__0.html#ab8753c49a176ce809a70ac12896682e3">Vec3R</a> &amp;uvw)</td></tr>
 </table>
@@ -197,7 +206,7 @@ template&lt;class ValueT, size_t N&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Find the minimum and maximum values of the eight cell values in @ data. </p>
+<p>Find the minimum and maximum values of the eight cell values in @ data. The default <em>component wise</em> less than comparison operator is used. </p>
 
 </div>
 </div>

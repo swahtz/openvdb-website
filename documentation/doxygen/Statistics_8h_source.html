@@ -17,6 +17,15 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -538,7 +547,7 @@ $(function(){initNavTree('Statistics_8h_source.html','',''); });
 <div class="ttc" id="anamespaceopenvdb_1_1v13__0_1_1tools_html_a0298e9e5b5b3a443d321bd24825f1d5a"><div class="ttname"><a href="namespaceopenvdb_1_1v13__0_1_1tools.html#a0298e9e5b5b3a443d321bd24825f1d5a">openvdb::v13_0::tools::statistics</a></div><div class="ttdeci">math::Stats statistics(const IterT &amp;iter, bool threaded=true)</div><div class="ttdoc">Iterate over a scalar grid and compute statistics (mean, variance, etc.) of the values of the voxels ...</div><div class="ttdef"><b>Definition</b> Statistics.h:362</div></div>
 <div class="ttc" id="anamespaceopenvdb_1_1v13__0_1_1tools_html_a35876c2d474f3ed28fc6a6aa4b4f5678"><div class="ttname"><a href="namespaceopenvdb_1_1v13__0_1_1tools.html#a35876c2d474f3ed28fc6a6aa4b4f5678">openvdb::v13_0::tools::opStatistics</a></div><div class="ttdeci">math::Stats opStatistics(const IterT &amp;iter, const OperatorT &amp;op=OperatorT(), bool threaded=true)</div><div class="ttdoc">Iterate over a grid and compute statistics (mean, variance, etc.) of the values produced by applying ...</div><div class="ttdef"><b>Definition</b> Statistics.h:398</div></div>
 <div class="ttc" id="anamespaceopenvdb_1_1v13__0_1_1tools_html_a705b035d27c69d566009424697c36a65"><div class="ttname"><a href="namespaceopenvdb_1_1v13__0_1_1tools.html#a705b035d27c69d566009424697c36a65">openvdb::v13_0::tools::histogram</a></div><div class="ttdeci">math::Histogram histogram(const IterT &amp;iter, double minVal, double maxVal, size_t numBins=10, bool threaded=true)</div><div class="ttdoc">Iterate over a scalar grid and compute a histogram of the values of the voxels that are visited,...</div><div class="ttdef"><b>Definition</b> Statistics.h:343</div></div>
-<div class="ttc" id="anamespaceopenvdb_1_1v13__0_1_1tools_html_a8e31fdabdae973490731a7be4f31d9ad"><div class="ttname"><a href="namespaceopenvdb_1_1v13__0_1_1tools.html#a8e31fdabdae973490731a7be4f31d9ad">openvdb::v13_0::tools::accumulate</a></div><div class="ttdeci">void accumulate(const IterT &amp;iter, XformOp &amp;op, bool threaded=true)</div><div class="ttdef"><b>Definition</b> ValueTransformer.h:683</div></div>
+<div class="ttc" id="anamespaceopenvdb_1_1v13__0_1_1tools_html_a8e31fdabdae973490731a7be4f31d9ad"><div class="ttname"><a href="namespaceopenvdb_1_1v13__0_1_1tools.html#a8e31fdabdae973490731a7be4f31d9ad">openvdb::v13_0::tools::accumulate</a></div><div class="ttdeci">void accumulate(const IterT &amp;iter, XformOp &amp;op, bool threaded=true)</div><div class="ttdef"><b>Definition</b> ValueTransformer.h:687</div></div>
 <div class="ttc" id="anamespaceopenvdb_1_1v13__0_1_1tools_html_ab4a308e2e6c2d283bfafb3bd80c8ca43"><div class="ttname"><a href="namespaceopenvdb_1_1v13__0_1_1tools.html#ab4a308e2e6c2d283bfafb3bd80c8ca43">openvdb::v13_0::tools::opExtrema</a></div><div class="ttdeci">math::Extrema opExtrema(const IterT &amp;iter, const OperatorT &amp;op=OperatorT(), bool threaded=true)</div><div class="ttdoc">Same as opStatistics except it returns a math::Extrema vs a math::Stats.</div><div class="ttdef"><b>Definition</b> Statistics.h:389</div></div>
 <div class="ttc" id="anamespaceopenvdb_1_1v13__0_1_1tools_html_ac6aea86a2df380225a3b3c8553efe4e3"><div class="ttname"><a href="namespaceopenvdb_1_1v13__0_1_1tools.html#ac6aea86a2df380225a3b3c8553efe4e3">openvdb::v13_0::tools::extrema</a></div><div class="ttdeci">math::Extrema extrema(const IterT &amp;iter, bool threaded=true)</div><div class="ttdoc">Iterate over a scalar grid and compute extrema (min/max) of the values of the voxels that are visited...</div><div class="ttdef"><b>Definition</b> Statistics.h:354</div></div>
 <div class="ttc" id="anamespaceopenvdb_html"><div class="ttname"><a href="namespaceopenvdb.html">openvdb</a></div><div class="ttdef"><b>Definition</b> Exceptions.h:13</div></div>
@@ -546,7 +555,7 @@ $(function(){initNavTree('Statistics_8h_source.html','',''); });
 <div class="ttc" id="aopenvdb_2Exceptions_8h_html_a3eec2ef3138c64fc5844490187c1b8d1"><div class="ttname"><a href="openvdb_2Exceptions_8h.html#a3eec2ef3138c64fc5844490187c1b8d1">OPENVDB_THROW</a></div><div class="ttdeci">#define OPENVDB_THROW(exception, message)</div><div class="ttdef"><b>Definition</b> Exceptions.h:74</div></div>
 <div class="ttc" id="aopenvdb_2Types_8h_html"><div class="ttname"><a href="openvdb_2Types_8h.html">Types.h</a></div></div>
 <div class="ttc" id="aversion_8h_8in_html_a00be3835cb8ad1ded8abd821fad20fc0"><div class="ttname"><a href="version_8h_8in.html#a00be3835cb8ad1ded8abd821fad20fc0">OPENVDB_VERSION_NAME</a></div><div class="ttdeci">#define OPENVDB_VERSION_NAME</div><div class="ttdoc">The version namespace name for this library version.</div><div class="ttdef"><b>Definition</b> version.h.in:121</div></div>
-<div class="ttc" id="aversion_8h_8in_html_a2dde157791cd7558cdf886489256ba14"><div class="ttname"><a href="version_8h_8in.html#a2dde157791cd7558cdf886489256ba14">OPENVDB_USE_VERSION_NAMESPACE</a></div><div class="ttdeci">#define OPENVDB_USE_VERSION_NAMESPACE</div><div class="ttdef"><b>Definition</b> version.h.in:218</div></div>
+<div class="ttc" id="aversion_8h_8in_html_a2dde157791cd7558cdf886489256ba14"><div class="ttname"><a href="version_8h_8in.html#a2dde157791cd7558cdf886489256ba14">OPENVDB_USE_VERSION_NAMESPACE</a></div><div class="ttdeci">#define OPENVDB_USE_VERSION_NAMESPACE</div><div class="ttdef"><b>Definition</b> version.h.in:284</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->

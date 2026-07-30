@@ -17,6 +17,15 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -122,6 +131,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:acd1c8953121142aed4cca66cd5500920" id="r_acd1c8953121142aed4cca66cd5500920"><td class="memTemplParams" colspan="2">template&lt;int src_size, typename src_valtype&gt; </td></tr>
 <tr class="memitem:acd1c8953121142aed4cca66cd5500920 template"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acd1c8953121142aed4cca66cd5500920">Tuple</a> (<a class="el" href="classopenvdb_1_1v13__0_1_1math_1_1Tuple.html">Tuple</a>&lt; src_size, src_valtype &gt; const &amp;src)</td></tr>
 <tr class="memdesc:acd1c8953121142aed4cca66cd5500920"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structopenvdb_1_1v13__0_1_1math_1_1Conversion.html" title="Dummy class for tag dispatch of conversion constructors.">Conversion</a> constructor.  <br /></td></tr>
+<tr class="memitem:a4685d6c6181390686d2d8076caf769af" id="r_a4685d6c6181390686d2d8076caf769af"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4685d6c6181390686d2d8076caf769af">Tuple</a> (const T val)</td></tr>
+<tr class="memdesc:a4685d6c6181390686d2d8076caf769af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor that fills this tuple with a value.  <br /></td></tr>
 <tr class="memitem:a1473cbc3cd7f2bbc5a536de9a840d3b8" id="r_a1473cbc3cd7f2bbc5a536de9a840d3b8"><td class="memTemplParams" colspan="2">template&lt;typename IdxT, typename std::enable_if&lt; std::is_integral&lt; IdxT &gt;::value, bool &gt;::type = true&gt; </td></tr>
 <tr class="memitem:a1473cbc3cd7f2bbc5a536de9a840d3b8 template"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1473cbc3cd7f2bbc5a536de9a840d3b8">operator[]</a> (IdxT i) const</td></tr>
 <tr class="memitem:a82cc88940f71c8399416fc4e4615514a" id="r_a82cc88940f71c8399416fc4e4615514a"><td class="memTemplParams" colspan="2">template&lt;typename IdxT, typename std::enable_if&lt; std::is_integral&lt; IdxT &gt;::value, bool &gt;::type = true&gt; </td></tr>
@@ -146,6 +157,42 @@ Compatibility</h2></td></tr>
 <tr class="memdesc:ab677830b0609dbb78492579fc91016d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exposes the internal array. Be careful when using this function.  <br /></td></tr>
 <tr class="memitem:a94ef65e62f073284071507be8ec497e5" id="r_a94ef65e62f073284071507be8ec497e5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#afb9ded5f49336ae503bb9f2035ea902b">value_type</a> const *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a94ef65e62f073284071507be8ec497e5">asV</a> () const</td></tr>
 <tr class="memdesc:a94ef65e62f073284071507be8ec497e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exposes the internal array. Be careful when using this function.  <br /></td></tr>
+<tr class="memitem:a7f6af16573939af16a999bdfd48236e0" id="r_a7f6af16573939af16a999bdfd48236e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classopenvdb_1_1v13__0_1_1math_1_1Tuple.html">Tuple</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7f6af16573939af16a999bdfd48236e0">operator+</a> (<a class="el" href="classopenvdb_1_1v13__0_1_1math_1_1Tuple.html">Tuple</a> in) const</td></tr>
+<tr class="memdesc:a7f6af16573939af16a999bdfd48236e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies this tuple into an array of a compatible type.  <br /></td></tr>
+<tr class="memitem:a0a4f4639bfeb2b42d41958ca44f999cf" id="r_a0a4f4639bfeb2b42d41958ca44f999cf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classopenvdb_1_1v13__0_1_1math_1_1Tuple.html">Tuple</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0a4f4639bfeb2b42d41958ca44f999cf">operator-</a> (<a class="el" href="classopenvdb_1_1v13__0_1_1math_1_1Tuple.html">Tuple</a> in) const</td></tr>
+<tr class="memdesc:a0a4f4639bfeb2b42d41958ca44f999cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies this tuple into an array of a compatible type.  <br /></td></tr>
+<tr class="memitem:a1ee31bbd76c1ab241db83a506a237c49" id="r_a1ee31bbd76c1ab241db83a506a237c49"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classopenvdb_1_1v13__0_1_1math_1_1Tuple.html">Tuple</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1ee31bbd76c1ab241db83a506a237c49">operator*</a> (<a class="el" href="classopenvdb_1_1v13__0_1_1math_1_1Tuple.html">Tuple</a> in) const</td></tr>
+<tr class="memdesc:a1ee31bbd76c1ab241db83a506a237c49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies this tuple into an array of a compatible type.  <br /></td></tr>
+<tr class="memitem:aaf0b1bc973d3950c7999eb860bfa1b0c" id="r_aaf0b1bc973d3950c7999eb860bfa1b0c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classopenvdb_1_1v13__0_1_1math_1_1Tuple.html">Tuple</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaf0b1bc973d3950c7999eb860bfa1b0c">operator/</a> (<a class="el" href="classopenvdb_1_1v13__0_1_1math_1_1Tuple.html">Tuple</a> in) const</td></tr>
+<tr class="memdesc:aaf0b1bc973d3950c7999eb860bfa1b0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies this tuple into an array of a compatible type.  <br /></td></tr>
+<tr class="memitem:ae38537de33eebb088b0f0b1ca9678660" id="r_ae38537de33eebb088b0f0b1ca9678660"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classopenvdb_1_1v13__0_1_1math_1_1Tuple.html">Tuple</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae38537de33eebb088b0f0b1ca9678660">operator&amp;</a> (<a class="el" href="classopenvdb_1_1v13__0_1_1math_1_1Tuple.html">Tuple</a> in) const</td></tr>
+<tr class="memdesc:ae38537de33eebb088b0f0b1ca9678660"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies this tuple into an array of a compatible type.  <br /></td></tr>
+<tr class="memitem:a0ba1c309608c5f4092c90319cc0464fa" id="r_a0ba1c309608c5f4092c90319cc0464fa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classopenvdb_1_1v13__0_1_1math_1_1Tuple.html">Tuple</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0ba1c309608c5f4092c90319cc0464fa">operator|</a> (<a class="el" href="classopenvdb_1_1v13__0_1_1math_1_1Tuple.html">Tuple</a> in) const</td></tr>
+<tr class="memdesc:a0ba1c309608c5f4092c90319cc0464fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies this tuple into an array of a compatible type.  <br /></td></tr>
+<tr class="memitem:a1491e6764ec8959cac8a6ff774f378fe" id="r_a1491e6764ec8959cac8a6ff774f378fe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classopenvdb_1_1v13__0_1_1math_1_1Tuple.html">Tuple</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1491e6764ec8959cac8a6ff774f378fe">operator+=</a> (<a class="el" href="classopenvdb_1_1v13__0_1_1math_1_1Tuple.html">Tuple</a> in)</td></tr>
+<tr class="memdesc:a1491e6764ec8959cac8a6ff774f378fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies this tuple into an array of a compatible type.  <br /></td></tr>
+<tr class="memitem:a8c3de3493c586bfc7f04bba2873ecdae" id="r_a8c3de3493c586bfc7f04bba2873ecdae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classopenvdb_1_1v13__0_1_1math_1_1Tuple.html">Tuple</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8c3de3493c586bfc7f04bba2873ecdae">operator-=</a> (<a class="el" href="classopenvdb_1_1v13__0_1_1math_1_1Tuple.html">Tuple</a> in)</td></tr>
+<tr class="memdesc:a8c3de3493c586bfc7f04bba2873ecdae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies this tuple into an array of a compatible type.  <br /></td></tr>
+<tr class="memitem:ac760035d843723c59a96fd44e6d93adf" id="r_ac760035d843723c59a96fd44e6d93adf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classopenvdb_1_1v13__0_1_1math_1_1Tuple.html">Tuple</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac760035d843723c59a96fd44e6d93adf">operator*=</a> (<a class="el" href="classopenvdb_1_1v13__0_1_1math_1_1Tuple.html">Tuple</a> in)</td></tr>
+<tr class="memdesc:ac760035d843723c59a96fd44e6d93adf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies this tuple into an array of a compatible type.  <br /></td></tr>
+<tr class="memitem:a835fd179009e07a67a97dc1a240b2a02" id="r_a835fd179009e07a67a97dc1a240b2a02"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classopenvdb_1_1v13__0_1_1math_1_1Tuple.html">Tuple</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a835fd179009e07a67a97dc1a240b2a02">operator/=</a> (<a class="el" href="classopenvdb_1_1v13__0_1_1math_1_1Tuple.html">Tuple</a> in)</td></tr>
+<tr class="memdesc:a835fd179009e07a67a97dc1a240b2a02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies this tuple into an array of a compatible type.  <br /></td></tr>
+<tr class="memitem:ab60c6eef14f80bcef74e631ff285fac5" id="r_ab60c6eef14f80bcef74e631ff285fac5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classopenvdb_1_1v13__0_1_1math_1_1Tuple.html">Tuple</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab60c6eef14f80bcef74e631ff285fac5">operator&amp;=</a> (<a class="el" href="classopenvdb_1_1v13__0_1_1math_1_1Tuple.html">Tuple</a> in)</td></tr>
+<tr class="memdesc:ab60c6eef14f80bcef74e631ff285fac5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies this tuple into an array of a compatible type.  <br /></td></tr>
+<tr class="memitem:ab108ff06a034c6464153bc9b074efe0a" id="r_ab108ff06a034c6464153bc9b074efe0a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classopenvdb_1_1v13__0_1_1math_1_1Tuple.html">Tuple</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab108ff06a034c6464153bc9b074efe0a">operator|=</a> (<a class="el" href="classopenvdb_1_1v13__0_1_1math_1_1Tuple.html">Tuple</a> in)</td></tr>
+<tr class="memdesc:ab108ff06a034c6464153bc9b074efe0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies this tuple into an array of a compatible type.  <br /></td></tr>
+<tr class="memitem:aa492174dcc9a86158a00086ab1b017fa" id="r_aa492174dcc9a86158a00086ab1b017fa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classopenvdb_1_1v13__0_1_1math_1_1Tuple.html">Tuple</a>&lt; SIZE, bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa492174dcc9a86158a00086ab1b017fa">operator&gt;=</a> (<a class="el" href="classopenvdb_1_1v13__0_1_1math_1_1Tuple.html">Tuple</a> in) const</td></tr>
+<tr class="memdesc:aa492174dcc9a86158a00086ab1b017fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies this tuple into an array of a compatible type.  <br /></td></tr>
+<tr class="memitem:aa5362957ba8a70f009590bfc37b0d628" id="r_aa5362957ba8a70f009590bfc37b0d628"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classopenvdb_1_1v13__0_1_1math_1_1Tuple.html">Tuple</a>&lt; SIZE, bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa5362957ba8a70f009590bfc37b0d628">operator&lt;=</a> (<a class="el" href="classopenvdb_1_1v13__0_1_1math_1_1Tuple.html">Tuple</a> in) const</td></tr>
+<tr class="memdesc:aa5362957ba8a70f009590bfc37b0d628"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies this tuple into an array of a compatible type.  <br /></td></tr>
+<tr class="memitem:a998da2e3527d6287bc2926874075a55c" id="r_a998da2e3527d6287bc2926874075a55c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classopenvdb_1_1v13__0_1_1math_1_1Tuple.html">Tuple</a>&lt; SIZE, bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a998da2e3527d6287bc2926874075a55c">operator&gt;</a> (<a class="el" href="classopenvdb_1_1v13__0_1_1math_1_1Tuple.html">Tuple</a> in) const</td></tr>
+<tr class="memdesc:a998da2e3527d6287bc2926874075a55c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies this tuple into an array of a compatible type.  <br /></td></tr>
+<tr class="memitem:a4937ee38596b010321f6dbae6fe0f7c6" id="r_a4937ee38596b010321f6dbae6fe0f7c6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classopenvdb_1_1v13__0_1_1math_1_1Tuple.html">Tuple</a>&lt; SIZE, bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4937ee38596b010321f6dbae6fe0f7c6">operator&lt;</a> (<a class="el" href="classopenvdb_1_1v13__0_1_1math_1_1Tuple.html">Tuple</a> in) const</td></tr>
+<tr class="memdesc:a4937ee38596b010321f6dbae6fe0f7c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies this tuple into an array of a compatible type.  <br /></td></tr>
+<tr class="memitem:a3d2724d6223ddf2e7f3632548bd88dd5" id="r_a3d2724d6223ddf2e7f3632548bd88dd5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classopenvdb_1_1v13__0_1_1math_1_1Tuple.html">Tuple</a>&lt; SIZE, bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3d2724d6223ddf2e7f3632548bd88dd5">operator==</a> (<a class="el" href="classopenvdb_1_1v13__0_1_1math_1_1Tuple.html">Tuple</a> in) const</td></tr>
+<tr class="memdesc:a3d2724d6223ddf2e7f3632548bd88dd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies this tuple into an array of a compatible type.  <br /></td></tr>
+<tr class="memitem:a91dbddb595486e989524faa46da4ccbb" id="r_a91dbddb595486e989524faa46da4ccbb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classopenvdb_1_1v13__0_1_1math_1_1Tuple.html">Tuple</a>&lt; SIZE, bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a91dbddb595486e989524faa46da4ccbb">operator!=</a> (<a class="el" href="classopenvdb_1_1v13__0_1_1math_1_1Tuple.html">Tuple</a> in) const</td></tr>
+<tr class="memdesc:a91dbddb595486e989524faa46da4ccbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies this tuple into an array of a compatible type.  <br /></td></tr>
 <tr class="memitem:ae9b08fca99a89639cd78a91152a64d5f" id="r_ae9b08fca99a89639cd78a91152a64d5f"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae9b08fca99a89639cd78a91152a64d5f">str</a> () const</td></tr>
 <tr class="memitem:a352bb124b2f1609c8d6a0fa0e62d91d0" id="r_a352bb124b2f1609c8d6a0fa0e62d91d0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a352bb124b2f1609c8d6a0fa0e62d91d0">write</a> (std::ostream &amp;os) const</td></tr>
 <tr class="memdesc:a352bb124b2f1609c8d6a0fa0e62d91d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies this tuple into an array of a compatible type.  <br /></td></tr>
@@ -198,7 +245,7 @@ template&lt;int SIZE, typename T&gt; </div>
 </div>
 <a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ae5cd36d87b0a23ee9b90614cc61af394" name="ae5cd36d87b0a23ee9b90614cc61af394"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae5cd36d87b0a23ee9b90614cc61af394">&#9670;&#160;</a></span>Tuple() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5cd36d87b0a23ee9b90614cc61af394">&#9670;&#160;</a></span>Tuple() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -226,7 +273,7 @@ template&lt;int SIZE, typename T&gt; </div>
 </div>
 </div>
 <a id="acd1c8953121142aed4cca66cd5500920" name="acd1c8953121142aed4cca66cd5500920"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acd1c8953121142aed4cca66cd5500920">&#9670;&#160;</a></span>Tuple() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#acd1c8953121142aed4cca66cd5500920">&#9670;&#160;</a></span>Tuple() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -254,6 +301,35 @@ template&lt;int src_size, typename src_valtype&gt; </div>
 
 <p><a class="el" href="structopenvdb_1_1v13__0_1_1math_1_1Conversion.html" title="Dummy class for tag dispatch of conversion constructors.">Conversion</a> constructor. </p>
 <p>Tuples with different value types and different sizes can be interconverted using this member. Converting from a larger tuple results in truncation; converting from a smaller tuple results in the extra data members being zeroed out. This function assumes that the integer 0 is convertible to the tuple's value type. </p>
+
+</div>
+</div>
+<a id="a4685d6c6181390686d2d8076caf769af" name="a4685d6c6181390686d2d8076caf769af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4685d6c6181390686d2d8076caf769af">&#9670;&#160;</a></span>Tuple() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int SIZE, typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classopenvdb_1_1v13__0_1_1math_1_1Tuple.html">Tuple</a> </td>
+          <td>(</td>
+          <td class="paramtype">const T</td>          <td class="paramname"><span class="paramname"><em>val</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel explicit">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructor that fills this tuple with a value. </p>
 
 </div>
 </div>
@@ -432,6 +508,470 @@ template&lt;int SIZE, typename T&gt; </div>
 
 </div>
 </div>
+<a id="a91dbddb595486e989524faa46da4ccbb" name="a91dbddb595486e989524faa46da4ccbb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91dbddb595486e989524faa46da4ccbb">&#9670;&#160;</a></span>operator!=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int SIZE, typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classopenvdb_1_1v13__0_1_1math_1_1Tuple.html">Tuple</a>&lt; SIZE, bool &gt; operator!= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classopenvdb_1_1v13__0_1_1math_1_1Tuple.html">Tuple</a>&lt; SIZE, T &gt;</td>          <td class="paramname"><span class="paramname"><em>in</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Copies this tuple into an array of a compatible type. </p>
+
+</div>
+</div>
+<a id="ae38537de33eebb088b0f0b1ca9678660" name="ae38537de33eebb088b0f0b1ca9678660"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae38537de33eebb088b0f0b1ca9678660">&#9670;&#160;</a></span>operator&amp;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int SIZE, typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classopenvdb_1_1v13__0_1_1math_1_1Tuple.html">Tuple</a> operator&amp; </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classopenvdb_1_1v13__0_1_1math_1_1Tuple.html">Tuple</a>&lt; SIZE, T &gt;</td>          <td class="paramname"><span class="paramname"><em>in</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Copies this tuple into an array of a compatible type. </p>
+
+</div>
+</div>
+<a id="ab60c6eef14f80bcef74e631ff285fac5" name="ab60c6eef14f80bcef74e631ff285fac5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab60c6eef14f80bcef74e631ff285fac5">&#9670;&#160;</a></span>operator&amp;=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int SIZE, typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classopenvdb_1_1v13__0_1_1math_1_1Tuple.html">Tuple</a> &amp; operator&amp;= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classopenvdb_1_1v13__0_1_1math_1_1Tuple.html">Tuple</a>&lt; SIZE, T &gt;</td>          <td class="paramname"><span class="paramname"><em>in</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Copies this tuple into an array of a compatible type. </p>
+
+</div>
+</div>
+<a id="a1ee31bbd76c1ab241db83a506a237c49" name="a1ee31bbd76c1ab241db83a506a237c49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ee31bbd76c1ab241db83a506a237c49">&#9670;&#160;</a></span>operator*()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int SIZE, typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classopenvdb_1_1v13__0_1_1math_1_1Tuple.html">Tuple</a> operator* </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classopenvdb_1_1v13__0_1_1math_1_1Tuple.html">Tuple</a>&lt; SIZE, T &gt;</td>          <td class="paramname"><span class="paramname"><em>in</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Copies this tuple into an array of a compatible type. </p>
+
+</div>
+</div>
+<a id="ac760035d843723c59a96fd44e6d93adf" name="ac760035d843723c59a96fd44e6d93adf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac760035d843723c59a96fd44e6d93adf">&#9670;&#160;</a></span>operator*=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int SIZE, typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classopenvdb_1_1v13__0_1_1math_1_1Tuple.html">Tuple</a> &amp; operator*= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classopenvdb_1_1v13__0_1_1math_1_1Tuple.html">Tuple</a>&lt; SIZE, T &gt;</td>          <td class="paramname"><span class="paramname"><em>in</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Copies this tuple into an array of a compatible type. </p>
+
+</div>
+</div>
+<a id="a7f6af16573939af16a999bdfd48236e0" name="a7f6af16573939af16a999bdfd48236e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f6af16573939af16a999bdfd48236e0">&#9670;&#160;</a></span>operator+()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int SIZE, typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classopenvdb_1_1v13__0_1_1math_1_1Tuple.html">Tuple</a> operator+ </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classopenvdb_1_1v13__0_1_1math_1_1Tuple.html">Tuple</a>&lt; SIZE, T &gt;</td>          <td class="paramname"><span class="paramname"><em>in</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Copies this tuple into an array of a compatible type. </p>
+
+</div>
+</div>
+<a id="a1491e6764ec8959cac8a6ff774f378fe" name="a1491e6764ec8959cac8a6ff774f378fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1491e6764ec8959cac8a6ff774f378fe">&#9670;&#160;</a></span>operator+=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int SIZE, typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classopenvdb_1_1v13__0_1_1math_1_1Tuple.html">Tuple</a> &amp; operator+= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classopenvdb_1_1v13__0_1_1math_1_1Tuple.html">Tuple</a>&lt; SIZE, T &gt;</td>          <td class="paramname"><span class="paramname"><em>in</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Copies this tuple into an array of a compatible type. </p>
+
+</div>
+</div>
+<a id="a0a4f4639bfeb2b42d41958ca44f999cf" name="a0a4f4639bfeb2b42d41958ca44f999cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a4f4639bfeb2b42d41958ca44f999cf">&#9670;&#160;</a></span>operator-()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int SIZE, typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classopenvdb_1_1v13__0_1_1math_1_1Tuple.html">Tuple</a> operator- </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classopenvdb_1_1v13__0_1_1math_1_1Tuple.html">Tuple</a>&lt; SIZE, T &gt;</td>          <td class="paramname"><span class="paramname"><em>in</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Copies this tuple into an array of a compatible type. </p>
+
+</div>
+</div>
+<a id="a8c3de3493c586bfc7f04bba2873ecdae" name="a8c3de3493c586bfc7f04bba2873ecdae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c3de3493c586bfc7f04bba2873ecdae">&#9670;&#160;</a></span>operator-=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int SIZE, typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classopenvdb_1_1v13__0_1_1math_1_1Tuple.html">Tuple</a> &amp; operator-= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classopenvdb_1_1v13__0_1_1math_1_1Tuple.html">Tuple</a>&lt; SIZE, T &gt;</td>          <td class="paramname"><span class="paramname"><em>in</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Copies this tuple into an array of a compatible type. </p>
+
+</div>
+</div>
+<a id="aaf0b1bc973d3950c7999eb860bfa1b0c" name="aaf0b1bc973d3950c7999eb860bfa1b0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf0b1bc973d3950c7999eb860bfa1b0c">&#9670;&#160;</a></span>operator/()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int SIZE, typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classopenvdb_1_1v13__0_1_1math_1_1Tuple.html">Tuple</a> operator/ </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classopenvdb_1_1v13__0_1_1math_1_1Tuple.html">Tuple</a>&lt; SIZE, T &gt;</td>          <td class="paramname"><span class="paramname"><em>in</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Copies this tuple into an array of a compatible type. </p>
+
+</div>
+</div>
+<a id="a835fd179009e07a67a97dc1a240b2a02" name="a835fd179009e07a67a97dc1a240b2a02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a835fd179009e07a67a97dc1a240b2a02">&#9670;&#160;</a></span>operator/=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int SIZE, typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classopenvdb_1_1v13__0_1_1math_1_1Tuple.html">Tuple</a> &amp; operator/= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classopenvdb_1_1v13__0_1_1math_1_1Tuple.html">Tuple</a>&lt; SIZE, T &gt;</td>          <td class="paramname"><span class="paramname"><em>in</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Copies this tuple into an array of a compatible type. </p>
+
+</div>
+</div>
+<a id="a4937ee38596b010321f6dbae6fe0f7c6" name="a4937ee38596b010321f6dbae6fe0f7c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4937ee38596b010321f6dbae6fe0f7c6">&#9670;&#160;</a></span>operator&lt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int SIZE, typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classopenvdb_1_1v13__0_1_1math_1_1Tuple.html">Tuple</a>&lt; SIZE, bool &gt; operator&lt; </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classopenvdb_1_1v13__0_1_1math_1_1Tuple.html">Tuple</a>&lt; SIZE, T &gt;</td>          <td class="paramname"><span class="paramname"><em>in</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Copies this tuple into an array of a compatible type. </p>
+
+</div>
+</div>
+<a id="aa5362957ba8a70f009590bfc37b0d628" name="aa5362957ba8a70f009590bfc37b0d628"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5362957ba8a70f009590bfc37b0d628">&#9670;&#160;</a></span>operator&lt;=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int SIZE, typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classopenvdb_1_1v13__0_1_1math_1_1Tuple.html">Tuple</a>&lt; SIZE, bool &gt; operator&lt;= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classopenvdb_1_1v13__0_1_1math_1_1Tuple.html">Tuple</a>&lt; SIZE, T &gt;</td>          <td class="paramname"><span class="paramname"><em>in</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Copies this tuple into an array of a compatible type. </p>
+
+</div>
+</div>
+<a id="a3d2724d6223ddf2e7f3632548bd88dd5" name="a3d2724d6223ddf2e7f3632548bd88dd5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d2724d6223ddf2e7f3632548bd88dd5">&#9670;&#160;</a></span>operator==()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int SIZE, typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classopenvdb_1_1v13__0_1_1math_1_1Tuple.html">Tuple</a>&lt; SIZE, bool &gt; operator== </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classopenvdb_1_1v13__0_1_1math_1_1Tuple.html">Tuple</a>&lt; SIZE, T &gt;</td>          <td class="paramname"><span class="paramname"><em>in</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Copies this tuple into an array of a compatible type. </p>
+
+</div>
+</div>
+<a id="a998da2e3527d6287bc2926874075a55c" name="a998da2e3527d6287bc2926874075a55c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a998da2e3527d6287bc2926874075a55c">&#9670;&#160;</a></span>operator&gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int SIZE, typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classopenvdb_1_1v13__0_1_1math_1_1Tuple.html">Tuple</a>&lt; SIZE, bool &gt; operator&gt; </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classopenvdb_1_1v13__0_1_1math_1_1Tuple.html">Tuple</a>&lt; SIZE, T &gt;</td>          <td class="paramname"><span class="paramname"><em>in</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Copies this tuple into an array of a compatible type. </p>
+
+</div>
+</div>
+<a id="aa492174dcc9a86158a00086ab1b017fa" name="aa492174dcc9a86158a00086ab1b017fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa492174dcc9a86158a00086ab1b017fa">&#9670;&#160;</a></span>operator&gt;=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int SIZE, typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classopenvdb_1_1v13__0_1_1math_1_1Tuple.html">Tuple</a>&lt; SIZE, bool &gt; operator&gt;= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classopenvdb_1_1v13__0_1_1math_1_1Tuple.html">Tuple</a>&lt; SIZE, T &gt;</td>          <td class="paramname"><span class="paramname"><em>in</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Copies this tuple into an array of a compatible type. </p>
+
+</div>
+</div>
 <a id="a82cc88940f71c8399416fc4e4615514a" name="a82cc88940f71c8399416fc4e4615514a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a82cc88940f71c8399416fc4e4615514a">&#9670;&#160;</a></span>operator[]() <span class="overload">[1/4]</span></h2>
 
@@ -541,6 +1081,64 @@ template&lt;int SIZE, typename T&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0ba1c309608c5f4092c90319cc0464fa" name="a0ba1c309608c5f4092c90319cc0464fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ba1c309608c5f4092c90319cc0464fa">&#9670;&#160;</a></span>operator|()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int SIZE, typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classopenvdb_1_1v13__0_1_1math_1_1Tuple.html">Tuple</a> operator| </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classopenvdb_1_1v13__0_1_1math_1_1Tuple.html">Tuple</a>&lt; SIZE, T &gt;</td>          <td class="paramname"><span class="paramname"><em>in</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Copies this tuple into an array of a compatible type. </p>
+
+</div>
+</div>
+<a id="ab108ff06a034c6464153bc9b074efe0a" name="ab108ff06a034c6464153bc9b074efe0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab108ff06a034c6464153bc9b074efe0a">&#9670;&#160;</a></span>operator|=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int SIZE, typename T&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classopenvdb_1_1v13__0_1_1math_1_1Tuple.html">Tuple</a> &amp; operator|= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classopenvdb_1_1v13__0_1_1math_1_1Tuple.html">Tuple</a>&lt; SIZE, T &gt;</td>          <td class="paramname"><span class="paramname"><em>in</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Copies this tuple into an array of a compatible type. </p>
 
 </div>
 </div>

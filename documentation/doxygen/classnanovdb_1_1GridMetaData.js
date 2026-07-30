@@ -28,6 +28,7 @@ var classnanovdb_1_1GridMetaData =
     [ "isStaggered", "classnanovdb_1_1GridMetaData.html#ae9506eb5cb3e2541ce7476ac7d5a7b61", null ],
     [ "isUnknown", "classnanovdb_1_1GridMetaData.html#a6dbe3fa00cd0ef1e9bab58d88afe19de", null ],
     [ "isValid", "classnanovdb_1_1GridMetaData.html#a8642f2bd38ed69600e3609a60b7516a0", null ],
+    [ "isVoxelBVH", "classnanovdb_1_1GridMetaData.html#a7ff07fe4686d5405cd9d6e636a3602a9", null ],
     [ "map", "classnanovdb_1_1GridMetaData.html#a438ec4f3c60ebb472659950ebb0f998e", null ],
     [ "nodeCount", "classnanovdb_1_1GridMetaData.html#a86d36499d93462e942a59bdbeb0fde87", null ],
     [ "operator=", "classnanovdb_1_1GridMetaData.html#a84123525e24c8963a822b8db0f8fe662", null ],

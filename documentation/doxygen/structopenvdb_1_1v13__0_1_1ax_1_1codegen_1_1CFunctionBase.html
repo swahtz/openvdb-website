@@ -17,6 +17,15 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -489,7 +498,7 @@ When casting arguments, the readonly flags of the function are not checked (unli
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000026">Deprecated</a></b></dt><dd>"Function::call which takes llvm::Value's and " "supports casting is incompatible with LLVM 16+ and will be removed." <br  />
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000027">Deprecated</a></b></dt><dd>"Function::call which takes llvm::Value's and " "supports casting is incompatible with LLVM 16+ and will be removed." <br  />
  </dd></dl>
 
 <p>Reimplemented in <a class="el" href="structopenvdb_1_1v13__0_1_1ax_1_1codegen_1_1CFunction.html#a3eb5e0f696f0d8de2c9ce35ef725272f">CFunction&lt; SignatureT &gt;</a>, <a class="el" href="structopenvdb_1_1v13__0_1_1ax_1_1codegen_1_1IRFunctionBase.html#a3eb5e0f696f0d8de2c9ce35ef725272f">IRFunctionBase</a>, <a class="el" href="structopenvdb_1_1v13__0_1_1ax_1_1codegen_1_1SRetFunction.html#a3eb5e0f696f0d8de2c9ce35ef725272f">SRetFunction&lt; SignatureT, CFunction&lt; SignatureT &gt; &gt;</a>, and <a class="el" href="structopenvdb_1_1v13__0_1_1ax_1_1codegen_1_1SRetFunction.html#a3eb5e0f696f0d8de2c9ce35ef725272f">SRetFunction&lt; SignatureT, IRFunction&lt; SignatureT &gt; &gt;</a>.</p>
@@ -660,7 +669,7 @@ It is possible to end up with function symbol collisions if you do not have uniq
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000034">Deprecated</a></b></dt><dd></dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000035">Deprecated</a></b></dt><dd></dd></dl>
 
 <p>Reimplemented in <a class="el" href="structopenvdb_1_1v13__0_1_1ax_1_1codegen_1_1CFunction.html#ad3dd86f31cfbcdfff6a7039302c71b29">CFunction&lt; SignatureT &gt;</a>.</p>
 
@@ -752,7 +761,7 @@ It is possible to end up with function symbol collisions if you do not have uniq
 </div><div class="memdoc">
 
 <p>Deprecated builder methods, no longer public. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000028">Deprecated</a></b></dt><dd>"This method incorrectly returns the attributes " "of the function set by the FunctionBuilder, not by the codegen. To " "inspect function attributes, retrieve the created function from the " "llvm::Module." <br  />
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000029">Deprecated</a></b></dt><dd>"This method incorrectly returns the attributes " "of the function set by the FunctionBuilder, not by the codegen. To " "inspect function attributes, retrieve the created function from the " "llvm::Module." <br  />
  </dd></dl>
 
 </div>
@@ -824,7 +833,7 @@ It is possible to end up with function symbol collisions if you do not have uniq
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000027">Deprecated</a></b></dt><dd>"Switch to AX's internal ArgInfo types for LLVM 16 onwards" <br  />
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000028">Deprecated</a></b></dt><dd>"Switch to AX's internal ArgInfo types for LLVM 16 onwards" <br  />
  </dd></dl>
 
 <p>Reimplemented in <a class="el" href="structopenvdb_1_1v13__0_1_1ax_1_1codegen_1_1SRetFunction.html#a9527ef3e0f61abd8b26dba4d2648ad21">SRetFunction&lt; SignatureT, CFunction&lt; SignatureT &gt; &gt;</a>, and <a class="el" href="structopenvdb_1_1v13__0_1_1ax_1_1codegen_1_1SRetFunction.html#a9527ef3e0f61abd8b26dba4d2648ad21">SRetFunction&lt; SignatureT, IRFunction&lt; SignatureT &gt; &gt;</a>.</p>
@@ -906,7 +915,7 @@ It is possible to end up with function symbol collisions if you do not have uniq
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000029">Deprecated</a></b></dt><dd>"Use the FunctionBuilder to construct Functions" <br  />
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000030">Deprecated</a></b></dt><dd>"Use the FunctionBuilder to construct Functions" <br  />
  </dd></dl>
 
 </div>
@@ -958,7 +967,7 @@ It is possible to end up with function symbol collisions if you do not have uniq
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000030">Deprecated</a></b></dt><dd>"Use the FunctionBuilder to construct Functions" <br  />
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000031">Deprecated</a></b></dt><dd>"Use the FunctionBuilder to construct Functions" <br  />
  </dd></dl>
 
 </div>
@@ -985,7 +994,7 @@ It is possible to end up with function symbol collisions if you do not have uniq
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000031">Deprecated</a></b></dt><dd>"Use the FunctionBuilder to construct Functions" <br  />
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000032">Deprecated</a></b></dt><dd>"Use the FunctionBuilder to construct Functions" <br  />
  </dd></dl>
 
 </div>
@@ -1016,7 +1025,7 @@ It is possible to end up with function symbol collisions if you do not have uniq
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000033">Deprecated</a></b></dt><dd>"Use the FunctionBuilder to construct Functions" <br  />
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000034">Deprecated</a></b></dt><dd>"Use the FunctionBuilder to construct Functions" <br  />
  </dd></dl>
 
 </div>
@@ -1043,7 +1052,7 @@ It is possible to end up with function symbol collisions if you do not have uniq
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000032">Deprecated</a></b></dt><dd>"Use the FunctionBuilder to construct Functions" <br  />
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000033">Deprecated</a></b></dt><dd>"Use the FunctionBuilder to construct Functions" <br  />
  </dd></dl>
 
 </div>
@@ -1163,7 +1172,7 @@ It is possible to end up with function symbol collisions if you do not have uniq
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000025">Deprecated</a></b></dt><dd>"Switch to AX's internal ArgInfo types for LLVM 16 onwards" <br  />
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000026">Deprecated</a></b></dt><dd>"Switch to AX's internal ArgInfo types for LLVM 16 onwards" <br  />
  </dd></dl>
 
 <p>Implemented in <a class="el" href="structopenvdb_1_1v13__0_1_1ax_1_1codegen_1_1CFunction.html#a498bb66ac13b5ba4fb6e66494dc482db">CFunction&lt; SignatureT &gt;</a>, <a class="el" href="structopenvdb_1_1v13__0_1_1ax_1_1codegen_1_1IRFunction.html#a498bb66ac13b5ba4fb6e66494dc482db">IRFunction&lt; SignatureT &gt;</a>, <a class="el" href="structopenvdb_1_1v13__0_1_1ax_1_1codegen_1_1SRetFunction.html#aeb7c9936016e2c09aab2e6f8e039a16a">SRetFunction&lt; SignatureT, CFunction&lt; SignatureT &gt; &gt;</a>, and <a class="el" href="structopenvdb_1_1v13__0_1_1ax_1_1codegen_1_1SRetFunction.html#aeb7c9936016e2c09aab2e6f8e039a16a">SRetFunction&lt; SignatureT, IRFunction&lt; SignatureT &gt; &gt;</a>.</p>

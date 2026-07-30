@@ -17,6 +17,15 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -163,7 +172,7 @@ $(function(){initNavTree('GeometryUtil_8h_source.html','',''); });
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="preprocessor">#if SYS_VERSION_MAJOR_INT &gt;= 21</span></div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>openvdb::math::Transform::Ptr</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><a class="code hl_function" href="namespaceopenvdb__houdini.html#acc354bc0a89f44fdefca88ab037efc55">frustumTransformFromCamera</a>(</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keyword">const</span> OBJ_CameraParms&amp;, <span class="keyword">const</span> UT_Matrix4D&amp;,</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keyword">const</span> UT_CameraParms&amp;, <span class="keyword">const</span> UT_Matrix4D&amp;,</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keywordtype">float</span> offset, <span class="keywordtype">float</span> nearPlaneDist, <span class="keywordtype">float</span> farPlaneDist,</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keywordtype">float</span> voxelDepthSize = 1.0, <span class="keywordtype">int</span> voxelCountX = 100);</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="preprocessor">#else</span></div>
@@ -406,7 +415,7 @@ $(function(){initNavTree('GeometryUtil_8h_source.html','',''); });
 <div class="ttc" id="aLeafManager_8h_html"><div class="ttname"><a href="LeafManager_8h.html">LeafManager.h</a></div><div class="ttdoc">A LeafManager manages a linear array of pointers to a given tree&#39;s leaf nodes, as well as optional au...</div></div>
 <div class="ttc" id="aMeshToVolume_8h_html"><div class="ttname"><a href="MeshToVolume_8h.html">MeshToVolume.h</a></div><div class="ttdoc">Convert polygonal meshes that consist of quads and/or triangles into signed or unsigned distance fiel...</div></div>
 <div class="ttc" id="aNullInterrupter_8h_html"><div class="ttname"><a href="NullInterrupter_8h.html">NullInterrupter.h</a></div></div>
-<div class="ttc" id="aPlatform_8h_html_a88b26daa45bbdd69d6bb12f9c7bfa3b2"><div class="ttname"><a href="Platform_8h.html#a88b26daa45bbdd69d6bb12f9c7bfa3b2">OPENVDB_HOUDINI_API</a></div><div class="ttdeci">#define OPENVDB_HOUDINI_API</div><div class="ttdef"><b>Definition</b> Platform.h:299</div></div>
+<div class="ttc" id="aPlatform_8h_html_a88b26daa45bbdd69d6bb12f9c7bfa3b2"><div class="ttname"><a href="Platform_8h.html#a88b26daa45bbdd69d6bb12f9c7bfa3b2">OPENVDB_HOUDINI_API</a></div><div class="ttdeci">#define OPENVDB_HOUDINI_API</div><div class="ttdef"><b>Definition</b> Platform.h:286</div></div>
 <div class="ttc" id="aclassopenvdb_1_1v13__0_1_1math_1_1Coord_html"><div class="ttname"><a href="classopenvdb_1_1v13__0_1_1math_1_1Coord.html">openvdb::v13_0::math::Coord</a></div><div class="ttdoc">Signed (x, y, z) 32-bit integer coordinates.</div><div class="ttdef"><b>Definition</b> Coord.h:26</div></div>
 <div class="ttc" id="aclassopenvdb__houdini_1_1GenAdaptivityMaskOp_html_a5b76e597777edbf500e32a0c2a8cf318"><div class="ttname"><a href="classopenvdb__houdini_1_1GenAdaptivityMaskOp.html#a5b76e597777edbf500e32a0c2a8cf318">openvdb_houdini::GenAdaptivityMaskOp::run</a></div><div class="ttdeci">void run(bool threaded=true)</div><div class="ttdef"><b>Definition</b> GeometryUtil.h:217</div></div>
 <div class="ttc" id="aclassopenvdb__houdini_1_1GenAdaptivityMaskOp_html_ab8ba688649197a85d205e534da36f970"><div class="ttname"><a href="classopenvdb__houdini_1_1GenAdaptivityMaskOp.html#ab8ba688649197a85d205e534da36f970">openvdb_houdini::GenAdaptivityMaskOp::operator()</a></div><div class="ttdeci">void operator()(const tbb::blocked_range&lt; size_t &gt; &amp;) const</div><div class="ttdef"><b>Definition</b> GeometryUtil.h:229</div></div>

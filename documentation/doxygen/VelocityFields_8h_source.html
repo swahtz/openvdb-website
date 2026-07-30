@@ -17,6 +17,15 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -446,10 +455,10 @@ $(function(){initNavTree('VelocityFields_8h_source.html','',''); });
 <div class="ttc" id="aclassopenvdb_1_1v13__0_1_1tools_1_1VelocitySampler_html_a8a94b489b62182f3d7aec612a81cfa62"><div class="ttname"><a href="classopenvdb_1_1v13__0_1_1tools_1_1VelocitySampler.html#a8a94b489b62182f3d7aec612a81cfa62">openvdb::v13_0::tools::VelocitySampler::VelocitySampler</a></div><div class="ttdeci">VelocitySampler(const GridT &amp;grid)</div><div class="ttdoc">Constructor from a grid.</div><div class="ttdef"><b>Definition</b> VelocityFields.h:160</div></div>
 <div class="ttc" id="aclassopenvdb_1_1v13__0_1_1tools_1_1VelocitySampler_html_ae3babf2322c2c430e7fff87a2c3c1fd1"><div class="ttname"><a href="classopenvdb_1_1v13__0_1_1tools_1_1VelocitySampler.html#ae3babf2322c2c430e7fff87a2c3c1fd1">openvdb::v13_0::tools::VelocitySampler::VelocitySampler</a></div><div class="ttdeci">VelocitySampler(const VelocitySampler &amp;other)</div><div class="ttdoc">Copy-constructor.</div><div class="ttdef"><b>Definition</b> VelocityFields.h:166</div></div>
 <div class="ttc" id="anamespaceopenvdb_1_1v13__0_1_1math_html_a4887842da9571c7e50d375c60bcefcb3"><div class="ttname"><a href="namespaceopenvdb_1_1v13__0_1_1math.html#a4887842da9571c7e50d375c60bcefcb3">openvdb::v13_0::math::pi</a></div><div class="ttdeci">constexpr T pi()</div><div class="ttdoc">Pi constant taken from Boost to match old behaviour.</div><div class="ttdef"><b>Definition</b> Math.h:130</div></div>
-<div class="ttc" id="anamespaceopenvdb_1_1v13__0_1_1math_html_a98d94999010cb92dfb5f652c353d1d82"><div class="ttname"><a href="namespaceopenvdb_1_1v13__0_1_1math.html#a98d94999010cb92dfb5f652c353d1d82">openvdb::v13_0::math::Vec3d</a></div><div class="ttdeci">Vec3&lt; double &gt; Vec3d</div><div class="ttdef"><b>Definition</b> Vec3.h:665</div></div>
-<div class="ttc" id="anamespaceopenvdb_1_1v13__0_1_1math_html_aa16742b9bc3f3876f2238690028f6e73"><div class="ttname"><a href="namespaceopenvdb_1_1v13__0_1_1math.html#aa16742b9bc3f3876f2238690028f6e73">openvdb::v13_0::math::Cos</a></div><div class="ttdeci">float Cos(const float &amp;x)</div><div class="ttdoc">Return cos x.</div><div class="ttdef"><b>Definition</b> Math.h:796</div></div>
-<div class="ttc" id="anamespaceopenvdb_1_1v13__0_1_1math_html_aeca3f6988bc77f27db9e93fa4ed4e0a9"><div class="ttname"><a href="namespaceopenvdb_1_1v13__0_1_1math.html#aeca3f6988bc77f27db9e93fa4ed4e0a9">openvdb::v13_0::math::Sin</a></div><div class="ttdeci">float Sin(const float &amp;x)</div><div class="ttdoc">Return sin x.</div><div class="ttdef"><b>Definition</b> Math.h:787</div></div>
-<div class="ttc" id="anamespaceopenvdb_1_1v13__0_1_1math_html_aedf18d743a5c369a09be703641495aaa"><div class="ttname"><a href="namespaceopenvdb_1_1v13__0_1_1math.html#aedf18d743a5c369a09be703641495aaa">openvdb::v13_0::math::Pow2</a></div><div class="ttdeci">Type Pow2(Type x)</div><div class="ttdoc">Return x2.</div><div class="ttdef"><b>Definition</b> Math.h:573</div></div>
+<div class="ttc" id="anamespaceopenvdb_1_1v13__0_1_1math_html_a98d94999010cb92dfb5f652c353d1d82"><div class="ttname"><a href="namespaceopenvdb_1_1v13__0_1_1math.html#a98d94999010cb92dfb5f652c353d1d82">openvdb::v13_0::math::Vec3d</a></div><div class="ttdeci">Vec3&lt; double &gt; Vec3d</div><div class="ttdef"><b>Definition</b> Vec3.h:708</div></div>
+<div class="ttc" id="anamespaceopenvdb_1_1v13__0_1_1math_html_aa16742b9bc3f3876f2238690028f6e73"><div class="ttname"><a href="namespaceopenvdb_1_1v13__0_1_1math.html#aa16742b9bc3f3876f2238690028f6e73">openvdb::v13_0::math::Cos</a></div><div class="ttdeci">float Cos(const float &amp;x)</div><div class="ttdoc">Return cos x.</div><div class="ttdef"><b>Definition</b> Math.h:793</div></div>
+<div class="ttc" id="anamespaceopenvdb_1_1v13__0_1_1math_html_aeca3f6988bc77f27db9e93fa4ed4e0a9"><div class="ttname"><a href="namespaceopenvdb_1_1v13__0_1_1math.html#aeca3f6988bc77f27db9e93fa4ed4e0a9">openvdb::v13_0::math::Sin</a></div><div class="ttdeci">float Sin(const float &amp;x)</div><div class="ttdoc">Return sin x.</div><div class="ttdef"><b>Definition</b> Math.h:784</div></div>
+<div class="ttc" id="anamespaceopenvdb_1_1v13__0_1_1math_html_aedf18d743a5c369a09be703641495aaa"><div class="ttname"><a href="namespaceopenvdb_1_1v13__0_1_1math.html#aedf18d743a5c369a09be703641495aaa">openvdb::v13_0::math::Pow2</a></div><div class="ttdeci">Type Pow2(Type x)</div><div class="ttdoc">Return x2.</div><div class="ttdef"><b>Definition</b> Math.h:570</div></div>
 <div class="ttc" id="anamespaceopenvdb_1_1v13__0_1_1tree_html"><div class="ttname"><a href="namespaceopenvdb_1_1v13__0_1_1tree.html">openvdb::v13_0::tree</a></div><div class="ttdef"><b>Definition</b> PointDataGrid.h:170</div></div>
 <div class="ttc" id="anamespaceopenvdb_1_1v13__0_html_a58332e5bdbbdb5a926507027db318e5b"><div class="ttname"><a href="namespaceopenvdb_1_1v13__0.html#a58332e5bdbbdb5a926507027db318e5b">openvdb::v13_0::Vec3fGrid</a></div><div class="ttdeci">Vec3SGrid Vec3fGrid</div><div class="ttdef"><b>Definition</b> openvdb.h:87</div></div>
 <div class="ttc" id="anamespaceopenvdb_1_1v13__0_html_ab8753c49a176ce809a70ac12896682e3"><div class="ttname"><a href="namespaceopenvdb_1_1v13__0.html#ab8753c49a176ce809a70ac12896682e3">openvdb::v13_0::Vec3R</a></div><div class="ttdeci">math::Vec3&lt; Real &gt; Vec3R</div><div class="ttdef"><b>Definition</b> Types.h:53</div></div>
@@ -457,7 +466,7 @@ $(function(){initNavTree('VelocityFields_8h_source.html','',''); });
 <div class="ttc" id="aopenvdb_8h_html"><div class="ttname"><a href="openvdb_8h.html">openvdb.h</a></div></div>
 <div class="ttc" id="astructopenvdb_1_1v13__0_1_1tools_1_1Sampler_html_ac6dc80e2a1753b4c79771e7d4ed37940"><div class="ttname"><a href="structopenvdb_1_1v13__0_1_1tools_1_1Sampler.html#ac6dc80e2a1753b4c79771e7d4ed37940">openvdb::v13_0::tools::Sampler::sample</a></div><div class="ttdeci">static bool sample(const TreeT &amp;inTree, const Vec3R &amp;inCoord, typename TreeT::ValueType &amp;result)</div><div class="ttdoc">Sample inTree at the floating-point index coordinate inCoord and store the result in result.</div></div>
 <div class="ttc" id="aversion_8h_8in_html_a00be3835cb8ad1ded8abd821fad20fc0"><div class="ttname"><a href="version_8h_8in.html#a00be3835cb8ad1ded8abd821fad20fc0">OPENVDB_VERSION_NAME</a></div><div class="ttdeci">#define OPENVDB_VERSION_NAME</div><div class="ttdoc">The version namespace name for this library version.</div><div class="ttdef"><b>Definition</b> version.h.in:121</div></div>
-<div class="ttc" id="aversion_8h_8in_html_a2dde157791cd7558cdf886489256ba14"><div class="ttname"><a href="version_8h_8in.html#a2dde157791cd7558cdf886489256ba14">OPENVDB_USE_VERSION_NAMESPACE</a></div><div class="ttdeci">#define OPENVDB_USE_VERSION_NAMESPACE</div><div class="ttdef"><b>Definition</b> version.h.in:218</div></div>
+<div class="ttc" id="aversion_8h_8in_html_a2dde157791cd7558cdf886489256ba14"><div class="ttname"><a href="version_8h_8in.html#a2dde157791cd7558cdf886489256ba14">OPENVDB_USE_VERSION_NAMESPACE</a></div><div class="ttdeci">#define OPENVDB_USE_VERSION_NAMESPACE</div><div class="ttdef"><b>Definition</b> version.h.in:284</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->

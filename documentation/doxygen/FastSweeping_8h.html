@@ -17,6 +17,15 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -197,7 +206,7 @@ Variables</h2></td></tr>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Defined the six functions {fog,sdf}To{Sdf,Ext,SdfAndExt} in addition to the two functions maskSdf and dilateSdf. Sdf denotes a signed-distance field (i.e. negative values are inside), fog is a scalar fog volume (i.e. higher values are inside), and Ext is a field (of arbitrary type) that is extended off the iso-surface. All these functions are implemented with the methods in the class named FastSweeping. </p>
 <dl class="section author"><dt>Author</dt><dd>Ken Museth</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>Solves the (simplified) Eikonal Eq: <img class="formulaInl" alt="$|\nabla \phi|^2 = 1$" src="form_0.png"/> and performs velocity extension, <img class="formulaInl" alt="$\nabla f\nabla \phi = 0$" src="form_1.png"/>, both by means of the fast sweeping algorithm detailed in: "A Fast Sweeping Method For Eikonal Equations" by H. Zhao, Mathematics of Computation, Vol 74(230), pp 603-627, 2004</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Solves the (simplified) Eikonal Eq: \(|\nabla \phi|^2 = 1\) and performs velocity extension, \(\nabla f\nabla \phi = 0\), both by means of the fast sweeping algorithm detailed in: "A Fast Sweeping Method For Eikonal Equations" by H. Zhao, Mathematics of Computation, Vol 74(230), pp 603-627, 2004</dd></dl>
 <p>The algorithm used below for parallel fast sweeping was first published in: "New Algorithm for Sparse and Parallel Fast Sweeping: Efficient
          Computation of Sparse Distance Fields" by K. Museth, ACM SIGGRAPH Talk, 2017, <a href="http://www.museth.org/Ken/Publications_files/Museth_SIG17.pdf">http://www.museth.org/Ken/Publications_files/Museth_SIG17.pdf</a> </p>
 </div></div><!-- contents -->

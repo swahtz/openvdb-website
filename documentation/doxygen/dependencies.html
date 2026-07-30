@@ -17,6 +17,15 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -133,7 +142,7 @@ OpenVDB Components</h1>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Component  </th><th class="markdownTableHeadNone">Requirements  </th><th class="markdownTableHeadNone">Optional  </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">OpenVDB Core Library  </td><td class="markdownTableBodyNone">CMake, C++17 compiler, TBB::tbb  </td><td class="markdownTableBodyNone">Blosc, ZLib, Log4cplus, Imath::Imath, Boost::iostream  </td></tr>
+<td class="markdownTableBodyNone">OpenVDB Core Library  </td><td class="markdownTableBodyNone">CMake, C++17 compiler, TBB::tbb  </td><td class="markdownTableBodyNone">Blosc, ZLib, Log4cplus, Imath::Imath (included), Boost::iostream, VCL (included)  </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">OpenVDB Print  </td><td class="markdownTableBodyNone">Core Library dependencies  </td><td class="markdownTableBodyNone">-  </td></tr>
 <tr class="markdownTableRowOdd">
@@ -151,12 +160,18 @@ OpenVDB Components</h1>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">OpenVDB UnitTests  </td><td class="markdownTableBodyNone">Core Library dependencies, GoogleTest, numpy*  </td><td class="markdownTableBodyNone">-  </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">OpenVDB Documentation  </td><td class="markdownTableBodyNone">Doxygen  </td><td class="markdownTableBodyNone">-  </td></tr>
+<td class="markdownTableBodyNone">OpenVDB Documentation  </td><td class="markdownTableBodyNone">Doxygen, Doxygen Awesome (included)  </td><td class="markdownTableBodyNone">-  </td></tr>
 </table>
 <ul>
 <li><b>*</b> GLEW is only required for building the vdb_view binary on Windows.</li>
 <li><b>*</b> numpy only required for python binding unit tests</li>
 <li><b>Note</b> - Bison and Flex are only required for re-generation of the AX grammar which is not typically necessary for the majority of users.</li>
+</ul>
+<p>Note that OpenVDB comes bundled with the following dependencies. Please see their respective license documentation in <span class="tt">ext/THIRD-PARTY.md</span> for license information.</p>
+<ul>
+<li>Doxygen Awesome</li>
+<li>Imath::Imath</li>
+<li>VCL</li>
 </ul>
 <h2 class="doxsection"><a class="anchor" id="depDependencyTable"></a>
 Dependency Table</h2>
@@ -184,33 +199,37 @@ Dependency Table</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">Boost  </td><td class="markdownTableBodyNone">1.82  </td><td class="markdownTableBodyNone">&gt;= 1.85  </td><td class="markdownTableBodyNone">Components: iostreams  </td><td class="markdownTableBodyNone">Y  </td><td class="markdownTableBodyNone">Y  </td><td class="markdownTableBodyNone"><a href="https://www.boost.org">https://www.boost.org</a>  </td></tr>
 <tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">VCL  </td><td class="markdownTableBodyNone">2.02.0  </td><td class="markdownTableBodyNone">&gt;= 2.02.0  </td><td class="markdownTableBodyNone">x86 intrinsics and SIMD class wrappers and  </td><td class="markdownTableBodyNone">Y  </td><td class="markdownTableBodyNone">Y  </td><td class="markdownTableBodyNone"><a href="https://github.com/vectorclass/version2">https://github.com/vectorclass/version2</a>  </td></tr>
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">LLVM  </td><td class="markdownTableBodyNone">15.0.0*  </td><td class="markdownTableBodyNone">18.0.0  </td><td class="markdownTableBodyNone">Target-independent code generation  </td><td class="markdownTableBodyNone">Y  </td><td class="markdownTableBodyNone">Y  </td><td class="markdownTableBodyNone"><a href="https://llvm.org/">https://llvm.org/</a>  </td></tr>
-<tr class="markdownTableRowEven">
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">Bison  </td><td class="markdownTableBodyNone">3.7.0  </td><td class="markdownTableBodyNone">3.7.0  </td><td class="markdownTableBodyNone">General-purpose parser generator  </td><td class="markdownTableBodyNone">Y  </td><td class="markdownTableBodyNone">Y  </td><td class="markdownTableBodyNone"><a href="https://www.gnu.org/software/gcc">https://www.gnu.org/software/gcc</a>  </td></tr>
-<tr class="markdownTableRowOdd">
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">Flex  </td><td class="markdownTableBodyNone">2.6.4  </td><td class="markdownTableBodyNone">2.6.4  </td><td class="markdownTableBodyNone">Fast lexical analyzer generator  </td><td class="markdownTableBodyNone">Y  </td><td class="markdownTableBodyNone">Y  </td><td class="markdownTableBodyNone"><a href="https://github.com/westes/flex">https://github.com/westes/flex</a>  </td></tr>
-<tr class="markdownTableRowEven">
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">Python  </td><td class="markdownTableBodyNone">3.10  </td><td class="markdownTableBodyNone">3.11  </td><td class="markdownTableBodyNone">The python interpreter and libraries  </td><td class="markdownTableBodyNone">Y  </td><td class="markdownTableBodyNone">Y  </td><td class="markdownTableBodyNone"><a href="https://www.python.org">https://www.python.org</a>  </td></tr>
-<tr class="markdownTableRowOdd">
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">nanobind**  </td><td class="markdownTableBodyNone">2.0.0  </td><td class="markdownTableBodyNone">&gt;= 2.5.0  </td><td class="markdownTableBodyNone">C++/python bindings  </td><td class="markdownTableBodyNone">Y  </td><td class="markdownTableBodyNone">Y  </td><td class="markdownTableBodyNone"><a href="https://nanobind.readthedocs.io">https://nanobind.readthedocs.io</a>  </td></tr>
-<tr class="markdownTableRowEven">
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">GoogleTest  </td><td class="markdownTableBodyNone">1.10  </td><td class="markdownTableBodyNone">Latest  </td><td class="markdownTableBodyNone">A unit testing framework module for C++  </td><td class="markdownTableBodyNone">Y  </td><td class="markdownTableBodyNone">Y  </td><td class="markdownTableBodyNone"><a href="https://github.com/google/googletest">https://github.com/google/googletest</a>  </td></tr>
-<tr class="markdownTableRowOdd">
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">Blosc  </td><td class="markdownTableBodyNone">1.17.0*  </td><td class="markdownTableBodyNone">Latest  </td><td class="markdownTableBodyNone">Recommended dependency for improved disk compression  </td><td class="markdownTableBodyNone">Y  </td><td class="markdownTableBodyNone">Y  </td><td class="markdownTableBodyNone"><a href="https://github.com/Blosc/c-blosc/releases">https://github.com/Blosc/c-blosc/releases</a>  </td></tr>
-<tr class="markdownTableRowEven">
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">Log4cplus  </td><td class="markdownTableBodyNone">1.1.2  </td><td class="markdownTableBodyNone">Latest  </td><td class="markdownTableBodyNone">An optional dependency for improved OpenVDB Logging  </td><td class="markdownTableBodyNone">Y  </td><td class="markdownTableBodyNone">Y  </td><td class="markdownTableBodyNone"><a href="https://github.com/log4cplus/log4cplus">https://github.com/log4cplus/log4cplus</a>  </td></tr>
-<tr class="markdownTableRowOdd">
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">libpng  </td><td class="markdownTableBodyNone">-  </td><td class="markdownTableBodyNone">Latest  </td><td class="markdownTableBodyNone">Library for manipulating PNG images  </td><td class="markdownTableBodyNone">Y  </td><td class="markdownTableBodyNone">Y  </td><td class="markdownTableBodyNone"><a href="http://www.libpng.org/pub/png/libpng.html">http://www.libpng.org/pub/png/libpng.html</a>  </td></tr>
-<tr class="markdownTableRowEven">
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">GLFW  </td><td class="markdownTableBodyNone">3.3  </td><td class="markdownTableBodyNone">Latest  </td><td class="markdownTableBodyNone">Simple API for OpenGL development  </td><td class="markdownTableBodyNone">Y  </td><td class="markdownTableBodyNone">Y  </td><td class="markdownTableBodyNone"><a href="https://www.glfw.org">https://www.glfw.org</a>  </td></tr>
-<tr class="markdownTableRowOdd">
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">OpenGL  </td><td class="markdownTableBodyNone">3.2  </td><td class="markdownTableBodyNone">Latest  </td><td class="markdownTableBodyNone">Environment for developing portable graphics applications  </td><td class="markdownTableBodyNone">Y  </td><td class="markdownTableBodyNone">Y  </td><td class="markdownTableBodyNone"><a href="https://www.opengl.org">https://www.opengl.org</a>  </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">GLEW  </td><td class="markdownTableBodyNone">1.0.0  </td><td class="markdownTableBodyNone">Latest  </td><td class="markdownTableBodyNone">A cross-platform OpenGL extension loading library.  </td><td class="markdownTableBodyNone">Y  </td><td class="markdownTableBodyNone">Y  </td><td class="markdownTableBodyNone"><a href="http://glew.sourceforge.net">http://glew.sourceforge.net</a>  </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">CUDA  </td><td class="markdownTableBodyNone">-  </td><td class="markdownTableBodyNone">Latest  </td><td class="markdownTableBodyNone">Parallel computing platform for graphical processing units.  </td><td class="markdownTableBodyNone">Y  </td><td class="markdownTableBodyNone">N  </td><td class="markdownTableBodyNone"><a href="https://developer.nvidia.com/cuda-downloads">https://developer.nvidia.com/cuda-downloads</a>  </td></tr>
+<td class="markdownTableBodyNone">GLEW  </td><td class="markdownTableBodyNone">1.0.0  </td><td class="markdownTableBodyNone">Latest  </td><td class="markdownTableBodyNone">A cross-platform OpenGL extension loading library.  </td><td class="markdownTableBodyNone">Y  </td><td class="markdownTableBodyNone">Y  </td><td class="markdownTableBodyNone"><a href="http://glew.sourceforge.net">http://glew.sourceforge.net</a>  </td></tr>
 <tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">CUDA  </td><td class="markdownTableBodyNone">-  </td><td class="markdownTableBodyNone">Latest  </td><td class="markdownTableBodyNone">Parallel computing platform for graphical processing units.  </td><td class="markdownTableBodyNone">Y  </td><td class="markdownTableBodyNone">N  </td><td class="markdownTableBodyNone"><a href="https://developer.nvidia.com/cuda-downloads">https://developer.nvidia.com/cuda-downloads</a>  </td></tr>
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">Doxygen  </td><td class="markdownTableBodyNone">1.8.8  </td><td class="markdownTableBodyNone">&lt;= 1.14.0  </td><td class="markdownTableBodyNone">Documentation generation from C++  </td><td class="markdownTableBodyNone">Y  </td><td class="markdownTableBodyNone">Y  </td><td class="markdownTableBodyNone"><a href="http://www.doxygen.nl">http://www.doxygen.nl</a>  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">Doxygen Awesome  </td><td class="markdownTableBodyNone">2.0.0  </td><td class="markdownTableBodyNone">&gt;= 2.0.0  </td><td class="markdownTableBodyNone">Documentation generation from C++  </td><td class="markdownTableBodyNone">Y  </td><td class="markdownTableBodyNone">Y  </td><td class="markdownTableBodyNone"><a href="https://github.com/jothepro/doxygen-awesome-css">https://github.com/jothepro/doxygen-awesome-css</a>  </td></tr>
 </table>
 <ul>
 <li><b>*</b> See the note in <a class="el" href="#depKnownIssues">known issues</a> regarding supported blosc/llvm versions.</li>

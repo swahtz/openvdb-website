@@ -17,6 +17,15 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -115,28 +124,13 @@ $(function(){initNavTree('structcnanovdb__gridblindmetadata.html','','structcnan
 Public Attributes</h2></td></tr>
 <tr class="memitem:a539cd4979ed5783a57d44d792d3a911b" id="r_a539cd4979ed5783a57d44d792d3a911b"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a539cd4979ed5783a57d44d792d3a911b">mByteOffset</a></td></tr>
 <tr class="memitem:ab63c01ba123e6d08145f34766938acbe" id="r_ab63c01ba123e6d08145f34766938acbe"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab63c01ba123e6d08145f34766938acbe">mElementCount</a></td></tr>
-<tr class="memitem:a0251ac0c51aa69a1a5f25044b269eae1" id="r_a0251ac0c51aa69a1a5f25044b269eae1"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0251ac0c51aa69a1a5f25044b269eae1">mFlags</a></td></tr>
+<tr class="memitem:a63111c1e2aae1decaf0b26309ffdbd49" id="r_a63111c1e2aae1decaf0b26309ffdbd49"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a63111c1e2aae1decaf0b26309ffdbd49">mValueSize</a></td></tr>
 <tr class="memitem:a4ce0c74afce5fff1bb7122c372fbc824" id="r_a4ce0c74afce5fff1bb7122c372fbc824"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4ce0c74afce5fff1bb7122c372fbc824">mSemantic</a></td></tr>
 <tr class="memitem:aa5298d6327c5d8997527cd834093aa18" id="r_aa5298d6327c5d8997527cd834093aa18"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa5298d6327c5d8997527cd834093aa18">mDataClass</a></td></tr>
 <tr class="memitem:a41e935aa94f69092fa0e22c05dcd9e88" id="r_a41e935aa94f69092fa0e22c05dcd9e88"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a41e935aa94f69092fa0e22c05dcd9e88">mDataType</a></td></tr>
 <tr class="memitem:a9d6ad3a5704ec220f829b5a8c20d5053" id="r_a9d6ad3a5704ec220f829b5a8c20d5053"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9d6ad3a5704ec220f829b5a8c20d5053">mName</a> [256]</td></tr>
-<tr class="memitem:ac5f26bf794ac398dfd8a82062c2af89f" id="r_ac5f26bf794ac398dfd8a82062c2af89f"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac5f26bf794ac398dfd8a82062c2af89f">_reserved</a> [(-(sizeof(int64_t)+sizeof(uint64_t)+2 *sizeof(uint32_t)+2 *sizeof(uint32_t)+256 *sizeof(char)) &amp;((32) -1))]</td></tr>
 </table>
 <a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
-<a id="ac5f26bf794ac398dfd8a82062c2af89f" name="ac5f26bf794ac398dfd8a82062c2af89f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac5f26bf794ac398dfd8a82062c2af89f">&#9670;&#160;</a></span>_reserved</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t _reserved[(-(sizeof(int64_t)+sizeof(uint64_t)+2 *sizeof(uint32_t)+2 *sizeof(uint32_t)+256 *sizeof(char)) &amp;((32) -1))]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a539cd4979ed5783a57d44d792d3a911b" name="a539cd4979ed5783a57d44d792d3a911b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a539cd4979ed5783a57d44d792d3a911b">&#9670;&#160;</a></span>mByteOffset</h2>
 
@@ -193,20 +187,6 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a0251ac0c51aa69a1a5f25044b269eae1" name="a0251ac0c51aa69a1a5f25044b269eae1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0251ac0c51aa69a1a5f25044b269eae1">&#9670;&#160;</a></span>mFlags</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint32_t mFlags</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a9d6ad3a5704ec220f829b5a8c20d5053" name="a9d6ad3a5704ec220f829b5a8c20d5053"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9d6ad3a5704ec220f829b5a8c20d5053">&#9670;&#160;</a></span>mName</h2>
 
@@ -229,6 +209,20 @@ Public Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">uint32_t mSemantic</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a63111c1e2aae1decaf0b26309ffdbd49" name="a63111c1e2aae1decaf0b26309ffdbd49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63111c1e2aae1decaf0b26309ffdbd49">&#9670;&#160;</a></span>mValueSize</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t mValueSize</td>
         </tr>
       </table>
 </div><div class="memdoc">

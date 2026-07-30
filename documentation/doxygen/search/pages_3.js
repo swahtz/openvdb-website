@@ -20,7 +20,7 @@ var searchData=
   ['detected_20vcpkg_20toolchain_20is_20using_20a_20mismatching_20triplet_20for_20openvdb_20build_20artifacts_17',['Detected VCPKG toolchain is using a mismatching triplet for OpenVDB build artifacts',['../build.html#troubleshoot4',1,'']]],
   ['different_20types_18',['Processing grids of different types',['../houdini.html#sProcessingTypedGrids',1,'']]],
   ['directly_20with_20maps_19',['Working Directly with Maps',['../transformsAndMaps.html#sCostOfMaps',1,'']]],
-  ['directory_20tree_20of_20nanovdb_20',['Overview of the directory tree of NanoVDB.',['../NanoVDB_SourceTree.html#autotoc_md8',1,'']]],
+  ['directory_20tree_20of_20nanovdb_20',['Overview of the directory tree of NanoVDB.',['../NanoVDB_SourceTree.html#autotoc_md4',1,'']]],
   ['distributed_20under_21',['What license is OpenVDB distributed under?',['../faq.html#sWhatLicense',1,'']]],
   ['documentation_22',['Documentation',['../axcplusplus.html',1,'AX C++ Documentation'],['../ax.html',1,'AX Language Documentation'],['../openvdbax.html#docs',1,'Documentation']]],
   ['does_20openvdb_20compare_20to_20existing_20sparse_20data_20structures_23',['How does OpenVDB compare to existing sparse data structures?',['../faq.html#sCompareVDB',1,'']]],

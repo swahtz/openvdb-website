@@ -17,6 +17,15 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -114,7 +123,7 @@ Namespaces</h2></td></tr>
 <tr class="memitem:v13_5F0" id="r_v13_5F0"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceopenvdb_1_1v13__0.html">v13_0</a></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><dl class="section note"><dt>Note</dt><dd>tbb/blocked_range.h is the ONLY include that persists from TBB 2020 to TBB 2021 that itself includes the TBB specific version header files. In TBB 2020, the version header was called tbb/stddef.h. In 2021, it's called tbb/version.h. We include tbb/blocked_range.h here to indirectly access the version defines in a consistent way so that downstream software doesn't need to provide compile time defines. </dd></dl>
+<div class="textblock"><dl class="section note"><dt>Note</dt><dd>tbb/task_arena.h is the ONLY include that persists from TBB 2020 to TBB 2021 to TBB 2023 that itself includes the TBB specific version header files. In TBB 2020, the version header was called tbb/stddef.h. In 2021+, it's called tbb/version.h. We include tbb/task_arena.h here to indirectly access the version defines in a consistent way so that downstream software doesn't need to provide compile time defines. </dd></dl>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <div id="page-nav" class="page-nav-panel">

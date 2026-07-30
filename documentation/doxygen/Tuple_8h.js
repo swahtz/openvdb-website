@@ -7,7 +7,7 @@ var Tuple_8h =
     [ "openvdb::v13_0::math::isInfinite", "namespaceopenvdb_1_1v13__0_1_1math.html#a385cf87b105b89c242d10c73001665bf", null ],
     [ "openvdb::v13_0::math::isNan", "namespaceopenvdb_1_1v13__0_1_1math.html#a4b47f71933aab3a4802c6aaa65d3a355", null ],
     [ "openvdb::v13_0::math::isZero", "namespaceopenvdb_1_1v13__0_1_1math.html#a3d882def3e04ae8264b1c7fb085667dd", null ],
-    [ "openvdb::v13_0::math::operator<", "namespaceopenvdb_1_1v13__0_1_1math.html#a50d2c1ee80b3f405fc41a7468a15f7e6", null ],
+    [ "openvdb::v13_0::math::operator&&", "namespaceopenvdb_1_1v13__0_1_1math.html#a174b36e439aae566d47b76fa624ceb7f", null ],
     [ "openvdb::v13_0::math::operator<<", "namespaceopenvdb_1_1v13__0_1_1math.html#ae661c06221e76d0b8d43598f504d392c", null ],
-    [ "openvdb::v13_0::math::operator>", "namespaceopenvdb_1_1v13__0_1_1math.html#a6ad783401c1891cf7d7c650e851b9b47", null ]
+    [ "openvdb::v13_0::math::operator||", "namespaceopenvdb_1_1v13__0_1_1math.html#a951ed65fc3db33a29c8f297d0c273a83", null ]
 ];

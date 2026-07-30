@@ -17,6 +17,15 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -696,7 +705,7 @@ template&lt;typename SignatureT&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000034">Deprecated</a></b></dt><dd></dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000035">Deprecated</a></b></dt><dd></dd></dl>
 
 <p>Reimplemented from <a class="el" href="structopenvdb_1_1v13__0_1_1ax_1_1codegen_1_1CFunctionBase.html#a63efe3f44116e72bed2c9c6f7b916fe9">CFunctionBase</a>.</p>
 
@@ -788,7 +797,7 @@ template&lt;typename SignatureT&gt; </div>
 </div><div class="memdoc">
 
 <p>Deprecated builder methods, no longer public. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000028">Deprecated</a></b></dt><dd>"This method incorrectly returns the attributes " "of the function set by the FunctionBuilder, not by the codegen. To " "inspect function attributes, retrieve the created function from the " "llvm::Module." <br  />
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000029">Deprecated</a></b></dt><dd>"This method incorrectly returns the attributes " "of the function set by the FunctionBuilder, not by the codegen. To " "inspect function attributes, retrieve the created function from the " "llvm::Module." <br  />
  </dd></dl>
 
 </div>
@@ -860,7 +869,7 @@ template&lt;typename SignatureT&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000027">Deprecated</a></b></dt><dd>"Switch to AX's internal ArgInfo types for LLVM 16 onwards" <br  />
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000028">Deprecated</a></b></dt><dd>"Switch to AX's internal ArgInfo types for LLVM 16 onwards" <br  />
  </dd></dl>
 
 <p>Reimplemented in <a class="el" href="structopenvdb_1_1v13__0_1_1ax_1_1codegen_1_1SRetFunction.html#a9527ef3e0f61abd8b26dba4d2648ad21">SRetFunction&lt; SignatureT, CFunction&lt; SignatureT &gt; &gt;</a>, and <a class="el" href="structopenvdb_1_1v13__0_1_1ax_1_1codegen_1_1SRetFunction.html#a9527ef3e0f61abd8b26dba4d2648ad21">SRetFunction&lt; SignatureT, IRFunction&lt; SignatureT &gt; &gt;</a>.</p>
@@ -942,7 +951,7 @@ template&lt;typename SignatureT&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000029">Deprecated</a></b></dt><dd>"Use the FunctionBuilder to construct Functions" <br  />
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000030">Deprecated</a></b></dt><dd>"Use the FunctionBuilder to construct Functions" <br  />
  </dd></dl>
 
 </div>
@@ -994,7 +1003,7 @@ template&lt;typename SignatureT&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000030">Deprecated</a></b></dt><dd>"Use the FunctionBuilder to construct Functions" <br  />
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000031">Deprecated</a></b></dt><dd>"Use the FunctionBuilder to construct Functions" <br  />
  </dd></dl>
 
 </div>
@@ -1021,7 +1030,7 @@ template&lt;typename SignatureT&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000031">Deprecated</a></b></dt><dd>"Use the FunctionBuilder to construct Functions" <br  />
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000032">Deprecated</a></b></dt><dd>"Use the FunctionBuilder to construct Functions" <br  />
  </dd></dl>
 
 </div>
@@ -1052,7 +1061,7 @@ template&lt;typename SignatureT&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000033">Deprecated</a></b></dt><dd>"Use the FunctionBuilder to construct Functions" <br  />
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000034">Deprecated</a></b></dt><dd>"Use the FunctionBuilder to construct Functions" <br  />
  </dd></dl>
 
 </div>
@@ -1079,7 +1088,7 @@ template&lt;typename SignatureT&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000032">Deprecated</a></b></dt><dd>"Use the FunctionBuilder to construct Functions" <br  />
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000033">Deprecated</a></b></dt><dd>"Use the FunctionBuilder to construct Functions" <br  />
  </dd></dl>
 
 </div>
@@ -1205,7 +1214,7 @@ template&lt;typename SignatureT&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000025">Deprecated</a></b></dt><dd>"Switch to AX's internal ArgInfo types for LLVM 16 onwards" <br  />
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000026">Deprecated</a></b></dt><dd>"Switch to AX's internal ArgInfo types for LLVM 16 onwards" <br  />
  </dd></dl>
 
 <p>Implements <a class="el" href="structopenvdb_1_1v13__0_1_1ax_1_1codegen_1_1Function.html#ab2b6bacd57c3ab5d930fc96e1319977d">Function</a>.</p>

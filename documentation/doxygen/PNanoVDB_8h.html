@@ -17,6 +17,15 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -144,7 +153,7 @@ Macros</h2></td></tr>
 <tr class="memitem:a2cf5e553719437f0bdf283fb6f4bd500" id="r_a2cf5e553719437f0bdf283fb6f4bd500"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2cf5e553719437f0bdf283fb6f4bd500">PNANOVDB_MAGIC_FILE</a>&#160;&#160;&#160;0x324244566f6e614eUL</td></tr>
 <tr class="memitem:aca8fcd353d41ee55227a6a97c9692028" id="r_aca8fcd353d41ee55227a6a97c9692028"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aca8fcd353d41ee55227a6a97c9692028">PNANOVDB_MAJOR_VERSION_NUMBER</a>&#160;&#160;&#160;32</td></tr>
 <tr class="memitem:a35884ec8b0408c606f24ef4b54bf0b4d" id="r_a35884ec8b0408c606f24ef4b54bf0b4d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a35884ec8b0408c606f24ef4b54bf0b4d">PNANOVDB_MINOR_VERSION_NUMBER</a>&#160;&#160;&#160;9</td></tr>
-<tr class="memitem:a20a63040a4744e45a0e42ac4c32e1ecb" id="r_a20a63040a4744e45a0e42ac4c32e1ecb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a20a63040a4744e45a0e42ac4c32e1ecb">PNANOVDB_PATCH_VERSION_NUMBER</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memitem:a20a63040a4744e45a0e42ac4c32e1ecb" id="r_a20a63040a4744e45a0e42ac4c32e1ecb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a20a63040a4744e45a0e42ac4c32e1ecb">PNANOVDB_PATCH_VERSION_NUMBER</a>&#160;&#160;&#160;2</td></tr>
 <tr class="memitem:a883de3dbd948dfe69aa311092bce0540" id="r_a883de3dbd948dfe69aa311092bce0540"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a883de3dbd948dfe69aa311092bce0540">PNANOVDB_GRID_TYPE_UNKNOWN</a>&#160;&#160;&#160;0</td></tr>
 <tr class="memitem:a11a1c7341267b70f6098543a3eb05d70" id="r_a11a1c7341267b70f6098543a3eb05d70"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a11a1c7341267b70f6098543a3eb05d70">PNANOVDB_GRID_TYPE_FLOAT</a>&#160;&#160;&#160;1</td></tr>
 <tr class="memitem:a1e0761de729ad04dccaa915e002627aa" id="r_a1e0761de729ad04dccaa915e002627aa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1e0761de729ad04dccaa915e002627aa">PNANOVDB_GRID_TYPE_DOUBLE</a>&#160;&#160;&#160;2</td></tr>
@@ -182,7 +191,8 @@ Macros</h2></td></tr>
 <tr class="memitem:ae0555cf3e984a2c04cb3fd86d1a86151" id="r_ae0555cf3e984a2c04cb3fd86d1a86151"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae0555cf3e984a2c04cb3fd86d1a86151">PNANOVDB_GRID_CLASS_VOXEL_VOLUME</a>&#160;&#160;&#160;7</td></tr>
 <tr class="memitem:a2cbc497a20283aaca9cca107faf4a72c" id="r_a2cbc497a20283aaca9cca107faf4a72c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2cbc497a20283aaca9cca107faf4a72c">PNANOVDB_GRID_CLASS_INDEX_GRID</a>&#160;&#160;&#160;8</td></tr>
 <tr class="memitem:a02cdbffcc865edada5c7e8f7bc8449cc" id="r_a02cdbffcc865edada5c7e8f7bc8449cc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a02cdbffcc865edada5c7e8f7bc8449cc">PNANOVDB_GRID_CLASS_TENSOR_GRID</a>&#160;&#160;&#160;9</td></tr>
-<tr class="memitem:ada3c1f596ab29ad672e87174d0bd5caf" id="r_ada3c1f596ab29ad672e87174d0bd5caf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ada3c1f596ab29ad672e87174d0bd5caf">PNANOVDB_GRID_CLASS_END</a>&#160;&#160;&#160;10</td></tr>
+<tr class="memitem:a9066d14235757e237a90c4d6ed4cd75d" id="r_a9066d14235757e237a90c4d6ed4cd75d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9066d14235757e237a90c4d6ed4cd75d">PNANOVDB_GRID_CLASS_VOXEL_BVH</a>&#160;&#160;&#160;10</td></tr>
+<tr class="memitem:ada3c1f596ab29ad672e87174d0bd5caf" id="r_ada3c1f596ab29ad672e87174d0bd5caf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ada3c1f596ab29ad672e87174d0bd5caf">PNANOVDB_GRID_CLASS_END</a>&#160;&#160;&#160;11</td></tr>
 <tr class="memitem:abcb902aaeb5f2b33aa2ca13c2bcfdc6a" id="r_abcb902aaeb5f2b33aa2ca13c2bcfdc6a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abcb902aaeb5f2b33aa2ca13c2bcfdc6a">PNANOVDB_GRID_FLAGS_HAS_LONG_GRID_NAME</a>&#160;&#160;&#160;(1 &lt;&lt; 0)</td></tr>
 <tr class="memitem:ad64159b6feafe1f4b63a8f99f338eea5" id="r_ad64159b6feafe1f4b63a8f99f338eea5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad64159b6feafe1f4b63a8f99f338eea5">PNANOVDB_GRID_FLAGS_HAS_BBOX</a>&#160;&#160;&#160;(1 &lt;&lt; 1)</td></tr>
 <tr class="memitem:a5b97f3a8812f588e2e79f9477e71abbc" id="r_a5b97f3a8812f588e2e79f9477e71abbc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5b97f3a8812f588e2e79f9477e71abbc">PNANOVDB_GRID_FLAGS_HAS_MIN_MAX</a>&#160;&#160;&#160;(1 &lt;&lt; 2)</td></tr>
@@ -239,7 +249,20 @@ Macros</h2></td></tr>
 <tr class="memitem:ad420657d2c4aa512c08ce1b231a85fa2" id="r_ad420657d2c4aa512c08ce1b231a85fa2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad420657d2c4aa512c08ce1b231a85fa2">PNANOVDB_GRIDBLINDMETADATA_SEMANTIC_WORLD_COORDS</a>&#160;&#160;&#160;7</td></tr>
 <tr class="memitem:aca177591695d86ce6b5ed90e325d8baf" id="r_aca177591695d86ce6b5ed90e325d8baf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aca177591695d86ce6b5ed90e325d8baf">PNANOVDB_GRIDBLINDMETADATA_SEMANTIC_GRID_COORDS</a>&#160;&#160;&#160;8</td></tr>
 <tr class="memitem:a25fd31aff27fa464772121962c9b8cf0" id="r_a25fd31aff27fa464772121962c9b8cf0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a25fd31aff27fa464772121962c9b8cf0">PNANOVDB_GRIDBLINDMETADATA_SEMANTIC_VOXEL_COORDS</a>&#160;&#160;&#160;9</td></tr>
-<tr class="memitem:a604d3fc1b9906bd26717660d3b104278" id="r_a604d3fc1b9906bd26717660d3b104278"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a604d3fc1b9906bd26717660d3b104278">PNANOVDB_GRIDBLINDMETADATA_SEMANTIC_END</a>&#160;&#160;&#160;10</td></tr>
+<tr class="memitem:a69568e9820eb01a1b488bf1053e363ae" id="r_a69568e9820eb01a1b488bf1053e363ae"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a69568e9820eb01a1b488bf1053e363ae">PNANOVDB_GRIDBLINDMETADATA_SEMANTIC_LEVEL_SET</a>&#160;&#160;&#160;10</td></tr>
+<tr class="memitem:afc6f9edcc4cb8c4b5b73a303774f327c" id="r_afc6f9edcc4cb8c4b5b73a303774f327c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afc6f9edcc4cb8c4b5b73a303774f327c">PNANOVDB_GRIDBLINDMETADATA_SEMANTIC_FOG_VOLUME</a>&#160;&#160;&#160;11</td></tr>
+<tr class="memitem:ab3e64ca6b3264ddcfea8604e3934b1b4" id="r_ab3e64ca6b3264ddcfea8604e3934b1b4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab3e64ca6b3264ddcfea8604e3934b1b4">PNANOVDB_GRIDBLINDMETADATA_SEMANTIC_STAGGERED</a>&#160;&#160;&#160;12</td></tr>
+<tr class="memitem:a921c961541dda670c344c0ffd03ac59d" id="r_a921c961541dda670c344c0ffd03ac59d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a921c961541dda670c344c0ffd03ac59d">PNANOVDB_GRIDBLINDMETADATA_SEMANTIC_POINT_OPACITY</a>&#160;&#160;&#160;13</td></tr>
+<tr class="memitem:adcbf9a42623b860cc474981d98b2178f" id="r_adcbf9a42623b860cc474981d98b2178f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adcbf9a42623b860cc474981d98b2178f">PNANOVDB_GRIDBLINDMETADATA_SEMANTIC_POINT_QUAT</a>&#160;&#160;&#160;14</td></tr>
+<tr class="memitem:ac7e45ddcc30424e35e2cac7a16a66a4e" id="r_ac7e45ddcc30424e35e2cac7a16a66a4e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac7e45ddcc30424e35e2cac7a16a66a4e">PNANOVDB_GRIDBLINDMETADATA_SEMANTIC_POINT_SCALE</a>&#160;&#160;&#160;15</td></tr>
+<tr class="memitem:ada4583d7dcd80648f48339e7f743660a" id="r_ada4583d7dcd80648f48339e7f743660a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ada4583d7dcd80648f48339e7f743660a">PNANOVDB_GRIDBLINDMETADATA_SEMANTIC_POINT_SH0</a>&#160;&#160;&#160;16</td></tr>
+<tr class="memitem:ad08943b3cc13e1346a16ebc726aec4d4" id="r_ad08943b3cc13e1346a16ebc726aec4d4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad08943b3cc13e1346a16ebc726aec4d4">PNANOVDB_GRIDBLINDMETADATA_SEMANTIC_POINT_SHN</a>&#160;&#160;&#160;17</td></tr>
+<tr class="memitem:aca1854533159c4df0047a7dbd5335c9b" id="r_aca1854533159c4df0047a7dbd5335c9b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aca1854533159c4df0047a7dbd5335c9b">PNANOVDB_GRIDBLINDMETADATA_SEMANTIC_LINE_ID</a>&#160;&#160;&#160;18</td></tr>
+<tr class="memitem:a6607bd626298557cadf3853c1d47db26" id="r_a6607bd626298557cadf3853c1d47db26"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6607bd626298557cadf3853c1d47db26">PNANOVDB_GRIDBLINDMETADATA_SEMANTIC_TRIANGLE_ID</a>&#160;&#160;&#160;19</td></tr>
+<tr class="memitem:adbeb4179deaf412c0b036d2c6e2e0663" id="r_adbeb4179deaf412c0b036d2c6e2e0663"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adbeb4179deaf412c0b036d2c6e2e0663">PNANOVDB_GRIDBLINDMETADATA_SEMANTIC_GAUSSIAN_ID</a>&#160;&#160;&#160;20</td></tr>
+<tr class="memitem:a168f885c2ba62e8ef0db35d4747bc02a" id="r_a168f885c2ba62e8ef0db35d4747bc02a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a168f885c2ba62e8ef0db35d4747bc02a">PNANOVDB_GRIDBLINDMETADATA_SEMANTIC_RANGE</a>&#160;&#160;&#160;21</td></tr>
+<tr class="memitem:a96ba045ea6b9e99b0efb75e00dd79196" id="r_a96ba045ea6b9e99b0efb75e00dd79196"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a96ba045ea6b9e99b0efb75e00dd79196">PNANOVDB_GRIDBLINDMETADATA_SEMANTIC_VOXEL_BVH</a>&#160;&#160;&#160;22</td></tr>
+<tr class="memitem:a604d3fc1b9906bd26717660d3b104278" id="r_a604d3fc1b9906bd26717660d3b104278"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a604d3fc1b9906bd26717660d3b104278">PNANOVDB_GRIDBLINDMETADATA_SEMANTIC_END</a>&#160;&#160;&#160;23</td></tr>
 <tr class="memitem:aecfc671333d86087d11ba5cba50cf819" id="r_aecfc671333d86087d11ba5cba50cf819"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aecfc671333d86087d11ba5cba50cf819">PNANOVDB_GRIDBLINDMETADATA_SIZE</a>&#160;&#160;&#160;288</td></tr>
 <tr class="memitem:a9519c684ae6096fb7ac0e763c3ba07ab" id="r_a9519c684ae6096fb7ac0e763c3ba07ab"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9519c684ae6096fb7ac0e763c3ba07ab">PNANOVDB_GRIDBLINDMETADATA_OFF_DATA_OFFSET</a>&#160;&#160;&#160;0</td></tr>
 <tr class="memitem:a088c2813525e1bb291e1990476ff4e92" id="r_a088c2813525e1bb291e1990476ff4e92"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a088c2813525e1bb291e1990476ff4e92">PNANOVDB_GRIDBLINDMETADATA_OFF_VALUE_COUNT</a>&#160;&#160;&#160;8</td></tr>
@@ -598,7 +621,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define PNANOVDB_GRID_CLASS_END&#160;&#160;&#160;10</td>
+          <td class="memname">#define PNANOVDB_GRID_CLASS_END&#160;&#160;&#160;11</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -725,6 +748,20 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define PNANOVDB_GRID_CLASS_UNKNOWN&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9066d14235757e237a90c4d6ed4cd75d" name="a9066d14235757e237a90c4d6ed4cd75d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9066d14235757e237a90c4d6ed4cd75d">&#9670;&#160;</a></span>PNANOVDB_GRID_CLASS_VOXEL_BVH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PNANOVDB_GRID_CLASS_VOXEL_BVH&#160;&#160;&#160;10</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1676,7 +1713,35 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define PNANOVDB_GRIDBLINDMETADATA_SEMANTIC_END&#160;&#160;&#160;10</td>
+          <td class="memname">#define PNANOVDB_GRIDBLINDMETADATA_SEMANTIC_END&#160;&#160;&#160;23</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afc6f9edcc4cb8c4b5b73a303774f327c" name="afc6f9edcc4cb8c4b5b73a303774f327c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc6f9edcc4cb8c4b5b73a303774f327c">&#9670;&#160;</a></span>PNANOVDB_GRIDBLINDMETADATA_SEMANTIC_FOG_VOLUME</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PNANOVDB_GRIDBLINDMETADATA_SEMANTIC_FOG_VOLUME&#160;&#160;&#160;11</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adbeb4179deaf412c0b036d2c6e2e0663" name="adbeb4179deaf412c0b036d2c6e2e0663"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbeb4179deaf412c0b036d2c6e2e0663">&#9670;&#160;</a></span>PNANOVDB_GRIDBLINDMETADATA_SEMANTIC_GAUSSIAN_ID</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PNANOVDB_GRIDBLINDMETADATA_SEMANTIC_GAUSSIAN_ID&#160;&#160;&#160;20</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1691,6 +1756,34 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define PNANOVDB_GRIDBLINDMETADATA_SEMANTIC_GRID_COORDS&#160;&#160;&#160;8</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a69568e9820eb01a1b488bf1053e363ae" name="a69568e9820eb01a1b488bf1053e363ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69568e9820eb01a1b488bf1053e363ae">&#9670;&#160;</a></span>PNANOVDB_GRIDBLINDMETADATA_SEMANTIC_LEVEL_SET</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PNANOVDB_GRIDBLINDMETADATA_SEMANTIC_LEVEL_SET&#160;&#160;&#160;10</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aca1854533159c4df0047a7dbd5335c9b" name="aca1854533159c4df0047a7dbd5335c9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca1854533159c4df0047a7dbd5335c9b">&#9670;&#160;</a></span>PNANOVDB_GRIDBLINDMETADATA_SEMANTIC_LINE_ID</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PNANOVDB_GRIDBLINDMETADATA_SEMANTIC_LINE_ID&#160;&#160;&#160;18</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1739,6 +1832,20 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a921c961541dda670c344c0ffd03ac59d" name="a921c961541dda670c344c0ffd03ac59d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a921c961541dda670c344c0ffd03ac59d">&#9670;&#160;</a></span>PNANOVDB_GRIDBLINDMETADATA_SEMANTIC_POINT_OPACITY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PNANOVDB_GRIDBLINDMETADATA_SEMANTIC_POINT_OPACITY&#160;&#160;&#160;13</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a565a4362aa591c70a25a108a0a6c0cef" name="a565a4362aa591c70a25a108a0a6c0cef"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a565a4362aa591c70a25a108a0a6c0cef">&#9670;&#160;</a></span>PNANOVDB_GRIDBLINDMETADATA_SEMANTIC_POINT_POSITION</h2>
 
@@ -1747,6 +1854,20 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define PNANOVDB_GRIDBLINDMETADATA_SEMANTIC_POINT_POSITION&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adcbf9a42623b860cc474981d98b2178f" name="adcbf9a42623b860cc474981d98b2178f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adcbf9a42623b860cc474981d98b2178f">&#9670;&#160;</a></span>PNANOVDB_GRIDBLINDMETADATA_SEMANTIC_POINT_QUAT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PNANOVDB_GRIDBLINDMETADATA_SEMANTIC_POINT_QUAT&#160;&#160;&#160;14</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1767,6 +1888,48 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="ac7e45ddcc30424e35e2cac7a16a66a4e" name="ac7e45ddcc30424e35e2cac7a16a66a4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7e45ddcc30424e35e2cac7a16a66a4e">&#9670;&#160;</a></span>PNANOVDB_GRIDBLINDMETADATA_SEMANTIC_POINT_SCALE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PNANOVDB_GRIDBLINDMETADATA_SEMANTIC_POINT_SCALE&#160;&#160;&#160;15</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ada4583d7dcd80648f48339e7f743660a" name="ada4583d7dcd80648f48339e7f743660a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada4583d7dcd80648f48339e7f743660a">&#9670;&#160;</a></span>PNANOVDB_GRIDBLINDMETADATA_SEMANTIC_POINT_SH0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PNANOVDB_GRIDBLINDMETADATA_SEMANTIC_POINT_SH0&#160;&#160;&#160;16</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad08943b3cc13e1346a16ebc726aec4d4" name="ad08943b3cc13e1346a16ebc726aec4d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad08943b3cc13e1346a16ebc726aec4d4">&#9670;&#160;</a></span>PNANOVDB_GRIDBLINDMETADATA_SEMANTIC_POINT_SHN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PNANOVDB_GRIDBLINDMETADATA_SEMANTIC_POINT_SHN&#160;&#160;&#160;17</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a605ac238b7ebd0ef68c2610f6d657654" name="a605ac238b7ebd0ef68c2610f6d657654"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a605ac238b7ebd0ef68c2610f6d657654">&#9670;&#160;</a></span>PNANOVDB_GRIDBLINDMETADATA_SEMANTIC_POINT_VELOCITY</h2>
 
@@ -1781,6 +1944,48 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a168f885c2ba62e8ef0db35d4747bc02a" name="a168f885c2ba62e8ef0db35d4747bc02a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a168f885c2ba62e8ef0db35d4747bc02a">&#9670;&#160;</a></span>PNANOVDB_GRIDBLINDMETADATA_SEMANTIC_RANGE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PNANOVDB_GRIDBLINDMETADATA_SEMANTIC_RANGE&#160;&#160;&#160;21</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab3e64ca6b3264ddcfea8604e3934b1b4" name="ab3e64ca6b3264ddcfea8604e3934b1b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3e64ca6b3264ddcfea8604e3934b1b4">&#9670;&#160;</a></span>PNANOVDB_GRIDBLINDMETADATA_SEMANTIC_STAGGERED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PNANOVDB_GRIDBLINDMETADATA_SEMANTIC_STAGGERED&#160;&#160;&#160;12</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6607bd626298557cadf3853c1d47db26" name="a6607bd626298557cadf3853c1d47db26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6607bd626298557cadf3853c1d47db26">&#9670;&#160;</a></span>PNANOVDB_GRIDBLINDMETADATA_SEMANTIC_TRIANGLE_ID</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PNANOVDB_GRIDBLINDMETADATA_SEMANTIC_TRIANGLE_ID&#160;&#160;&#160;19</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a776f6f7822490b37988dd8ae4b138c11" name="a776f6f7822490b37988dd8ae4b138c11"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a776f6f7822490b37988dd8ae4b138c11">&#9670;&#160;</a></span>PNANOVDB_GRIDBLINDMETADATA_SEMANTIC_UNKNOWN</h2>
 
@@ -1789,6 +1994,20 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define PNANOVDB_GRIDBLINDMETADATA_SEMANTIC_UNKNOWN&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a96ba045ea6b9e99b0efb75e00dd79196" name="a96ba045ea6b9e99b0efb75e00dd79196"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96ba045ea6b9e99b0efb75e00dd79196">&#9670;&#160;</a></span>PNANOVDB_GRIDBLINDMETADATA_SEMANTIC_VOXEL_BVH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PNANOVDB_GRIDBLINDMETADATA_SEMANTIC_VOXEL_BVH&#160;&#160;&#160;22</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2320,7 +2539,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define PNANOVDB_PATCH_VERSION_NUMBER&#160;&#160;&#160;0</td>
+          <td class="memname">#define PNANOVDB_PATCH_VERSION_NUMBER&#160;&#160;&#160;2</td>
         </tr>
       </table>
 </div><div class="memdoc">

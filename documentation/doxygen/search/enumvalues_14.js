@@ -34,6 +34,7 @@ var searchData=
   ['voxel16_31',['Voxel16',['../namespacenanovdb.html#a141c0fdf5a91c32310d552d4c357699bacf9278b5e5db74c7c099e8694a2476c4',1,'nanovdb']]],
   ['voxel32_32',['Voxel32',['../namespacenanovdb.html#a141c0fdf5a91c32310d552d4c357699ba0522330b37aac86ef9303c0686b543d4',1,'nanovdb']]],
   ['voxel8_33',['Voxel8',['../namespacenanovdb.html#a141c0fdf5a91c32310d552d4c357699ba1784e0952706051e3000cc167eec72a5',1,'nanovdb']]],
-  ['voxelcoords_34',['VoxelCoords',['../namespacenanovdb.html#ad302dde29b8cf276217e7db12f56e1eaa7572a22ae44e59c3d4f906392ccb0081',1,'nanovdb']]],
-  ['voxelvolume_35',['VoxelVolume',['../namespacenanovdb.html#a4b4b8c3c2fb135839b2d1b020cc06538a72123f854e9cd15456c7bec1065d6fb2',1,'nanovdb']]]
+  ['voxelbvh_34',['VoxelBVH',['../namespacenanovdb.html#a4b4b8c3c2fb135839b2d1b020cc06538ac1b70572c5bdf5303444ea61fd9895a7',1,'nanovdb::VoxelBVH'],['../namespacenanovdb.html#ad302dde29b8cf276217e7db12f56e1eaac1b70572c5bdf5303444ea61fd9895a7',1,'nanovdb::VoxelBVH']]],
+  ['voxelcoords_35',['VoxelCoords',['../namespacenanovdb.html#ad302dde29b8cf276217e7db12f56e1eaa7572a22ae44e59c3d4f906392ccb0081',1,'nanovdb']]],
+  ['voxelvolume_36',['VoxelVolume',['../namespacenanovdb.html#a4b4b8c3c2fb135839b2d1b020cc06538a72123f854e9cd15456c7bec1065d6fb2',1,'nanovdb']]]
 ];

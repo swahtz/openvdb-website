@@ -17,6 +17,15 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -129,7 +138,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:abfe590279683c35d7ed596a1cda01bab" id="r_abfe590279683c35d7ed596a1cda01bab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="nanovdb_2nanovdb_2util_2Util_8h.html#a551e5ea2539324048f4b47c00ab67d55">__hostdev__</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abfe590279683c35d7ed596a1cda01bab">ReadAccessor</a> (const <a class="el" href="classnanovdb_1_1Tree.html">TreeT</a> &amp;tree)</td></tr>
 <tr class="memdesc:abfe590279683c35d7ed596a1cda01bab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor from a tree.  <br /></td></tr>
 <tr class="memitem:ade6b760de9ce445af32c455fc41cdb8b" id="r_ade6b760de9ce445af32c455fc41cdb8b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="nanovdb_2nanovdb_2util_2Util_8h.html#a551e5ea2539324048f4b47c00ab67d55">__hostdev__</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ade6b760de9ce445af32c455fc41cdb8b">clear</a> ()</td></tr>
-<tr class="memdesc:ade6b760de9ce445af32c455fc41cdb8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset this access to its initial state, i.e. with an empty cache @node Noop since this template specialization has no cache.  <br /></td></tr>
+<tr class="memdesc:ade6b760de9ce445af32c455fc41cdb8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset this access to its initial state, i.e. with an empty cache.  <br /></td></tr>
 <tr class="memitem:afcf8466c416c574a78f1861e69c020c5" id="r_afcf8466c416c574a78f1861e69c020c5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="nanovdb_2nanovdb_2util_2Util_8h.html#a551e5ea2539324048f4b47c00ab67d55">__hostdev__</a> const <a class="el" href="classnanovdb_1_1RootNode.html">RootT</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afcf8466c416c574a78f1861e69c020c5">root</a> () const</td></tr>
 <tr class="memitem:ac815eea7eac403fc6a39d329db9aa03b" id="r_ac815eea7eac403fc6a39d329db9aa03b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac815eea7eac403fc6a39d329db9aa03b">ReadAccessor</a> (const <a class="el" href="classnanovdb_1_1ReadAccessor.html">ReadAccessor</a> &amp;)=default</td></tr>
 <tr class="memdesc:ac815eea7eac403fc6a39d329db9aa03b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defaults constructors.  <br /></td></tr>
@@ -159,6 +168,8 @@ Friends</h2></td></tr>
 <tr class="memitem:aff4f5e7209d5ad66394519639bd989f8" id="r_aff4f5e7209d5ad66394519639bd989f8"><td class="memTemplParams" colspan="2">template&lt;typename&gt; </td></tr>
 <tr class="memitem:aff4f5e7209d5ad66394519639bd989f8 template"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aff4f5e7209d5ad66394519639bd989f8">RootNode</a></td></tr>
 <tr class="memdesc:aff4f5e7209d5ad66394519639bd989f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allow nodes to insert themselves into the cache.  <br /></td></tr>
+<tr class="memitem:a5fc7cbf1929731e78733e1b476142b8a" id="r_a5fc7cbf1929731e78733e1b476142b8a"><td class="memTemplParams" colspan="2">template&lt;typename, uint32_t&gt; </td></tr>
+<tr class="memitem:a5fc7cbf1929731e78733e1b476142b8a template"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5fc7cbf1929731e78733e1b476142b8a">InternalNode</a></td></tr>
 <tr class="memitem:ac5b8d8876f050bc8f682fb105bdcebf3" id="r_ac5b8d8876f050bc8f682fb105bdcebf3"><td class="memTemplParams" colspan="2">template&lt;typename, typename, template&lt; uint32_t &gt; class, uint32_t&gt; </td></tr>
 <tr class="memitem:ac5b8d8876f050bc8f682fb105bdcebf3 template"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac5b8d8876f050bc8f682fb105bdcebf3">LeafNode</a></td></tr>
 </table>
@@ -387,7 +398,8 @@ template&lt;typename BuildT&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Reset this access to its initial state, i.e. with an empty cache @node Noop since this template specialization has no cache. </p>
+<p>Reset this access to its initial state, i.e. with an empty cache. </p>
+<dl class="section note"><dt>Note</dt><dd>Noop since this template specialization has no cache </dd></dl>
 
 </div>
 </div>
@@ -783,6 +795,32 @@ template&lt;typename OpT, typename... ArgsT&gt; </div>
 </div>
 </div>
 <a name="doc-related-members" id="doc-related-members"></a><h2 id="header-doc-related-members" class="groupheader">Friends And Related Symbol Documentation</h2>
+<a id="a5fc7cbf1929731e78733e1b476142b8a" name="a5fc7cbf1929731e78733e1b476142b8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5fc7cbf1929731e78733e1b476142b8a">&#9670;&#160;</a></span>InternalNode</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename BuildT&gt; </div>
+<div class="memtemplate">
+template&lt;typename, uint32_t&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="classnanovdb_1_1InternalNode.html">InternalNode</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel friend">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ac5b8d8876f050bc8f682fb105bdcebf3" name="ac5b8d8876f050bc8f682fb105bdcebf3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac5b8d8876f050bc8f682fb105bdcebf3">&#9670;&#160;</a></span>LeafNode</h2>
 

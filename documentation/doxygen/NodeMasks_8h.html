@@ -17,6 +17,15 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -111,6 +120,7 @@ $(function(){initNavTree('NodeMasks_8h.html','',''); });
 <div class="textblock"><code>#include &lt;algorithm&gt;</code><br />
 <code>#include &lt;cstring&gt;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;openvdb/version.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="Platform_8h_source.html">openvdb/Platform.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="openvdb_2Types_8h_source.html">openvdb/Types.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="Assert_8h_source.html">openvdb/util/Assert.h</a>&gt;</code><br />

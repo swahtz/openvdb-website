@@ -17,6 +17,15 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -131,6 +140,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab9c5d6036520c95c042b774f979bb171" id="r_ab9c5d6036520c95c042b774f979bb171"><td class="memItemLeft" align="right" valign="top"><a class="el" href="nanovdb_2nanovdb_2util_2Util_8h.html#a551e5ea2539324048f4b47c00ab67d55">__hostdev__</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab9c5d6036520c95c042b774f979bb171">isPointIndex</a> () const</td></tr>
 <tr class="memitem:abf11b7cbb5ab9b5ddd0fc573dd72ec3d" id="r_abf11b7cbb5ab9b5ddd0fc573dd72ec3d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="nanovdb_2nanovdb_2util_2Util_8h.html#a551e5ea2539324048f4b47c00ab67d55">__hostdev__</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abf11b7cbb5ab9b5ddd0fc573dd72ec3d">isGridIndex</a> () const</td></tr>
 <tr class="memitem:ad3bf5d3f85decaf0980340d5711c25a9" id="r_ad3bf5d3f85decaf0980340d5711c25a9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="nanovdb_2nanovdb_2util_2Util_8h.html#a551e5ea2539324048f4b47c00ab67d55">__hostdev__</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad3bf5d3f85decaf0980340d5711c25a9">isPointData</a> () const</td></tr>
+<tr class="memitem:a7ff07fe4686d5405cd9d6e636a3602a9" id="r_a7ff07fe4686d5405cd9d6e636a3602a9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="nanovdb_2nanovdb_2util_2Util_8h.html#a551e5ea2539324048f4b47c00ab67d55">__hostdev__</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7ff07fe4686d5405cd9d6e636a3602a9">isVoxelBVH</a> () const</td></tr>
 <tr class="memitem:aa4fb204adb703fd6c4f33562d48cfc66" id="r_aa4fb204adb703fd6c4f33562d48cfc66"><td class="memItemLeft" align="right" valign="top"><a class="el" href="nanovdb_2nanovdb_2util_2Util_8h.html#a551e5ea2539324048f4b47c00ab67d55">__hostdev__</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa4fb204adb703fd6c4f33562d48cfc66">isMask</a> () const</td></tr>
 <tr class="memitem:a6dbe3fa00cd0ef1e9bab58d88afe19de" id="r_a6dbe3fa00cd0ef1e9bab58d88afe19de"><td class="memItemLeft" align="right" valign="top"><a class="el" href="nanovdb_2nanovdb_2util_2Util_8h.html#a551e5ea2539324048f4b47c00ab67d55">__hostdev__</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6dbe3fa00cd0ef1e9bab58d88afe19de">isUnknown</a> () const</td></tr>
 <tr class="memitem:a2802cb3987b79fac934f6327a8d9ec9b" id="r_a2802cb3987b79fac934f6327a8d9ec9b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="nanovdb_2nanovdb_2util_2Util_8h.html#a551e5ea2539324048f4b47c00ab67d55">__hostdev__</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2802cb3987b79fac934f6327a8d9ec9b">hasMinMax</a> () const</td></tr>
@@ -856,6 +866,31 @@ template&lt;typename T&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="nanovdb_2nanovdb_2util_2Util_8h.html#a551e5ea2539324048f4b47c00ab67d55">__hostdev__</a> bool isValid </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7ff07fe4686d5405cd9d6e636a3602a9" name="a7ff07fe4686d5405cd9d6e636a3602a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ff07fe4686d5405cd9d6e636a3602a9">&#9670;&#160;</a></span>isVoxelBVH()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="nanovdb_2nanovdb_2util_2Util_8h.html#a551e5ea2539324048f4b47c00ab67d55">__hostdev__</a> bool isVoxelBVH </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const</td>

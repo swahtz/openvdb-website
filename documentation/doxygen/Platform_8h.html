@@ -17,6 +17,15 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -119,7 +128,7 @@ Macros</h2></td></tr>
 <tr class="memitem:ac3004d334cb9a9ac58f68c343220e571" id="r_ac3004d334cb9a9ac58f68c343220e571"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac3004d334cb9a9ac58f68c343220e571">OPENVDB_HAS_CXX11</a>&#160;&#160;&#160;1</td></tr>
 <tr class="memdesc:ac3004d334cb9a9ac58f68c343220e571"><td class="mdescLeft">&#160;</td><td class="mdescRight">OpenVDB now requires C++17.  <br /></td></tr>
 <tr class="memitem:a75f69f6aab6d38a8269686d79b268b29" id="r_a75f69f6aab6d38a8269686d79b268b29"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a75f69f6aab6d38a8269686d79b268b29">OPENVDB_UBSAN_SUPPRESS</a>(X)</td></tr>
-<tr class="memdesc:a75f69f6aab6d38a8269686d79b268b29"><td class="mdescLeft">&#160;</td><td class="mdescRight">SIMD Intrinsic Headers.  <br /></td></tr>
+<tr class="memdesc:a75f69f6aab6d38a8269686d79b268b29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Windows defines.  <br /></td></tr>
 <tr class="memitem:ac156b02c89b6fcf62cd867da6d881475" id="r_ac156b02c89b6fcf62cd867da6d881475"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac156b02c89b6fcf62cd867da6d881475">OPENVDB_LIKELY</a>(x)</td></tr>
 <tr class="memitem:aa7a931484d0bf4c15d597386de0ec0f6" id="r_aa7a931484d0bf4c15d597386de0ec0f6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa7a931484d0bf4c15d597386de0ec0f6">OPENVDB_UNLIKELY</a>(x)</td></tr>
 <tr class="memitem:ac7c57090b8fcfc0467b3ee535ec330fa" id="r_ac7c57090b8fcfc0467b3ee535ec330fa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac7c57090b8fcfc0467b3ee535ec330fa">OPENVDB_ASSUME</a>(...)</td></tr>
@@ -435,9 +444,9 @@ Macros</h2></td></tr>
 <div class="line">    myDeprecatedFunction();</div>
 <div class="line">    <a class="code hl_define" href="#a0c70c8f354f37e782bf75458027eaeca">OPENVDB_NO_DEPRECATION_WARNING_END</a></div>
 <div class="line">}</div>
-<div class="ttc" id="aPlatform_8h_html_a0c70c8f354f37e782bf75458027eaeca"><div class="ttname"><a href="#a0c70c8f354f37e782bf75458027eaeca">OPENVDB_NO_DEPRECATION_WARNING_END</a></div><div class="ttdeci">#define OPENVDB_NO_DEPRECATION_WARNING_END</div><div class="ttdef"><b>Definition</b> Platform.h:218</div></div>
-<div class="ttc" id="aPlatform_8h_html_a6cc94924e47acd6586e2f5e6c3330768"><div class="ttname"><a href="#a6cc94924e47acd6586e2f5e6c3330768">OPENVDB_NO_DEPRECATION_WARNING_BEGIN</a></div><div class="ttdeci">#define OPENVDB_NO_DEPRECATION_WARNING_BEGIN</div><div class="ttdoc">Bracket code with OPENVDB_NO_DEPRECATION_WARNING_BEGIN/_END, to inhibit warnings about deprecated cod...</div><div class="ttdef"><b>Definition</b> Platform.h:217</div></div>
-<div class="ttc" id="aPlatform_8h_html_acad6915d4aac81665b540218e8b1e06c"><div class="ttname"><a href="#acad6915d4aac81665b540218e8b1e06c">OPENVDB_DEPRECATED</a></div><div class="ttdeci">#define OPENVDB_DEPRECATED</div><div class="ttdef"><b>Definition</b> Platform.h:170</div></div>
+<div class="ttc" id="aPlatform_8h_html_a0c70c8f354f37e782bf75458027eaeca"><div class="ttname"><a href="#a0c70c8f354f37e782bf75458027eaeca">OPENVDB_NO_DEPRECATION_WARNING_END</a></div><div class="ttdeci">#define OPENVDB_NO_DEPRECATION_WARNING_END</div><div class="ttdef"><b>Definition</b> Platform.h:205</div></div>
+<div class="ttc" id="aPlatform_8h_html_a6cc94924e47acd6586e2f5e6c3330768"><div class="ttname"><a href="#a6cc94924e47acd6586e2f5e6c3330768">OPENVDB_NO_DEPRECATION_WARNING_BEGIN</a></div><div class="ttdeci">#define OPENVDB_NO_DEPRECATION_WARNING_BEGIN</div><div class="ttdoc">Bracket code with OPENVDB_NO_DEPRECATION_WARNING_BEGIN/_END, to inhibit warnings about deprecated cod...</div><div class="ttdef"><b>Definition</b> Platform.h:204</div></div>
+<div class="ttc" id="aPlatform_8h_html_acad6915d4aac81665b540218e8b1e06c"><div class="ttname"><a href="#acad6915d4aac81665b540218e8b1e06c">OPENVDB_DEPRECATED</a></div><div class="ttdeci">#define OPENVDB_DEPRECATED</div><div class="ttdef"><b>Definition</b> Platform.h:157</div></div>
 </div><!-- fragment --> 
 </div>
 </div>
@@ -473,8 +482,8 @@ Macros</h2></td></tr>
 <div class="line"><a class="code hl_define" href="#a4f7375e7791cade4ae486a8ebb68056f">OPENVDB_NO_TYPE_CONVERSION_WARNING_BEGIN</a></div>
 <div class="line"><span class="keywordtype">int</span> valueAsInt = value;</div>
 <div class="line"><a class="code hl_define" href="#ac13c11880cf8b8dd311a72e5a05b295d">OPENVDB_NO_TYPE_CONVERSION_WARNING_END</a></div>
-<div class="ttc" id="aPlatform_8h_html_a4f7375e7791cade4ae486a8ebb68056f"><div class="ttname"><a href="#a4f7375e7791cade4ae486a8ebb68056f">OPENVDB_NO_TYPE_CONVERSION_WARNING_BEGIN</a></div><div class="ttdeci">#define OPENVDB_NO_TYPE_CONVERSION_WARNING_BEGIN</div><div class="ttdoc">Bracket code with OPENVDB_NO_TYPE_CONVERSION_WARNING_BEGIN/_END, to inhibit warnings about type conve...</div><div class="ttdef"><b>Definition</b> Platform.h:244</div></div>
-<div class="ttc" id="aPlatform_8h_html_ac13c11880cf8b8dd311a72e5a05b295d"><div class="ttname"><a href="#ac13c11880cf8b8dd311a72e5a05b295d">OPENVDB_NO_TYPE_CONVERSION_WARNING_END</a></div><div class="ttdeci">#define OPENVDB_NO_TYPE_CONVERSION_WARNING_END</div><div class="ttdef"><b>Definition</b> Platform.h:245</div></div>
+<div class="ttc" id="aPlatform_8h_html_a4f7375e7791cade4ae486a8ebb68056f"><div class="ttname"><a href="#a4f7375e7791cade4ae486a8ebb68056f">OPENVDB_NO_TYPE_CONVERSION_WARNING_BEGIN</a></div><div class="ttdeci">#define OPENVDB_NO_TYPE_CONVERSION_WARNING_BEGIN</div><div class="ttdoc">Bracket code with OPENVDB_NO_TYPE_CONVERSION_WARNING_BEGIN/_END, to inhibit warnings about type conve...</div><div class="ttdef"><b>Definition</b> Platform.h:231</div></div>
+<div class="ttc" id="aPlatform_8h_html_ac13c11880cf8b8dd311a72e5a05b295d"><div class="ttname"><a href="#ac13c11880cf8b8dd311a72e5a05b295d">OPENVDB_NO_TYPE_CONVERSION_WARNING_END</a></div><div class="ttdeci">#define OPENVDB_NO_TYPE_CONVERSION_WARNING_END</div><div class="ttdef"><b>Definition</b> Platform.h:232</div></div>
 </div><!-- fragment --> 
 </div>
 </div>
@@ -512,8 +521,8 @@ Macros</h2></td></tr>
 <div class="line">    ...</div>
 <div class="line">    <a class="code hl_define" href="#aa4a2916120921a779c15e6182c8d8118">OPENVDB_NO_UNREACHABLE_CODE_WARNING_END</a></div>
 <div class="line">}</div>
-<div class="ttc" id="aPlatform_8h_html_aa4a2916120921a779c15e6182c8d8118"><div class="ttname"><a href="#aa4a2916120921a779c15e6182c8d8118">OPENVDB_NO_UNREACHABLE_CODE_WARNING_END</a></div><div class="ttdeci">#define OPENVDB_NO_UNREACHABLE_CODE_WARNING_END</div><div class="ttdef"><b>Definition</b> Platform.h:164</div></div>
-<div class="ttc" id="aPlatform_8h_html_ac8dadf7b858eb1987194e570f80bff79"><div class="ttname"><a href="#ac8dadf7b858eb1987194e570f80bff79">OPENVDB_NO_UNREACHABLE_CODE_WARNING_BEGIN</a></div><div class="ttdeci">#define OPENVDB_NO_UNREACHABLE_CODE_WARNING_BEGIN</div><div class="ttdef"><b>Definition</b> Platform.h:163</div></div>
+<div class="ttc" id="aPlatform_8h_html_aa4a2916120921a779c15e6182c8d8118"><div class="ttname"><a href="#aa4a2916120921a779c15e6182c8d8118">OPENVDB_NO_UNREACHABLE_CODE_WARNING_END</a></div><div class="ttdeci">#define OPENVDB_NO_UNREACHABLE_CODE_WARNING_END</div><div class="ttdef"><b>Definition</b> Platform.h:151</div></div>
+<div class="ttc" id="aPlatform_8h_html_ac8dadf7b858eb1987194e570f80bff79"><div class="ttname"><a href="#ac8dadf7b858eb1987194e570f80bff79">OPENVDB_NO_UNREACHABLE_CODE_WARNING_BEGIN</a></div><div class="ttdeci">#define OPENVDB_NO_UNREACHABLE_CODE_WARNING_BEGIN</div><div class="ttdef"><b>Definition</b> Platform.h:150</div></div>
 </div><!-- fragment --><p> In the above, <span class="tt">NodeType::LEVEL == 0</span> is a compile-time constant expression, so for some template instantiations, the line below it is unreachable. </p>
 
 </div>
@@ -758,8 +767,8 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>SIMD Intrinsic Headers. </p>
-<p>Windows defines Macros to suppress undefined behaviour sanitizer warnings. Should be used sparingly, primarily to suppress issues in upstream dependencies. </p>
+<p>Windows defines. </p>
+<p>Macros to suppress undefined behaviour sanitizer warnings. Should be used sparingly, primarily to suppress issues in upstream dependencies. </p>
 
 </div>
 </div>

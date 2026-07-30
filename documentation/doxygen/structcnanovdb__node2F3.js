@@ -1,6 +1,5 @@
 var structcnanovdb__node2F3 =
 [
-    [ "_reserved", "structcnanovdb__node2F3.html#a012dab93689172aaaf4e80422ab7de75", null ],
     [ "mAverage", "structcnanovdb__node2F3.html#a97181a4552f4240ece7960f12ddf7c8e", null ],
     [ "mBBox_max", "structcnanovdb__node2F3.html#a5abbf0d39de519a363053d36c61824fd", null ],
     [ "mBBox_min", "structcnanovdb__node2F3.html#aba9e59125aa66f2496d27901d16e7b8b", null ],

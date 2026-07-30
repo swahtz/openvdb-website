@@ -17,6 +17,15 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -189,7 +198,7 @@ $(function(){initNavTree('Functions_8h_source.html','',''); });
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
 <div class="ttc" id="aCompilerOptions_8h_html"><div class="ttname"><a href="CompilerOptions_8h.html">CompilerOptions.h</a></div><div class="ttdoc">OpenVDB AX Compiler Options.</div></div>
 <div class="ttc" id="aFunctionRegistry_8h_html"><div class="ttname"><a href="FunctionRegistry_8h.html">FunctionRegistry.h</a></div><div class="ttdoc">Contains the global function registration definition which described all available user front end fun...</div></div>
-<div class="ttc" id="aPlatform_8h_html_a4054a06b412a2c4f17ad97328fccd2cd"><div class="ttname"><a href="Platform_8h.html#a4054a06b412a2c4f17ad97328fccd2cd">OPENVDB_AX_API</a></div><div class="ttdeci">#define OPENVDB_AX_API</div><div class="ttdef"><b>Definition</b> Platform.h:312</div></div>
+<div class="ttc" id="aPlatform_8h_html_a4054a06b412a2c4f17ad97328fccd2cd"><div class="ttname"><a href="Platform_8h.html#a4054a06b412a2c4f17ad97328fccd2cd">OPENVDB_AX_API</a></div><div class="ttdeci">#define OPENVDB_AX_API</div><div class="ttdef"><b>Definition</b> Platform.h:299</div></div>
 <div class="ttc" id="aclassopenvdb_1_1v13__0_1_1ax_1_1codegen_1_1FunctionRegistry_html"><div class="ttname"><a href="classopenvdb_1_1v13__0_1_1ax_1_1codegen_1_1FunctionRegistry.html">openvdb::v13_0::ax::codegen::FunctionRegistry</a></div><div class="ttdoc">The function registry which is used for function code generation. Each time a function is visited wit...</div><div class="ttdef"><b>Definition</b> FunctionRegistry.h:42</div></div>
 <div class="ttc" id="aclassopenvdb_1_1v13__0_1_1ax_1_1codegen_1_1FunctionRegistry_html_af87f2a1a2395918a71eed11c61f94fc8"><div class="ttname"><a href="classopenvdb_1_1v13__0_1_1ax_1_1codegen_1_1FunctionRegistry.html#af87f2a1a2395918a71eed11c61f94fc8">openvdb::v13_0::ax::codegen::FunctionRegistry::UniquePtr</a></div><div class="ttdeci">std::unique_ptr&lt; FunctionRegistry &gt; UniquePtr</div><div class="ttdef"><b>Definition</b> FunctionRegistry.h:46</div></div>
 <div class="ttc" id="anamespaceopenvdb_1_1v13__0_1_1ax_1_1codegen_html_a4a9ee9a0ec0a79d08c610b2d30d2c5d3"><div class="ttname"><a href="namespaceopenvdb_1_1v13__0_1_1ax_1_1codegen.html#a4a9ee9a0ec0a79d08c610b2d30d2c5d3">openvdb::v13_0::ax::codegen::createDefaultRegistry</a></div><div class="ttdeci">FunctionRegistry::UniquePtr createDefaultRegistry(const FunctionOptions *op=nullptr)</div><div class="ttdoc">Creates a registry with the default set of registered functions including math functions,...</div><div class="ttdef"><b>Definition</b> Functions.h:62</div></div>
@@ -199,7 +208,7 @@ $(function(){initNavTree('Functions_8h_source.html','',''); });
 <div class="ttc" id="anamespaceopenvdb_html"><div class="ttname"><a href="namespaceopenvdb.html">openvdb</a></div><div class="ttdef"><b>Definition</b> Exceptions.h:13</div></div>
 <div class="ttc" id="astructopenvdb_1_1v13__0_1_1ax_1_1FunctionOptions_html"><div class="ttname"><a href="structopenvdb_1_1v13__0_1_1ax_1_1FunctionOptions.html">openvdb::v13_0::ax::FunctionOptions</a></div><div class="ttdoc">Options that control how functions behave.</div><div class="ttdef"><b>Definition</b> CompilerOptions.h:25</div></div>
 <div class="ttc" id="aversion_8h_8in_html_a00be3835cb8ad1ded8abd821fad20fc0"><div class="ttname"><a href="version_8h_8in.html#a00be3835cb8ad1ded8abd821fad20fc0">OPENVDB_VERSION_NAME</a></div><div class="ttdeci">#define OPENVDB_VERSION_NAME</div><div class="ttdoc">The version namespace name for this library version.</div><div class="ttdef"><b>Definition</b> version.h.in:121</div></div>
-<div class="ttc" id="aversion_8h_8in_html_a2dde157791cd7558cdf886489256ba14"><div class="ttname"><a href="version_8h_8in.html#a2dde157791cd7558cdf886489256ba14">OPENVDB_USE_VERSION_NAMESPACE</a></div><div class="ttdeci">#define OPENVDB_USE_VERSION_NAMESPACE</div><div class="ttdef"><b>Definition</b> version.h.in:218</div></div>
+<div class="ttc" id="aversion_8h_8in_html_a2dde157791cd7558cdf886489256ba14"><div class="ttname"><a href="version_8h_8in.html#a2dde157791cd7558cdf886489256ba14">OPENVDB_USE_VERSION_NAMESPACE</a></div><div class="ttdeci">#define OPENVDB_USE_VERSION_NAMESPACE</div><div class="ttdef"><b>Definition</b> version.h.in:284</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->

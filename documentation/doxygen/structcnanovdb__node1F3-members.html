@@ -17,6 +17,15 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -111,18 +120,17 @@ $(function(){initNavTree('structcnanovdb__node1F3.html','',''); });
 
 <p>This is the complete list of members for <a class="el" href="structcnanovdb__node1F3.html">cnanovdb_node1F3</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="structcnanovdb__node1F3.html#a2f41739f61f8cf9fe9cebfaf0fe08cb8">_reserved</a></td><td class="entry"><a class="el" href="structcnanovdb__node1F3.html">cnanovdb_node1F3</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="structcnanovdb__node1F3.html#a97181a4552f4240ece7960f12ddf7c8e">mAverage</a></td><td class="entry"><a class="el" href="structcnanovdb__node1F3.html">cnanovdb_node1F3</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="structcnanovdb__node1F3.html#a5abbf0d39de519a363053d36c61824fd">mBBox_max</a></td><td class="entry"><a class="el" href="structcnanovdb__node1F3.html">cnanovdb_node1F3</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="structcnanovdb__node1F3.html#aba9e59125aa66f2496d27901d16e7b8b">mBBox_min</a></td><td class="entry"><a class="el" href="structcnanovdb__node1F3.html">cnanovdb_node1F3</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="structcnanovdb__node1F3.html#a86bed6120cff09e7e87b42c1379d0fd8">mChildMask</a></td><td class="entry"><a class="el" href="structcnanovdb__node1F3.html">cnanovdb_node1F3</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="structcnanovdb__node1F3.html#a0251ac0c51aa69a1a5f25044b269eae1">mFlags</a></td><td class="entry"><a class="el" href="structcnanovdb__node1F3.html">cnanovdb_node1F3</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="structcnanovdb__node1F3.html#ad6282bb1e3459f5dd68786c640572252">mMaximum</a></td><td class="entry"><a class="el" href="structcnanovdb__node1F3.html">cnanovdb_node1F3</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="structcnanovdb__node1F3.html#ae67cef59d3bd11a984ceb04e4520a012">mMinimum</a></td><td class="entry"><a class="el" href="structcnanovdb__node1F3.html">cnanovdb_node1F3</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="structcnanovdb__node1F3.html#add8f0aed1a13c2046ba0b6f4d6281cb6">mOffset</a></td><td class="entry"><a class="el" href="structcnanovdb__node1F3.html">cnanovdb_node1F3</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="structcnanovdb__node1F3.html#a4518d8f98f7460166325c5b43c823605">mStdDevi</a></td><td class="entry"><a class="el" href="structcnanovdb__node1F3.html">cnanovdb_node1F3</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="structcnanovdb__node1F3.html#a81fa12fdfdfdc0499267821574500a92">mTable</a></td><td class="entry"><a class="el" href="structcnanovdb__node1F3.html">cnanovdb_node1F3</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="structcnanovdb__node1F3.html#a5b2305fd879c2039fa31d2054e8ce69e">mValueMask</a></td><td class="entry"><a class="el" href="structcnanovdb__node1F3.html">cnanovdb_node1F3</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="structcnanovdb__node1F3.html#a97181a4552f4240ece7960f12ddf7c8e">mAverage</a></td><td class="entry"><a class="el" href="structcnanovdb__node1F3.html">cnanovdb_node1F3</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="structcnanovdb__node1F3.html#a5abbf0d39de519a363053d36c61824fd">mBBox_max</a></td><td class="entry"><a class="el" href="structcnanovdb__node1F3.html">cnanovdb_node1F3</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="structcnanovdb__node1F3.html#aba9e59125aa66f2496d27901d16e7b8b">mBBox_min</a></td><td class="entry"><a class="el" href="structcnanovdb__node1F3.html">cnanovdb_node1F3</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="structcnanovdb__node1F3.html#a86bed6120cff09e7e87b42c1379d0fd8">mChildMask</a></td><td class="entry"><a class="el" href="structcnanovdb__node1F3.html">cnanovdb_node1F3</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="structcnanovdb__node1F3.html#a0251ac0c51aa69a1a5f25044b269eae1">mFlags</a></td><td class="entry"><a class="el" href="structcnanovdb__node1F3.html">cnanovdb_node1F3</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="structcnanovdb__node1F3.html#ad6282bb1e3459f5dd68786c640572252">mMaximum</a></td><td class="entry"><a class="el" href="structcnanovdb__node1F3.html">cnanovdb_node1F3</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="structcnanovdb__node1F3.html#ae67cef59d3bd11a984ceb04e4520a012">mMinimum</a></td><td class="entry"><a class="el" href="structcnanovdb__node1F3.html">cnanovdb_node1F3</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="structcnanovdb__node1F3.html#add8f0aed1a13c2046ba0b6f4d6281cb6">mOffset</a></td><td class="entry"><a class="el" href="structcnanovdb__node1F3.html">cnanovdb_node1F3</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="structcnanovdb__node1F3.html#a4518d8f98f7460166325c5b43c823605">mStdDevi</a></td><td class="entry"><a class="el" href="structcnanovdb__node1F3.html">cnanovdb_node1F3</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="structcnanovdb__node1F3.html#a81fa12fdfdfdc0499267821574500a92">mTable</a></td><td class="entry"><a class="el" href="structcnanovdb__node1F3.html">cnanovdb_node1F3</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="structcnanovdb__node1F3.html#a5b2305fd879c2039fa31d2054e8ce69e">mValueMask</a></td><td class="entry"><a class="el" href="structcnanovdb__node1F3.html">cnanovdb_node1F3</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->

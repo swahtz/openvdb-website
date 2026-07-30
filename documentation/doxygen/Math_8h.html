@@ -17,6 +17,15 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -255,12 +264,12 @@ Functions</h2></td></tr>
 <tr class="memitem:ad35876c555c6cc47dabbeaaf2e46f9ed" id="r_ad35876c555c6cc47dabbeaaf2e46f9ed"><td class="memTemplParams" colspan="2">template&lt;typename Type&gt; </td></tr>
 <tr class="memitem:ad35876c555c6cc47dabbeaaf2e46f9ed template"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceopenvdb_1_1v13__0_1_1math.html#ad35876c555c6cc47dabbeaaf2e46f9ed">isZero</a> (const Type &amp;x)</td></tr>
 <tr class="memdesc:ad35876c555c6cc47dabbeaaf2e46f9ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return <code>true</code> if <em class="arg">x</em> is exactly equal to zero.  <br /></td></tr>
-<tr class="memitem:a2e6c0fc88fbdcd53c07544d8b31114fb" id="r_a2e6c0fc88fbdcd53c07544d8b31114fb"><td class="memTemplParams" colspan="2">template&lt;typename Type&gt; </td></tr>
-<tr class="memitem:a2e6c0fc88fbdcd53c07544d8b31114fb template"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceopenvdb_1_1v13__0_1_1math.html#a2e6c0fc88fbdcd53c07544d8b31114fb">isApproxZero</a> (const Type &amp;x)</td></tr>
-<tr class="memdesc:a2e6c0fc88fbdcd53c07544d8b31114fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return <code>true</code> if <em class="arg">x</em> is equal to zero to within the default floating-point comparison tolerance.  <br /></td></tr>
 <tr class="memitem:a2886ce41a0b07867ce1057562b6a3d93" id="r_a2886ce41a0b07867ce1057562b6a3d93"><td class="memTemplParams" colspan="2">template&lt;typename Type&gt; </td></tr>
 <tr class="memitem:a2886ce41a0b07867ce1057562b6a3d93 template"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceopenvdb_1_1v13__0_1_1math.html#a2886ce41a0b07867ce1057562b6a3d93">isApproxZero</a> (const Type &amp;x, const Type &amp;tolerance)</td></tr>
 <tr class="memdesc:a2886ce41a0b07867ce1057562b6a3d93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return <code>true</code> if <em class="arg">x</em> is equal to zero to within the given tolerance.  <br /></td></tr>
+<tr class="memitem:a2e6c0fc88fbdcd53c07544d8b31114fb" id="r_a2e6c0fc88fbdcd53c07544d8b31114fb"><td class="memTemplParams" colspan="2">template&lt;typename Type&gt; </td></tr>
+<tr class="memitem:a2e6c0fc88fbdcd53c07544d8b31114fb template"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceopenvdb_1_1v13__0_1_1math.html#a2e6c0fc88fbdcd53c07544d8b31114fb">isApproxZero</a> (const Type &amp;x)</td></tr>
+<tr class="memdesc:a2e6c0fc88fbdcd53c07544d8b31114fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return <code>true</code> if <em class="arg">x</em> is equal to zero to within the default floating-point comparison tolerance.  <br /></td></tr>
 <tr class="memitem:a942957f1908446c00fcb1196189aaaba" id="r_a942957f1908446c00fcb1196189aaaba"><td class="memTemplParams" colspan="2">template&lt;typename Type&gt; </td></tr>
 <tr class="memitem:a942957f1908446c00fcb1196189aaaba template"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceopenvdb_1_1v13__0_1_1math.html#a942957f1908446c00fcb1196189aaaba">isNegative</a> (const Type &amp;x)</td></tr>
 <tr class="memdesc:a942957f1908446c00fcb1196189aaaba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return <code>true</code> if <em class="arg">x</em> is less than zero.  <br /></td></tr>

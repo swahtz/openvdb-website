@@ -17,6 +17,15 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -122,6 +131,7 @@ $(function(){initNavTree('globals_o.html','',''); });
 <li>OPENVDB_DEPRECATED&#160;:&#160;<a class="el" href="Platform_8h.html#acad6915d4aac81665b540218e8b1e06c">Platform.h</a></li>
 <li>OPENVDB_DEPRECATED_MESSAGE&#160;:&#160;<a class="el" href="Platform_8h.html#ad1f8203a6a066b0312fd16e529bddd22">Platform.h</a></li>
 <li>OPENVDB_ENABLE_ASSERTS&#160;:&#160;<a class="el" href="version_8h_8in.html#a4c50fb88617dc453773269235d40a0f0">version.h.in</a></li>
+<li>OPENVDB_ENABLE_VEC_RELATIONAL_OPERATIONS&#160;:&#160;<a class="el" href="version_8h_8in.html#a771a11de8ea14c94afee7c2e75db1015">version.h.in</a></li>
 <li>OPENVDB_EXACT_IS_APPROX_EQUAL&#160;:&#160;<a class="el" href="Math_8h.html#a6b253af5feb78da3c382919eb161e94f">Math.h</a></li>
 <li>OPENVDB_EXCEPTION&#160;:&#160;<a class="el" href="openvdb_2Exceptions_8h.html#a82231e85176ee365b2fe7ec5dae79830">Exceptions.h</a></li>
 <li>OPENVDB_FINISH_NON_THREADSAFE_STATIC_ADDRESS&#160;:&#160;<a class="el" href="Platform_8h.html#a04a587fd9ae1911115d6c9ea3d7b2ecd">Platform.h</a></li>
@@ -187,19 +197,22 @@ $(function(){initNavTree('globals_o.html','',''); });
 <li>OPENVDB_TYPELIST_FORCE_INLINE&#160;:&#160;<a class="el" href="TypeList_8h.html#ac9fb0b4e99c1085c096d438b7552237d">TypeList.h</a></li>
 <li>OPENVDB_UBSAN_SUPPRESS&#160;:&#160;<a class="el" href="Platform_8h.html#a75f69f6aab6d38a8269686d79b268b29">Platform.h</a></li>
 <li>OPENVDB_UNLIKELY&#160;:&#160;<a class="el" href="Platform_8h.html#aa7a931484d0bf4c15d597386de0ec0f6">Platform.h</a></li>
+<li>OPENVDB_USE_AVX&#160;:&#160;<a class="el" href="version_8h_8in.html#aec691d014a39d1c0e5f924ecd30e3337">version.h.in</a></li>
 <li>OPENVDB_USE_BLOSC&#160;:&#160;<a class="el" href="version_8h_8in.html#ad9b4094c98dfe2c5e327e97640573397">version.h.in</a></li>
 <li>OPENVDB_USE_DELAYED_LOADING&#160;:&#160;<a class="el" href="version_8h_8in.html#a37848ce33ebef26696a36d9975a1fe1a">version.h.in</a></li>
 <li>OPENVDB_USE_EXPLICIT_INSTANTIATION&#160;:&#160;<a class="el" href="version_8h_8in.html#a9ae309f5f7e4f0e48703fdf3fd0a1df1">version.h.in</a></li>
 <li>OPENVDB_USE_IMATH_HALF&#160;:&#160;<a class="el" href="version_8h_8in.html#afd09230e7f8a44c7b990c2d64326b6d5">version.h.in</a></li>
 <li>OPENVDB_USE_ORACLE_IN_REBUILD&#160;:&#160;<a class="el" href="LevelSetRebuild_8h.html#a4d4853472b8f2bbc484cbeb4023a680d">LevelSetRebuild.h</a></li>
+<li>OPENVDB_USE_SSE42&#160;:&#160;<a class="el" href="version_8h_8in.html#a3e75306bf6e4011db32af418ea979718">version.h.in</a></li>
+<li>OPENVDB_USE_VCL&#160;:&#160;<a class="el" href="version_8h_8in.html#ae55a6f7532c2c9a22dce0dd06efd5662">version.h.in</a></li>
 <li>OPENVDB_USE_VERSION_NAMESPACE&#160;:&#160;<a class="el" href="version_8h_8in.html#a2dde157791cd7558cdf886489256ba14">version.h.in</a></li>
 <li>OPENVDB_USE_ZLIB&#160;:&#160;<a class="el" href="version_8h_8in.html#a729c4c59a11263debb7250fd2646315c">version.h.in</a></li>
+<li>OPENVDB_VCL_NAMESPACE&#160;:&#160;<a class="el" href="version_8h_8in.html#a6f84f365970078aa6f5d01d516d924b1">version.h.in</a></li>
 <li>OPENVDB_VEC3_TREE_INSTANTIATE&#160;:&#160;<a class="el" href="version_8h_8in.html#a7d027e8f99ea64bd389bf3015fe6eada">version.h.in</a></li>
 <li>OPENVDB_VERSION_HAS_BEEN_INCLUDED&#160;:&#160;<a class="el" href="version_8h_8in.html#adcaf61d21377593c0e9dad4a0206bb97">version.h.in</a></li>
 <li>OPENVDB_VERSION_NAME&#160;:&#160;<a class="el" href="version_8h_8in.html#a00be3835cb8ad1ded8abd821fad20fc0">version.h.in</a></li>
 <li>OPENVDB_VOLUME_TREE_INSTANTIATE&#160;:&#160;<a class="el" href="version_8h_8in.html#a9ae6309f0451d550fc854cf97c4b4221">version.h.in</a></li>
-<li>operator&lt;&lt;()&#160;:&#160;<a class="el" href="Half_8h.html#aedd7fa37e5d01d73c4b23591eeca49cd">Half.h</a></li>
-<li>operator&gt;&gt;()&#160;:&#160;<a class="el" href="Half_8h.html#ab922cde65d0eecc74c48607af60fded0">Half.h</a></li>
+<li>OPENVDB_X86_INSTRSET&#160;:&#160;<a class="el" href="version_8h_8in.html#a82d968ba5877270a91ba090ef4bfa9ca">version.h.in</a></li>
 <li>OR&#160;:&#160;<a class="el" href="axparser_8h.html#a4fb17c3afc02be01e847b79146e4a6e6a96727447c0ad447987df1c6415aef074">axparser.h</a></li>
 </ul>
 </div><!-- contents -->

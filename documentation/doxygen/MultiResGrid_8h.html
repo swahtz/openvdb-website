@@ -17,6 +17,15 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -152,7 +161,6 @@ Namespaces</h2></td></tr>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Multi-resolution grid that contains LoD sequences of trees with powers of two refinements. </p>
 <dl class="section author"><dt>Author</dt><dd>Ken Museth</dd></dl>
-<dl class="section warning"><dt>Warning</dt><dd>This class is fairly new and as such has not seen a lot of use in production. Please report any issues or request for new features directly to <a href="#" onclick="location.href='mai'+'lto:'+'ken'+'.m'+'use'+'th'+'@dr'+'ea'+'mwo'+'rk'+'s.c'+'om'; return false;">ken.m<span class="obfuscator">.nosp@m.</span>uset<span class="obfuscator">.nosp@m.</span>h@dre<span class="obfuscator">.nosp@m.</span>amwo<span class="obfuscator">.nosp@m.</span>rks.c<span class="obfuscator">.nosp@m.</span>om</a>.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>While this class can arguably be used to implement a sparse Multi-Grid solver it is currently intended as a means to efficiently compute LoD levels for applications like rendering</dd>
 <dd>
 Prolongation means interpolation from coarse -&gt; fine </dd>

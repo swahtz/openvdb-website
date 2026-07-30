@@ -1,9 +1,9 @@
 var structcnanovdb__griddata =
 [
-    [ "_reserved", "structcnanovdb__griddata.html#a5fcbf75a8b3fdb5c8b7cd2c1a986772e", null ],
+    [ "_reserved", "structcnanovdb__griddata.html#af588c85f745efbda960e7b24877a5177", null ],
     [ "mBBox", "structcnanovdb__griddata.html#ae9fc311606e04e6428de80a98337f7c0", null ],
-    [ "mBlindMetadataCount", "structcnanovdb__griddata.html#a52d0d777e099110c2270f36f87f99588", null ],
-    [ "mBlindMetadataOffset", "structcnanovdb__griddata.html#a20247b365d8705e8c31f5fea5b257ccd", null ],
+    [ "mBlindMetadataCount", "structcnanovdb__griddata.html#a35a5215b4b0105abd2c9dd4c386b2a3d", null ],
+    [ "mBlindMetadataOffset", "structcnanovdb__griddata.html#ae60d14baa2e4c08bb4dfcd1e9b8673ef", null ],
     [ "mChecksum", "structcnanovdb__griddata.html#aa519c51b6c61fe65cc450b87b4ff4920", null ],
     [ "mFlags", "structcnanovdb__griddata.html#a0251ac0c51aa69a1a5f25044b269eae1", null ],
     [ "mGridClass", "structcnanovdb__griddata.html#ae4ee122666dd8d007428bc6a144456a0", null ],

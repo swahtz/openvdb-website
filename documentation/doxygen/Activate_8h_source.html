@@ -17,6 +17,15 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -384,7 +393,7 @@ $(function(){initNavTree('Activate_8h_source.html','',''); });
 <div class="ttc" id="aPointDataGrid_8h_html"><div class="ttname"><a href="PointDataGrid_8h.html">PointDataGrid.h</a></div><div class="ttdoc">Attribute-owned data structure for points. Point attributes are stored in leaf nodes and ordered by v...</div></div>
 <div class="ttc" id="aclassopenvdb_1_1v13__0_1_1tree_1_1DynamicNodeManager_html"><div class="ttname"><a href="classopenvdb_1_1v13__0_1_1tree_1_1DynamicNodeManager.html">openvdb::v13_0::tree::DynamicNodeManager</a></div><div class="ttdef"><b>Definition</b> NodeManager.h:891</div></div>
 <div class="ttc" id="aclassopenvdb_1_1v13__0_1_1tree_1_1DynamicNodeManager_html_a9170509fcce7f66eb02c64d608083ec9"><div class="ttname"><a href="classopenvdb_1_1v13__0_1_1tree_1_1DynamicNodeManager.html#a9170509fcce7f66eb02c64d608083ec9">openvdb::v13_0::tree::DynamicNodeManager::foreachTopDown</a></div><div class="ttdeci">void foreachTopDown(const NodeOp &amp;op, bool threaded=true, size_t leafGrainSize=1, size_t nonLeafGrainSize=1)</div><div class="ttdoc">Threaded method that applies a user-supplied functor to all the nodes in the tree.</div><div class="ttdef"><b>Definition</b> NodeManager.h:977</div></div>
-<div class="ttc" id="anamespaceopenvdb_1_1v13__0_1_1math_html_a587514b87a4cfb115322b63ae1dbc801"><div class="ttname"><a href="namespaceopenvdb_1_1v13__0_1_1math.html#a587514b87a4cfb115322b63ae1dbc801">openvdb::v13_0::math::isApproxEqual</a></div><div class="ttdeci">bool isApproxEqual(const Type &amp;a, const Type &amp;b, const Type &amp;tolerance)</div><div class="ttdoc">Return true if a is equal to b to within the given tolerance.</div><div class="ttdef"><b>Definition</b> Math.h:431</div></div>
+<div class="ttc" id="anamespaceopenvdb_1_1v13__0_1_1math_html_a587514b87a4cfb115322b63ae1dbc801"><div class="ttname"><a href="namespaceopenvdb_1_1v13__0_1_1math.html#a587514b87a4cfb115322b63ae1dbc801">openvdb::v13_0::math::isApproxEqual</a></div><div class="ttdeci">bool isApproxEqual(const Type &amp;a, const Type &amp;b, const Type &amp;tolerance)</div><div class="ttdoc">Return true if a is equal to b to within the given tolerance.</div><div class="ttdef"><b>Definition</b> Math.h:428</div></div>
 <div class="ttc" id="anamespaceopenvdb_1_1v13__0_1_1tools_html"><div class="ttname"><a href="namespaceopenvdb_1_1v13__0_1_1tools.html">openvdb::v13_0::tools</a></div><div class="ttdef"><b>Definition</b> Activate.h:25</div></div>
 <div class="ttc" id="anamespaceopenvdb_1_1v13__0_1_1tools_html_a95818e0902bf2d721182aea060c98a39"><div class="ttname"><a href="namespaceopenvdb_1_1v13__0_1_1tools.html#a95818e0902bf2d721182aea060c98a39">openvdb::v13_0::tools::deactivate</a></div><div class="ttdeci">void deactivate(GridOrTree &amp;, const typename GridOrTree::ValueType &amp;value, const typename GridOrTree::ValueType &amp;tolerance=zeroVal&lt; typename GridOrTree::ValueType &gt;(), const bool threaded=true)</div><div class="ttdoc">Mark as inactive any active tiles or voxels in the given grid or tree whose values are equal to value...</div><div class="ttdef"><b>Definition</b> Activate.h:203</div></div>
 <div class="ttc" id="anamespaceopenvdb_1_1v13__0_1_1tools_html_afbad51b90ae8354757fa735b4d2058b0"><div class="ttname"><a href="namespaceopenvdb_1_1v13__0_1_1tools.html#afbad51b90ae8354757fa735b4d2058b0">openvdb::v13_0::tools::activate</a></div><div class="ttdeci">void activate(GridOrTree &amp;, const typename GridOrTree::ValueType &amp;value, const typename GridOrTree::ValueType &amp;tolerance=zeroVal&lt; typename GridOrTree::ValueType &gt;(), const bool threaded=true)</div><div class="ttdoc">Mark as active any inactive tiles or voxels in the given grid or tree whose values are equal to value...</div><div class="ttdef"><b>Definition</b> Activate.h:179</div></div>
@@ -394,10 +403,10 @@ $(function(){initNavTree('Activate_8h_source.html','',''); });
 <div class="ttc" id="aopenvdb_2Types_8h_html"><div class="ttname"><a href="openvdb_2Types_8h.html">Types.h</a></div></div>
 <div class="ttc" id="aopenvdb_2openvdb_2tree_2NodeManager_8h_html"><div class="ttname"><a href="openvdb_2openvdb_2tree_2NodeManager_8h.html">NodeManager.h</a></div><div class="ttdoc">NodeManager produces linear arrays of all tree nodes allowing for efficient threading and bottom-up p...</div></div>
 <div class="ttc" id="aopenvdb_8h_html"><div class="ttname"><a href="openvdb_8h.html">openvdb.h</a></div></div>
-<div class="ttc" id="astructopenvdb_1_1v13__0_1_1TreeAdapter_html"><div class="ttname"><a href="structopenvdb_1_1v13__0_1_1TreeAdapter.html">openvdb::v13_0::TreeAdapter</a></div><div class="ttdoc">This adapter allows code that is templated on a Tree type to accept either a Tree type or a Grid type...</div><div class="ttdef"><b>Definition</b> Grid.h:1056</div></div>
+<div class="ttc" id="astructopenvdb_1_1v13__0_1_1TreeAdapter_html"><div class="ttname"><a href="structopenvdb_1_1v13__0_1_1TreeAdapter.html">openvdb::v13_0::TreeAdapter</a></div><div class="ttdoc">This adapter allows code that is templated on a Tree type to accept either a Tree type or a Grid type...</div><div class="ttdef"><b>Definition</b> Grid.h:1058</div></div>
 <div class="ttc" id="aversion_8h_8in_html_a00be3835cb8ad1ded8abd821fad20fc0"><div class="ttname"><a href="version_8h_8in.html#a00be3835cb8ad1ded8abd821fad20fc0">OPENVDB_VERSION_NAME</a></div><div class="ttdeci">#define OPENVDB_VERSION_NAME</div><div class="ttdoc">The version namespace name for this library version.</div><div class="ttdef"><b>Definition</b> version.h.in:121</div></div>
-<div class="ttc" id="aversion_8h_8in_html_a2dde157791cd7558cdf886489256ba14"><div class="ttname"><a href="version_8h_8in.html#a2dde157791cd7558cdf886489256ba14">OPENVDB_USE_VERSION_NAMESPACE</a></div><div class="ttdeci">#define OPENVDB_USE_VERSION_NAMESPACE</div><div class="ttdef"><b>Definition</b> version.h.in:218</div></div>
-<div class="ttc" id="aversion_8h_8in_html_af5d84e649a9214c7e60ef2fc79e9dcd3"><div class="ttname"><a href="version_8h_8in.html#af5d84e649a9214c7e60ef2fc79e9dcd3">OPENVDB_ALL_TREE_INSTANTIATE</a></div><div class="ttdeci">#define OPENVDB_ALL_TREE_INSTANTIATE(Function)</div><div class="ttdef"><b>Definition</b> version.h.in:166</div></div>
+<div class="ttc" id="aversion_8h_8in_html_a2dde157791cd7558cdf886489256ba14"><div class="ttname"><a href="version_8h_8in.html#a2dde157791cd7558cdf886489256ba14">OPENVDB_USE_VERSION_NAMESPACE</a></div><div class="ttdeci">#define OPENVDB_USE_VERSION_NAMESPACE</div><div class="ttdef"><b>Definition</b> version.h.in:284</div></div>
+<div class="ttc" id="aversion_8h_8in_html_af5d84e649a9214c7e60ef2fc79e9dcd3"><div class="ttname"><a href="version_8h_8in.html#af5d84e649a9214c7e60ef2fc79e9dcd3">OPENVDB_ALL_TREE_INSTANTIATE</a></div><div class="ttdeci">#define OPENVDB_ALL_TREE_INSTANTIATE(Function)</div><div class="ttdef"><b>Definition</b> version.h.in:232</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->

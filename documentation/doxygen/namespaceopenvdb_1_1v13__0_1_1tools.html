@@ -17,6 +17,15 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -287,6 +296,10 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Makes every voxel of a grid active if it contains a point.  <a href="classopenvdb_1_1v13__0_1_1tools_1_1PointsToMask.html#details">More...</a><br /></td></tr>
 <tr class="memitem:PolygonPool" id="r_PolygonPool"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classopenvdb_1_1v13__0_1_1tools_1_1PolygonPool.html">PolygonPool</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collection of quads and triangles.  <a href="classopenvdb_1_1v13__0_1_1tools_1_1PolygonPool.html#details">More...</a><br /></td></tr>
+<tr class="memitem:PolySoup" id="r_PolySoup"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structopenvdb_1_1v13__0_1_1tools_1_1PolySoup.html">PolySoup</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Simple structure for a polygon soup.  <a href="structopenvdb_1_1v13__0_1_1tools_1_1PolySoup.html#details">More...</a><br /></td></tr>
+<tr class="memitem:PolySoupToLevelSet" id="r_PolySoupToLevelSet"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classopenvdb_1_1v13__0_1_1tools_1_1PolySoupToLevelSet.html">PolySoupToLevelSet</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class that implements the actual shrink wrap algorithm.  <a href="classopenvdb_1_1v13__0_1_1tools_1_1PolySoupToLevelSet.html#details">More...</a><br /></td></tr>
 <tr class="memitem:PositionShader" id="r_PositionShader"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classopenvdb_1_1v13__0_1_1tools_1_1PositionShader.html">PositionShader</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Color shader that treats position (x, y, z) as an RGB color in a cube defined from an axis-aligned bounding box in world space.  <a href="classopenvdb_1_1v13__0_1_1tools_1_1PositionShader.html#details">More...</a><br /></td></tr>
 <tr class="memitem:PositionShader_3C_20Film_3A_3ARGBA_2C_20SamplerType_20_3E" id="r_PositionShader_3C_20Film_3A_3ARGBA_2C_20SamplerType_20_3E"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classopenvdb_1_1v13__0_1_1tools_1_1PositionShader_3_01Film_1_1RGBA_00_01SamplerType_01_4.html">PositionShader&lt; Film::RGBA, SamplerType &gt;</a></td></tr>
@@ -303,6 +316,7 @@ Classes</h2></td></tr>
 <tr class="memitem:Sampler_3C_202_2C_20true_20_3E" id="r_Sampler_3C_202_2C_20true_20_3E"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structopenvdb_1_1v13__0_1_1tools_1_1Sampler_3_012_00_01true_01_4.html">Sampler&lt; 2, true &gt;</a></td></tr>
 <tr class="memitem:ScalarToVectorConverter" id="r_ScalarToVectorConverter"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structopenvdb_1_1v13__0_1_1tools_1_1ScalarToVectorConverter.html">ScalarToVectorConverter</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structopenvdb_1_1v13__0_1_1tools_1_1ScalarToVectorConverter.html#a8b727e6fbafe29f45e41f6dd34442324">ScalarToVectorConverter&lt;ScalarGridType&gt;::Type</a> is the type of a grid having the same tree configuration as ScalarGridType but value type Vec3&lt;T&gt; where T is ScalarGridType::ValueType.  <a href="structopenvdb_1_1v13__0_1_1tools_1_1ScalarToVectorConverter.html#details">More...</a><br /></td></tr>
+<tr class="memitem:ShrinkWrapLimit" id="r_ShrinkWrapLimit"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classopenvdb_1_1v13__0_1_1tools_1_1ShrinkWrapLimit.html">ShrinkWrapLimit</a></td></tr>
 <tr class="memitem:SignedFloodFillOp" id="r_SignedFloodFillOp"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classopenvdb_1_1v13__0_1_1tools_1_1SignedFloodFillOp.html">SignedFloodFillOp</a></td></tr>
 <tr class="memitem:SparseExtractor" id="r_SparseExtractor"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classopenvdb_1_1v13__0_1_1tools_1_1SparseExtractor.html">SparseExtractor</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Functor-based class used to extract data that satisfies some criteria defined by the embedded <code>OpType</code> functor. The <code>extractSparseTree</code> function wraps this class.  <a href="classopenvdb_1_1v13__0_1_1tools_1_1SparseExtractor.html#details">More...</a><br /></td></tr>
@@ -774,6 +788,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ac9f4df82ed92eb746d439ce4721ea8a5" id="r_ac9f4df82ed92eb746d439ce4721ea8a5"><td class="memTemplParams" colspan="2">template&lt;typename GridOrTreeType&gt; </td></tr>
 <tr class="memitem:ac9f4df82ed92eb746d439ce4721ea8a5 template"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac9f4df82ed92eb746d439ce4721ea8a5">segmentSDF</a> (const GridOrTreeType &amp;volume, std::vector&lt; typename GridOrTreeType::Ptr &gt; &amp;segments)</td></tr>
 <tr class="memdesc:ac9f4df82ed92eb746d439ce4721ea8a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Separates disjoint SDF surfaces into distinct grids or trees.  <br /></td></tr>
+<tr class="memitem:a50a2cb385ae4d23baee4eab96478ea11" id="r_a50a2cb385ae4d23baee4eab96478ea11"><td class="memTemplParams" colspan="2">template&lt;class GridType&gt; </td></tr>
+<tr class="memitem:a50a2cb385ae4d23baee4eab96478ea11 template"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a50a2cb385ae4d23baee4eab96478ea11">distanceFieldToSDF</a> (GridType &amp;grid, bool removeDisconnectedInterior=false, bool rebuildNarrowBand=true, float halfWidth=3.0f)</td></tr>
+<tr class="memdesc:a50a2cb385ae4d23baee4eab96478ea11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a distance field (unsigned or signed) into a proper signed distance field / level set.  <br /></td></tr>
 <tr class="memitem:a392050cd0aa310bd6dc02ff96a23f07c" id="r_a392050cd0aa310bd6dc02ff96a23f07c"><td class="memTemplParams" colspan="2">template&lt;class GridType&gt; </td></tr>
 <tr class="memitem:a392050cd0aa310bd6dc02ff96a23f07c template"><td class="memItemLeft" align="right" valign="top">OPENVDB_DOCS_INTERNAL void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a392050cd0aa310bd6dc02ff96a23f07c">sdfToFogVolume</a> (GridType &amp;grid, typename GridType::ValueType cutoffDistance)</td></tr>
 <tr class="memdesc:a392050cd0aa310bd6dc02ff96a23f07c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Threaded method to convert a sparse level set/SDF into a sparse fog volume.  <br /></td></tr>
@@ -834,9 +851,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a6872c2dd6da764c5600bd8ad2a126060" id="r_a6872c2dd6da764c5600bd8ad2a126060"><td class="memTemplParams" colspan="2">template&lt;typename TreeOrLeafManagerT&gt; </td></tr>
 <tr class="memitem:a6872c2dd6da764c5600bd8ad2a126060 template"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6872c2dd6da764c5600bd8ad2a126060">erodeActiveValues</a> (TreeOrLeafManagerT &amp;tree, const int iterations=1, const <a class="el" href="#a31d3cd59d1264144ae21e5250166cfc2">NearestNeighbors</a> nn=<a class="el" href="#a31d3cd59d1264144ae21e5250166cfc2a8b7234ad92f6feba2725d890a38fdd59">NN_FACE</a>, const <a class="el" href="#ac7a17ca003c7f18f411cab4e8b4f6e74">TilePolicy</a> mode=<a class="el" href="#ac7a17ca003c7f18f411cab4e8b4f6e74ab963e977b12771992aceaf779527c26f">PRESERVE_TILES</a>, const bool threaded=true)</td></tr>
 <tr class="memdesc:a6872c2dd6da764c5600bd8ad2a126060"><td class="mdescLeft">&#160;</td><td class="mdescRight">Topologically erode all active values (i.e. both voxels and tiles) in a tree using one of three nearest neighbor connectivity patterns.  <br /></td></tr>
-<tr class="memitem:ac3d8c9dd7eda32f2e44bbcdef93457bd" id="r_ac3d8c9dd7eda32f2e44bbcdef93457bd"><td class="memTemplParams" colspan="2">template&lt;typename TreeT, typename OpT&gt; </td></tr>
-<tr class="memitem:ac3d8c9dd7eda32f2e44bbcdef93457bd template"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac3d8c9dd7eda32f2e44bbcdef93457bd">visitNodesDepthFirst</a> (TreeT &amp;tree, OpT &amp;op, size_t idx=0)</td></tr>
-<tr class="memdesc:ac3d8c9dd7eda32f2e44bbcdef93457bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Visit all nodes in the tree depth-first and apply a user-supplied functor to each node.  <br /></td></tr>
+<tr class="memitem:ad6c78f0b7877a026d17d8ab5023f79ba" id="r_ad6c78f0b7877a026d17d8ab5023f79ba"><td class="memTemplParams" colspan="2">template&lt;typename TreeT, typename OpT&gt; </td></tr>
+<tr class="memitem:ad6c78f0b7877a026d17d8ab5023f79ba template"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad6c78f0b7877a026d17d8ab5023f79ba">visitNodesDepthFirst</a> (TreeT &amp;tree, OpT &amp;op, size_t idx=0, bool topDown=true)</td></tr>
+<tr class="memdesc:ad6c78f0b7877a026d17d8ab5023f79ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Visit all nodes in the tree depth-first and apply a user-supplied functor to each node.  <br /></td></tr>
 <tr class="memitem:ae29bb93f486d96bd91cad919e623dab0" id="r_ae29bb93f486d96bd91cad919e623dab0"><td class="memTemplParams" colspan="2">template&lt;typename GridT, typename ParticleListT, typename InterrupterT = util::NullInterrupter&gt; </td></tr>
 <tr class="memitem:ae29bb93f486d96bd91cad919e623dab0 template"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae29bb93f486d96bd91cad919e623dab0">particlesToSdf</a> (const ParticleListT &amp;, GridT &amp;, InterrupterT *=nullptr)</td></tr>
 <tr class="memdesc:ae29bb93f486d96bd91cad919e623dab0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Populate a scalar, floating-point grid with CSG-unioned level set spheres described by the given particle positions and radii.  <br /></td></tr>
@@ -876,6 +893,15 @@ Functions</h2></td></tr>
 <tr class="memitem:af1a9e6032ccf9b1c6e96407559797fa3" id="r_af1a9e6032ccf9b1c6e96407559797fa3"><td class="memTemplParams" colspan="2">template&lt;typename PointListT&gt; </td></tr>
 <tr class="memitem:af1a9e6032ccf9b1c6e96407559797fa3 template"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classopenvdb_1_1v13__0_1_1Grid.html#afc0f397bf0d1638f08250c19bc02d39e">MaskGrid::Ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af1a9e6032ccf9b1c6e96407559797fa3">createPointMask</a> (const PointListT &amp;points, const <a class="el" href="classopenvdb_1_1v13__0_1_1math_1_1Transform.html">math::Transform</a> &amp;xform)</td></tr>
 <tr class="memdesc:af1a9e6032ccf9b1c6e96407559797fa3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a <a class="el" href="namespaceopenvdb_1_1v13__0.html#ab26e09c39606fb93509615cd9120d4b0">MaskGrid</a> where each binary voxel value is on if the voxel contains one (or more) points (i.e. the 3D position of a point is closer to this voxel than any other voxels).  <br /></td></tr>
+<tr class="memitem:a31944fb58ffc3e63a52ce67eba6b7108" id="r_a31944fb58ffc3e63a52ce67eba6b7108"><td class="memTemplParams" colspan="2">template&lt;typename GridType, class ShrinkWrapT = ShrinkWrapLimit, class ProgressT = void&gt; </td></tr>
+<tr class="memitem:a31944fb58ffc3e63a52ce67eba6b7108 template"><td class="memItemLeft" align="right" valign="top">GridType::Ptr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a31944fb58ffc3e63a52ce67eba6b7108">polySoupToLevelSet</a> (<a class="el" href="structopenvdb_1_1v13__0_1_1tools_1_1PolySoup.html">PolySoup</a> &amp;&amp;poly, int dim=256, float voxelSize=0.0, const ShrinkWrapT &amp;D=ShrinkWrapT(), float halfWidth=float(<a class="el" href="namespaceopenvdb_1_1v13__0.html#a04f60dd7b4a065a54f873613ff8df50f">LEVEL_SET_HALF_WIDTH</a>), ProgressT *progress=nullptr, int offset_mode=0)</td></tr>
+<tr class="memdesc:a31944fb58ffc3e63a52ce67eba6b7108"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a soup of polygons to a shrink wrapped level set volume. This version takes a <a class="el" href="structopenvdb_1_1v13__0_1_1tools_1_1PolySoup.html" title="Simple structure for a polygon soup.">PolySoup</a> struct and optional voxel dimension and/or voxel size. If the voxel size is invalid, i.e. not positive, the dimension and bbox of the <a class="el" href="structopenvdb_1_1v13__0_1_1tools_1_1PolySoup.html" title="Simple structure for a polygon soup.">PolySoup</a> is used to derive the voxel size.  <br /></td></tr>
+<tr class="memitem:aec4155ebb862b905b7028646d7c2bdd6" id="r_aec4155ebb862b905b7028646d7c2bdd6"><td class="memTemplParams" colspan="2">template&lt;typename GridType, class ShrinkWrapT = ShrinkWrapLimit, class ProgressT = void&gt; </td></tr>
+<tr class="memitem:aec4155ebb862b905b7028646d7c2bdd6 template"><td class="memItemLeft" align="right" valign="top">std::vector&lt; typename GridType::Ptr &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aec4155ebb862b905b7028646d7c2bdd6">polySoupToLevelSet</a> (int dim, const <a class="el" href="classopenvdb_1_1v13__0_1_1math_1_1BBox.html">math::BBox</a>&lt; <a class="el" href="namespaceopenvdb_1_1v13__0.html#a4873ae29d5d8d4f1cb7c7717af41a993">Vec3f</a> &gt; &amp;bbox, std::vector&lt; <a class="el" href="namespaceopenvdb_1_1v13__0_1_1math.html#ae60b991a87c83e25ec51e0576209be11">Vec3s</a> &gt; &amp;vtx, std::vector&lt; <a class="el" href="namespaceopenvdb_1_1v13__0.html#ab407b3d357305019c37259d8f5d7f1a7">Vec3I</a> &gt; &amp;tri, std::vector&lt; <a class="el" href="namespaceopenvdb_1_1v13__0.html#a1b3b3d39bd0af138296a8de32155eadb">Vec4I</a> &gt; &amp;quad, const ShrinkWrapT &amp;D=ShrinkWrapT(), float halfWidth=float(<a class="el" href="namespaceopenvdb_1_1v13__0.html#a04f60dd7b4a065a54f873613ff8df50f">LEVEL_SET_HALF_WIDTH</a>), ProgressT *progress=nullptr, int offset_mode=0)</td></tr>
+<tr class="memdesc:aec4155ebb862b905b7028646d7c2bdd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a soup of polygons to a LOD sequence of shrink wrapped level set volumes.  <br /></td></tr>
+<tr class="memitem:a48ddf2b1b1476fd25868acef3a2d318c" id="r_a48ddf2b1b1476fd25868acef3a2d318c"><td class="memTemplParams" colspan="2">template&lt;typename GridType, class ShrinkWrapT = ShrinkWrapLimit, class ProgressT = void&gt; </td></tr>
+<tr class="memitem:a48ddf2b1b1476fd25868acef3a2d318c template"><td class="memItemLeft" align="right" valign="top">std::vector&lt; typename GridType::Ptr &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a48ddf2b1b1476fd25868acef3a2d318c">polySoupToLevelSet</a> (float minVoxelSize, const <a class="el" href="classopenvdb_1_1v13__0_1_1math_1_1BBox.html">math::BBox</a>&lt; <a class="el" href="namespaceopenvdb_1_1v13__0.html#a4873ae29d5d8d4f1cb7c7717af41a993">Vec3f</a> &gt; &amp;bbox, std::vector&lt; <a class="el" href="namespaceopenvdb_1_1v13__0_1_1math.html#ae60b991a87c83e25ec51e0576209be11">Vec3s</a> &gt; &amp;vtx, std::vector&lt; <a class="el" href="namespaceopenvdb_1_1v13__0.html#ab407b3d357305019c37259d8f5d7f1a7">Vec3I</a> &gt; &amp;tri, std::vector&lt; <a class="el" href="namespaceopenvdb_1_1v13__0.html#a1b3b3d39bd0af138296a8de32155eadb">Vec4I</a> &gt; &amp;quad, const ShrinkWrapT &amp;D=ShrinkWrapT(), float halfWidth=float(<a class="el" href="namespaceopenvdb_1_1v13__0.html#a04f60dd7b4a065a54f873613ff8df50f">LEVEL_SET_HALF_WIDTH</a>), ProgressT *progress=nullptr, int offset_mode=0)</td></tr>
+<tr class="memdesc:a48ddf2b1b1476fd25868acef3a2d318c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a soup of polygons to a LOD sequence of shrink wrapped level set volumes.  <br /></td></tr>
 <tr class="memitem:a1f99dbe0666280f607a4473ddf15d891" id="r_a1f99dbe0666280f607a4473ddf15d891"><td class="memTemplParams" colspan="2">template&lt;typename GridT, typename MaskT = typename GridT::template ValueConverter&lt;ValueMask&gt;::Type&gt; </td></tr>
 <tr class="memitem:a1f99dbe0666280f607a4473ddf15d891 template"><td class="memItemLeft" align="right" valign="top">MaskT::Ptr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1f99dbe0666280f607a4473ddf15d891">createPotentialFlowMask</a> (const GridT &amp;grid, int dilation=5)</td></tr>
 <tr class="memdesc:a1f99dbe0666280f607a4473ddf15d891"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a mask for the Potential Flow domain.  <br /></td></tr>
@@ -1063,8 +1089,9 @@ template&lt;typename TreeT&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line"> <a class="code hl_class" href="classopenvdb_1_1v13__0_1_1tree_1_1Tree.html">tree::Tree</a>&lt;<a class="code hl_class" href="classopenvdb_1_1v13__0_1_1tree_1_1RootNode.html">tree::RootNode</a>&lt;tree::InternalNode&lt;tree::InternalNode</div>
+<b>Initial value:</b><div class="fragment"><div class="line"> <a class="code hl_class" href="classopenvdb_1_1v13__0_1_1tree_1_1Tree.html">tree::Tree</a>&lt;<a class="code hl_class" href="classopenvdb_1_1v13__0_1_1tree_1_1RootNode.html">tree::RootNode</a>&lt;<a class="code hl_class" href="classopenvdb_1_1v13__0_1_1tree_1_1InternalNode.html">tree::InternalNode</a>&lt;<a class="code hl_class" href="classopenvdb_1_1v13__0_1_1tree_1_1InternalNode.html">tree::InternalNode</a></div>
 <div class="line">    &lt;<a class="code hl_struct" href="structopenvdb_1_1v13__0_1_1tools_1_1PointIndexLeafNode.html">PointIndexLeafNode&lt;PointIndex32, 3&gt;</a>, 4&gt;, 5&gt;&gt;&gt;</div>
+<div class="ttc" id="aclassopenvdb_1_1v13__0_1_1tree_1_1InternalNode_html"><div class="ttname"><a href="classopenvdb_1_1v13__0_1_1tree_1_1InternalNode.html">openvdb::v13_0::tree::InternalNode</a></div><div class="ttdef"><b>Definition</b> InternalNode.h:35</div></div>
 <div class="ttc" id="aclassopenvdb_1_1v13__0_1_1tree_1_1RootNode_html"><div class="ttname"><a href="classopenvdb_1_1v13__0_1_1tree_1_1RootNode.html">openvdb::v13_0::tree::RootNode</a></div><div class="ttdef"><b>Definition</b> RootNode.h:40</div></div>
 <div class="ttc" id="aclassopenvdb_1_1v13__0_1_1tree_1_1Tree_html"><div class="ttname"><a href="classopenvdb_1_1v13__0_1_1tree_1_1Tree.html">openvdb::v13_0::tree::Tree</a></div><div class="ttdef"><b>Definition</b> Tree.h:195</div></div>
 <div class="ttc" id="astructopenvdb_1_1v13__0_1_1tools_1_1PointIndexLeafNode_html"><div class="ttname"><a href="structopenvdb_1_1v13__0_1_1tools_1_1PointIndexLeafNode.html">openvdb::v13_0::tools::PointIndexLeafNode</a></div><div class="ttdef"><b>Definition</b> PointIndexGrid.h:1359</div></div>
@@ -1458,7 +1485,7 @@ If <em class="arg">threaded</em> is false, the join method is never called.</dd>
 <div class="ttc" id="aclassopenvdb_1_1v13__0_1_1math_1_1Stats_html"><div class="ttname"><a href="classopenvdb_1_1v13__0_1_1math_1_1Stats.html">openvdb::v13_0::math::Stats</a></div><div class="ttdoc">This class computes statistics (minimum value, maximum value, mean, variance and standard deviation) ...</div><div class="ttdef"><b>Definition</b> Stats.h:180</div></div>
 <div class="ttc" id="aclassopenvdb_1_1v13__0_1_1math_1_1Stats_html_a1c762a4059fc92d21d53c05f268227b1"><div class="ttname"><a href="classopenvdb_1_1v13__0_1_1math_1_1Stats.html#a1c762a4059fc92d21d53c05f268227b1">openvdb::v13_0::math::Stats::add</a></div><div class="ttdeci">void add(double val)</div><div class="ttdoc">Add a single sample.</div><div class="ttdef"><b>Definition</b> Stats.h:190</div></div>
 <div class="ttc" id="aclassopenvdb_1_1v13__0_1_1math_1_1Stats_html_a602edc19b448a24d0f2a891e446f3f85"><div class="ttname"><a href="classopenvdb_1_1v13__0_1_1math_1_1Stats.html#a602edc19b448a24d0f2a891e446f3f85">openvdb::v13_0::math::Stats::mean</a></div><div class="ttdeci">double mean() const</div><div class="ttdef"><b>Definition</b> Stats.h:223</div></div>
-<div class="ttc" id="anamespaceopenvdb_1_1v13__0_1_1tools_html_a8e31fdabdae973490731a7be4f31d9ad"><div class="ttname"><a href="#a8e31fdabdae973490731a7be4f31d9ad">openvdb::v13_0::tools::accumulate</a></div><div class="ttdeci">void accumulate(const IterT &amp;iter, XformOp &amp;op, bool threaded=true)</div><div class="ttdef"><b>Definition</b> ValueTransformer.h:683</div></div>
+<div class="ttc" id="anamespaceopenvdb_1_1v13__0_1_1tools_html_a8e31fdabdae973490731a7be4f31d9ad"><div class="ttname"><a href="#a8e31fdabdae973490731a7be4f31d9ad">openvdb::v13_0::tools::accumulate</a></div><div class="ttdeci">void accumulate(const IterT &amp;iter, XformOp &amp;op, bool threaded=true)</div><div class="ttdef"><b>Definition</b> ValueTransformer.h:687</div></div>
 <div class="ttc" id="anamespaceopenvdb_1_1v13__0_html_a2ae45d4df056c7d0d936a496fec925ee"><div class="ttname"><a href="namespaceopenvdb_1_1v13__0.html#a2ae45d4df056c7d0d936a496fec925ee">openvdb::v13_0::FloatGrid</a></div><div class="ttdeci">Grid&lt; FloatTree &gt; FloatGrid</div><div class="ttdef"><b>Definition</b> openvdb.h:76</div></div>
 </div><!-- fragment --></dd></dl>
 <dl class="section note"><dt>Note</dt><dd>For more complex operations that require finer control over threading, consider using <code>tbb::parallel_for()</code> or <code>tbb::parallel_reduce()</code> in conjunction with a <a class="el" href="classopenvdb_1_1v13__0_1_1tree_1_1IteratorRange.html">tree::IteratorRange</a> that wraps a grid or tree iterator. </dd></dl>
@@ -4711,6 +4738,51 @@ template&lt;typename GridT&gt; </div>
 
 </div>
 </div>
+<a id="a50a2cb385ae4d23baee4eab96478ea11" name="a50a2cb385ae4d23baee4eab96478ea11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50a2cb385ae4d23baee4eab96478ea11">&#9670;&#160;</a></span>distanceFieldToSDF()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class GridType&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void distanceFieldToSDF </td>
+          <td>(</td>
+          <td class="paramtype">GridType &amp;</td>          <td class="paramname"><span class="paramname"><em>grid</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>removeDisconnectedInterior</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>rebuildNarrowBand</em></span><span class="paramdefsep"> = </span><span class="paramdefval">true</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>halfWidth</em></span><span class="paramdefsep"> = </span><span class="paramdefval">3.0f</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Convert a distance field (unsigned or signed) into a proper signed distance field / level set. </p>
+<p>Uses the same internal pipeline as meshToVolume to determine the sign of the distance field from the exterior boundary. The input values are first normalized into the squared index-space representation that the pipeline expects (boundary threshold = 0.75, i.e. (sqrt(3)/2)^2), then converted back to world-space signed distances.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">grid</td><td>Distance field grid to convert in place. The grid's transform is used to determine the voxel size. </td></tr>
+    <tr><td class="paramname">removeDisconnectedInterior</td><td>When enabled, deactivate interior narrow-band voxels that are not topologically connected to the exterior boundary. This removes interior surfaces caused by overlapping or self-intersecting geometry. </td></tr>
+    <tr><td class="paramname">rebuildNarrowBand</td><td>When enabled,rebuild a symmetric narrow band from the zero crossing via PDE renormalization. </td></tr>
+    <tr><td class="paramname">halfWidth</td><td>half the width of the narrow band, in voxel units (default: 3). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ad9d4adc505e30de4684d20efdcb66512" name="ad9d4adc505e30de4684d20efdcb66512"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad9d4adc505e30de4684d20efdcb66512">&#9670;&#160;</a></span>divergence() <span class="overload">[1/4]</span></h2>
 
@@ -5484,7 +5556,7 @@ template&lt;typename FogGridT, typename ExtOpT, typename ExtValueT&gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>Note</dt><dd>Strictly speaking a fog volume is normalized to the range [0,1] but this method accepts a scalar volume with an arbritary range, as long as the it includes the <em class="arg">isoValue</em>.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Strictly speaking a fog volume is normalized to the range [0,1] but this method accepts a scalar volume with an arbitrary range, as long as the it includes the <em class="arg">isoValue</em>.</dd></dl>
 <p>Topology of output grid is identical to that of the input grid, except active tiles in the input grid will be converted to active voxels in the output grid!</p>
 <dl class="section warning"><dt>Warning</dt><dd>If <em class="arg">isoValue</em> does not intersect any active values in <em class="arg">fogGrid</em> then the returned grid has all its active values set to <em class="arg">background</em>. </dd></dl>
 
@@ -5526,7 +5598,7 @@ template&lt;typename GridT&gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>Note</dt><dd>Strictly speaking a fog volume is normalized to the range [0,1] but this method accepts a scalar volume with an arbritary range, as long as the it includes the <em class="arg">isoValue</em>.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Strictly speaking a fog volume is normalized to the range [0,1] but this method accepts a scalar volume with an arbitrary range, as long as the it includes the <em class="arg">isoValue</em>.</dd></dl>
 <p>Topology of output grid is identical to that of the input grid, except active tiles in the input grid will be converted to active voxels in the output grid!</p>
 <dl class="section warning"><dt>Warning</dt><dd>If <em class="arg">isoValue</em> does not intersect any active values in <em class="arg">fogGrid</em> then the returned grid has all its active values set to plus or minus infinity, depending on if the input values are larger or smaller than <em class="arg">isoValue</em>. </dd></dl>
 
@@ -5592,7 +5664,7 @@ template&lt;typename FogGridT, typename ExtOpT, typename ExtValueT&gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>Note</dt><dd>Strictly speaking a fog volume is normalized to the range [0,1] but this method accepts a scalar volume with an arbritary range, as long as the it includes the <em class="arg">isoValue</em>.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Strictly speaking a fog volume is normalized to the range [0,1] but this method accepts a scalar volume with an arbitrary range, as long as the it includes the <em class="arg">isoValue</em>.</dd></dl>
 <p>Topology of output grids are identical to that of the input grid, except active tiles in the input grid will be converted to active voxels in the output grids!</p>
 <dl class="section warning"><dt>Warning</dt><dd>If <em class="arg">isoValue</em> does not intersect any active values in <em class="arg">fogGrid</em> then a pair of the following grids is returned: The first is a signed distance grid with its active values set to plus or minus infinity depending of whether its input values are above or below <em class="arg">isoValue</em>. The second grid, which represents the extension field, has all its active values set to <em class="arg">background</em>. </dd></dl>
 
@@ -5696,7 +5768,7 @@ template&lt;typename IterT, typename XformOp&gt; </div>
 <div class="line"><a class="code hl_typedef" href="namespaceopenvdb_1_1v13__0.html#a2ae45d4df056c7d0d936a496fec925ee">FloatGrid</a> grid = ...;</div>
 <div class="line"><a class="code hl_function" href="#ada1c7e219f36d148510ce22d7599171b">tools::foreach</a>(grid.beginValueAll(), Local::op);</div>
 <div class="ttc" id="aclassopenvdb_1_1v13__0_1_1Grid_html_ae60f7ec90327837088fbe58242f78745"><div class="ttname"><a href="classopenvdb_1_1v13__0_1_1Grid.html#ae60f7ec90327837088fbe58242f78745">openvdb::v13_0::Grid&lt; FloatTree &gt;::ValueAllIter</a></div><div class="ttdeci">typename FloatTree::ValueAllIter ValueAllIter</div><div class="ttdef"><b>Definition</b> Grid.h:586</div></div>
-<div class="ttc" id="anamespaceopenvdb_1_1v13__0_1_1tools_html_ada1c7e219f36d148510ce22d7599171b"><div class="ttname"><a href="#ada1c7e219f36d148510ce22d7599171b">openvdb::v13_0::tools::foreach</a></div><div class="ttdeci">void foreach(const IterT &amp;iter, XformOp &amp;op, bool threaded=true, bool shareOp=true)</div><div class="ttdoc">Iterate over a grid and at each step call op(iter).</div><div class="ttdef"><b>Definition</b> ValueTransformer.h:382</div></div>
+<div class="ttc" id="anamespaceopenvdb_1_1v13__0_1_1tools_html_ada1c7e219f36d148510ce22d7599171b"><div class="ttname"><a href="#ada1c7e219f36d148510ce22d7599171b">openvdb::v13_0::tools::foreach</a></div><div class="ttdeci">void foreach(const IterT &amp;iter, XformOp &amp;op, bool threaded=true, bool shareOp=true)</div><div class="ttdoc">Iterate over a grid and at each step call op(iter).</div><div class="ttdef"><b>Definition</b> ValueTransformer.h:386</div></div>
 </div><!-- fragment --></dd></dl>
 <dl class="section user"><dt>Example:</dt><dd>Rotate all active vectors of a vector grid by 45 degrees about the y axis. <div class="fragment"><div class="line"><span class="keyword">namespace </span>{</div>
 <div class="line">    <span class="keyword">struct </span><a class="code hl_struct" href="structopenvdb_1_1v13__0_1_1tools_1_1MatMul.html">MatMul</a> {</div>
@@ -8144,6 +8216,240 @@ template&lt;typename GridT, typename ParticleListT, typename InterrupterT = util
 
 </div>
 </div>
+<a id="a48ddf2b1b1476fd25868acef3a2d318c" name="a48ddf2b1b1476fd25868acef3a2d318c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48ddf2b1b1476fd25868acef3a2d318c">&#9670;&#160;</a></span>polySoupToLevelSet() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename GridType, class ShrinkWrapT = ShrinkWrapLimit, class ProgressT = void&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; typename GridType::Ptr &gt; polySoupToLevelSet </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>minVoxelSize</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classopenvdb_1_1v13__0_1_1math_1_1BBox.html">math::BBox</a>&lt; <a class="el" href="namespaceopenvdb_1_1v13__0.html#a4873ae29d5d8d4f1cb7c7717af41a993">Vec3f</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>bbox</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="namespaceopenvdb_1_1v13__0_1_1math.html#ae60b991a87c83e25ec51e0576209be11">Vec3s</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>vtx</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="namespaceopenvdb_1_1v13__0.html#ab407b3d357305019c37259d8f5d7f1a7">Vec3I</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>tri</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="namespaceopenvdb_1_1v13__0.html#a1b3b3d39bd0af138296a8de32155eadb">Vec4I</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>quad</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const ShrinkWrapT &amp;</td>          <td class="paramname"><span class="paramname"><em>D</em></span><span class="paramdefsep"> = </span><span class="paramdefval">ShrinkWrapT()</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>halfWidth</em></span><span class="paramdefsep"> = </span><span class="paramdefval">float(<a class="el" href="namespaceopenvdb_1_1v13__0.html#a04f60dd7b4a065a54f873613ff8df50f">LEVEL_SET_HALF_WIDTH</a>)</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ProgressT *</td>          <td class="paramname"><span class="paramname"><em>progress</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>offset_mode</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Convert a soup of polygons to a LOD sequence of shrink wrapped level set volumes. </p>
+<dl class="section return"><dt>Returns</dt><dd>a vector of grids of type <code>GridType</code> containing a narrow-band level set at various resolution shrink wrapping the input polygon mesh. The first element in this vector has the highest resolution.</dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classopenvdb_1_1v13__0_1_1TypeError.html">TypeError</a></td><td>if <code>GridType</code> is not scalar or not floating-point</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>Unlike <a class="el" href="#a49d6517666da8e1ec1175651ebf12f32" title="Convert a triangle mesh to a level set volume.">tools::meshToLevelSet</a> this method works for any polygons, and does not require a closed surface.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">minVoxelSize</td><td>Finest/smallest voxel size of the output grids </td></tr>
+    <tr><td class="paramname">bbox</td><td>bounding box of the vertices of the polygon mesh </td></tr>
+    <tr><td class="paramname">vtx</td><td>vector of world space vertex positions </td></tr>
+    <tr><td class="paramname">tri</td><td>vector of triangle indies </td></tr>
+    <tr><td class="paramname">quad</td><td>vector of quad indices </td></tr>
+    <tr><td class="paramname">D</td><td>functor mapping voxel size to maximum allowed surface deformation allowed by shrink wrapping as a function of the voxel size </td></tr>
+    <tr><td class="paramname">halfWidth</td><td>half the width of the narrow band, in voxel units </td></tr>
+    <tr><td class="paramname">progress</td><td>optional pointer to progress bar </td></tr>
+    <tr><td class="paramname">offset_mode</td><td>EXPERIMENTAL parameter that will be removed in the near future. It should only be used by experts! </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aec4155ebb862b905b7028646d7c2bdd6" name="aec4155ebb862b905b7028646d7c2bdd6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec4155ebb862b905b7028646d7c2bdd6">&#9670;&#160;</a></span>polySoupToLevelSet() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename GridType, class ShrinkWrapT = ShrinkWrapLimit, class ProgressT = void&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; typename GridType::Ptr &gt; polySoupToLevelSet </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>dim</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classopenvdb_1_1v13__0_1_1math_1_1BBox.html">math::BBox</a>&lt; <a class="el" href="namespaceopenvdb_1_1v13__0.html#a4873ae29d5d8d4f1cb7c7717af41a993">Vec3f</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>bbox</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="namespaceopenvdb_1_1v13__0_1_1math.html#ae60b991a87c83e25ec51e0576209be11">Vec3s</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>vtx</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="namespaceopenvdb_1_1v13__0.html#ab407b3d357305019c37259d8f5d7f1a7">Vec3I</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>tri</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="namespaceopenvdb_1_1v13__0.html#a1b3b3d39bd0af138296a8de32155eadb">Vec4I</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>quad</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const ShrinkWrapT &amp;</td>          <td class="paramname"><span class="paramname"><em>D</em></span><span class="paramdefsep"> = </span><span class="paramdefval">ShrinkWrapT()</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>halfWidth</em></span><span class="paramdefsep"> = </span><span class="paramdefval">float(<a class="el" href="namespaceopenvdb_1_1v13__0.html#a04f60dd7b4a065a54f873613ff8df50f">LEVEL_SET_HALF_WIDTH</a>)</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ProgressT *</td>          <td class="paramname"><span class="paramname"><em>progress</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>offset_mode</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Convert a soup of polygons to a LOD sequence of shrink wrapped level set volumes. </p>
+<dl class="section return"><dt>Returns</dt><dd>a vector of grids of type <code>GridType</code> containing a narrow-band level set at various resolution shrink wrapping the input polygon mesh. The first element in this vector has the highest resolution.</dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classopenvdb_1_1v13__0_1_1TypeError.html">TypeError</a></td><td>if <code>GridType</code> is not scalar or not floating-point</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>Unlike <a class="el" href="#a49d6517666da8e1ec1175651ebf12f32" title="Convert a triangle mesh to a level set volume.">tools::meshToLevelSet</a> this method works for any polygons, and does not require a closed surface.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dim</td><td>Largest voxel dimension of the finest output grid </td></tr>
+    <tr><td class="paramname">bbox</td><td>Bounding box of the vertices of the polygon mesh </td></tr>
+    <tr><td class="paramname">vtx</td><td>Vector of world space vertex positions </td></tr>
+    <tr><td class="paramname">tri</td><td>Vector of triangle indices </td></tr>
+    <tr><td class="paramname">quad</td><td>Vector of quad indices </td></tr>
+    <tr><td class="paramname">D</td><td>Functor mapping voxel size to maximum allowed surface deformation allowed by shrink wrapping as a function of the voxel size </td></tr>
+    <tr><td class="paramname">halfWidth</td><td><a class="el" href="namespaceopenvdb_1_1v13__0.html#a22a8e71efc9fdc0f1f152e647c13be9d">Half</a> the width of the narrow band, in voxel units </td></tr>
+    <tr><td class="paramname">progress</td><td>Optional pointer to progress bar </td></tr>
+    <tr><td class="paramname">offset_mode</td><td>EXPERIMENTAL parameter that will be removed in the near future. It should only be used by experts! </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a31944fb58ffc3e63a52ce67eba6b7108" name="a31944fb58ffc3e63a52ce67eba6b7108"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31944fb58ffc3e63a52ce67eba6b7108">&#9670;&#160;</a></span>polySoupToLevelSet() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename GridType, class ShrinkWrapT = ShrinkWrapLimit, class ProgressT = void&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">GridType::Ptr polySoupToLevelSet </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structopenvdb_1_1v13__0_1_1tools_1_1PolySoup.html">PolySoup</a> &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em>poly</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>dim</em></span><span class="paramdefsep"> = </span><span class="paramdefval">256</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>voxelSize</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0.0</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const ShrinkWrapT &amp;</td>          <td class="paramname"><span class="paramname"><em>D</em></span><span class="paramdefsep"> = </span><span class="paramdefval">ShrinkWrapT()</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>halfWidth</em></span><span class="paramdefsep"> = </span><span class="paramdefval">float(<a class="el" href="namespaceopenvdb_1_1v13__0.html#a04f60dd7b4a065a54f873613ff8df50f">LEVEL_SET_HALF_WIDTH</a>)</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ProgressT *</td>          <td class="paramname"><span class="paramname"><em>progress</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>offset_mode</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Convert a soup of polygons to a shrink wrapped level set volume. This version takes a <a class="el" href="structopenvdb_1_1v13__0_1_1tools_1_1PolySoup.html" title="Simple structure for a polygon soup.">PolySoup</a> struct and optional voxel dimension and/or voxel size. If the voxel size is invalid, i.e. not positive, the dimension and bbox of the <a class="el" href="structopenvdb_1_1v13__0_1_1tools_1_1PolySoup.html" title="Simple structure for a polygon soup.">PolySoup</a> is used to derive the voxel size. </p>
+<dl class="section return"><dt>Returns</dt><dd>A shared pointer to grid of type <code>GridType</code> containing a narrow-band level set that shrink wraps the input polygons.</dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classopenvdb_1_1v13__0_1_1TypeError.html">TypeError</a></td><td>if <code>GridType</code> is not scalar or not floating-point</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>Unlike <a class="el" href="#a49d6517666da8e1ec1175651ebf12f32" title="Convert a triangle mesh to a level set volume.">tools::meshToLevelSet</a> this method works for any polygons, and does not require a closed surface.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">poly</td><td>Struct with polygon soup, that will be destroyed (moved) </td></tr>
+    <tr><td class="paramname">dim</td><td>Optional dimension in voxel units (assuming voxelSize is invalid) </td></tr>
+    <tr><td class="paramname">voxelSize</td><td>Optional voxel size in world units (if invalid dim will be used instead) </td></tr>
+    <tr><td class="paramname">D</td><td>Functor mapping voxel size to maximum allowed surface deformation allowed by shrink wrapping as a function of the voxel size </td></tr>
+    <tr><td class="paramname">halfWidth</td><td><a class="el" href="namespaceopenvdb_1_1v13__0.html#a22a8e71efc9fdc0f1f152e647c13be9d">Half</a> the width of the narrow band, in voxel units </td></tr>
+    <tr><td class="paramname">progress</td><td>Optional pointer to progress bar </td></tr>
+    <tr><td class="paramname">offset_mode</td><td>EXPERIMENTAL parameter that will be removed in the near future. It should only be used by experts! </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a8057e1165c928a37703f90eb9496083c" name="a8057e1165c928a37703f90eb9496083c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8057e1165c928a37703f90eb9496083c">&#9670;&#160;</a></span>prune()</h2>
 
@@ -8927,7 +9233,7 @@ template&lt;typename SdfGridT, typename ExtOpT, typename ExtValueT&gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>Note</dt><dd>Strictly speaking a fog volume is normalized to the range [0,1] but this method accepts a scalar volume with an arbritary range, as long as the it includes the <em class="arg">isoValue</em>.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Strictly speaking a fog volume is normalized to the range [0,1] but this method accepts a scalar volume with an arbitrary range, as long as the it includes the <em class="arg">isoValue</em>.</dd></dl>
 <p>Topology of output grids are identical to that of the input grid, except active tiles in the input grid will be converted to active voxels in the output grids!</p>
 <dl class="section warning"><dt>Warning</dt><dd>If <em class="arg">isoValue</em> does not intersect any active values in <em class="arg">sdfGrid</em> then a pair of the following grids is returned: The first is a signed distance grid with its active values set to plus or minus infinity depending of whether its input values are above or below <em class="arg">isoValue</em>. The second grid, which represents the extension field, has all its active values set to <em class="arg">background</em>. </dd></dl>
 
@@ -9690,7 +9996,7 @@ template&lt;typename InIterT, typename OutGridT, typename XformOp&gt; </div>
 <div class="line"><a class="code hl_typedef" href="namespaceopenvdb_1_1v13__0.html#a2ae45d4df056c7d0d936a496fec925ee">FloatGrid</a> outGrid;</div>
 <div class="line"><a class="code hl_function" href="#ae7aba10043b96fad10e7d79a26de0bd0">tools::transformValues</a>(inGrid.cbeginValueOn(), outGrid, Local::op);</div>
 <div class="ttc" id="aclassopenvdb_1_1v13__0_1_1math_1_1CoordBBox_html"><div class="ttname"><a href="classopenvdb_1_1v13__0_1_1math_1_1CoordBBox.html">openvdb::v13_0::math::CoordBBox</a></div><div class="ttdoc">Axis-aligned bounding box of signed integer coordinates.</div><div class="ttdef"><b>Definition</b> Coord.h:252</div></div>
-<div class="ttc" id="anamespaceopenvdb_1_1v13__0_1_1tools_html_ae7aba10043b96fad10e7d79a26de0bd0"><div class="ttname"><a href="#ae7aba10043b96fad10e7d79a26de0bd0">openvdb::v13_0::tools::transformValues</a></div><div class="ttdeci">undefined void transformValues(const InIterT &amp;inIter, OutGridT &amp;outGrid, XformOp &amp;op, bool threaded=true, bool shareOp=true, MergePolicy merge=MERGE_ACTIVE_STATES)</div><div class="ttdoc">Iterate over a grid and at each step call op(iter, accessor) to populate (via the accessor) the given...</div><div class="ttdef"><b>Definition</b> ValueTransformer.h:591</div></div>
+<div class="ttc" id="anamespaceopenvdb_1_1v13__0_1_1tools_html_ae7aba10043b96fad10e7d79a26de0bd0"><div class="ttname"><a href="#ae7aba10043b96fad10e7d79a26de0bd0">openvdb::v13_0::tools::transformValues</a></div><div class="ttdeci">undefined void transformValues(const InIterT &amp;inIter, OutGridT &amp;outGrid, XformOp &amp;op, bool threaded=true, bool shareOp=true, MergePolicy merge=MERGE_ACTIVE_STATES)</div><div class="ttdoc">Iterate over a grid and at each step call op(iter, accessor) to populate (via the accessor) the given...</div><div class="ttdef"><b>Definition</b> ValueTransformer.h:595</div></div>
 <div class="ttc" id="anamespaceopenvdb_1_1v13__0_html_a58332e5bdbbdb5a926507027db318e5b"><div class="ttname"><a href="namespaceopenvdb_1_1v13__0.html#a58332e5bdbbdb5a926507027db318e5b">openvdb::v13_0::Vec3fGrid</a></div><div class="ttdeci">Vec3SGrid Vec3fGrid</div><div class="ttdef"><b>Definition</b> openvdb.h:87</div></div>
 </div><!-- fragment --></dd></dl>
 <dl class="section note"><dt>Note</dt><dd>For more complex operations that require finer control over threading, consider using <code>tbb::parallel_for()</code> or <code>tbb::parallel_reduce()</code> in conjunction with a <a class="el" href="classopenvdb_1_1v13__0_1_1tree_1_1IteratorRange.html">tree::IteratorRange</a> that wraps a grid or tree iterator. </dd></dl>
@@ -9767,8 +10073,8 @@ template&lt;class GridType&gt; </div>
 
 </div>
 </div>
-<a id="ac3d8c9dd7eda32f2e44bbcdef93457bd" name="ac3d8c9dd7eda32f2e44bbcdef93457bd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac3d8c9dd7eda32f2e44bbcdef93457bd">&#9670;&#160;</a></span>visitNodesDepthFirst()</h2>
+<a id="ad6c78f0b7877a026d17d8ab5023f79ba" name="ad6c78f0b7877a026d17d8ab5023f79ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6c78f0b7877a026d17d8ab5023f79ba">&#9670;&#160;</a></span>visitNodesDepthFirst()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -9788,7 +10094,12 @@ template&lt;typename TreeT, typename OpT&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>idx</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>&#160;)</td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>idx</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>topDown</em></span><span class="paramdefsep"> = </span><span class="paramdefval">true</span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -9798,7 +10109,8 @@ template&lt;typename TreeT, typename OpT&gt; </div>
   <table class="params">
     <tr><td class="paramname">tree</td><td>tree to be visited. </td></tr>
     <tr><td class="paramname">op</td><td>user-supplied functor, see examples for interface details. </td></tr>
-    <tr><td class="paramname">idx</td><td>optional offset to start sequential node indexing from a non-zero index.</td></tr>
+    <tr><td class="paramname">idx</td><td>optional offset to start sequential node indexing from a non-zero index. </td></tr>
+    <tr><td class="paramname">topDown</td><td>if true, visit parent nodes before their children (pre-order traversal). If false, visit children before their parent nodes (post-order traversal). Defaults to true.</td></tr>
   </table>
   </dd>
 </dl>
@@ -9821,7 +10133,7 @@ template&lt;typename TreeT, typename OpT&gt; </div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// usage:</span></div>
 <div class="line">OffsetOp op(3.0f);</div>
-<div class="line"><a class="code hl_function" href="#ac3d8c9dd7eda32f2e44bbcdef93457bd">visitNodesDepthFirst</a>(tree, op);</div>
+<div class="line"><a class="code hl_function" href="#ad6c78f0b7877a026d17d8ab5023f79ba">visitNodesDepthFirst</a>(tree, op);</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Functor to offset all the active values of a tree. Note</span></div>
 <div class="line"><span class="comment">// this implementation also illustrates how different</span></div>
@@ -9861,12 +10173,12 @@ template&lt;typename TreeT, typename OpT&gt; </div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// usage:</span></div>
 <div class="line">OffsetByLevelOp&lt;FloatTree&gt; op(3.0f);</div>
-<div class="line"><a class="code hl_function" href="#ac3d8c9dd7eda32f2e44bbcdef93457bd">visitNodesDepthFirst</a>(tree, op);</div>
+<div class="line"><a class="code hl_function" href="#ad6c78f0b7877a026d17d8ab5023f79ba">visitNodesDepthFirst</a>(tree, op);</div>
 <div class="ttc" id="anamespaceopenvdb_1_1v13__0_1_1tools_html_a5844baaab66cb9519db44a85d8cc0fd7"><div class="ttname"><a href="#a5844baaab66cb9519db44a85d8cc0fd7">openvdb::v13_0::tools::mOffset</a></div><div class="ttdeci">const Coord FastSweeping&lt; SdfGridT, ExtValueT &gt;::mOffset[6]</div><div class="ttdef"><b>Definition</b> FastSweeping.h:714</div></div>
-<div class="ttc" id="anamespaceopenvdb_1_1v13__0_1_1tools_html_ac3d8c9dd7eda32f2e44bbcdef93457bd"><div class="ttname"><a href="#ac3d8c9dd7eda32f2e44bbcdef93457bd">openvdb::v13_0::tools::visitNodesDepthFirst</a></div><div class="ttdeci">size_t visitNodesDepthFirst(TreeT &amp;tree, OpT &amp;op, size_t idx=0)</div><div class="ttdoc">Visit all nodes in the tree depth-first and apply a user-supplied functor to each node.</div><div class="ttdef"><b>Definition</b> NodeVisitor.h:229</div></div>
+<div class="ttc" id="anamespaceopenvdb_1_1v13__0_1_1tools_html_ad6c78f0b7877a026d17d8ab5023f79ba"><div class="ttname"><a href="#ad6c78f0b7877a026d17d8ab5023f79ba">openvdb::v13_0::tools::visitNodesDepthFirst</a></div><div class="ttdeci">size_t visitNodesDepthFirst(TreeT &amp;tree, OpT &amp;op, size_t idx=0, bool topDown=true)</div><div class="ttdoc">Visit all nodes in the tree depth-first and apply a user-supplied functor to each node.</div><div class="ttdef"><b>Definition</b> NodeVisitor.h:233</div></div>
 <div class="ttc" id="anamespaceopenvdb_1_1v13__0_1_1tree_html"><div class="ttname"><a href="namespaceopenvdb_1_1v13__0_1_1tree.html">openvdb::v13_0::tree</a></div><div class="ttdef"><b>Definition</b> PointDataGrid.h:170</div></div>
 </div><!-- fragment --></dd></dl>
-<dl class="section user"><dt>Here is an example when migrating from using the deprecated Tree::visit()</dt><dd>method. The main difference between the Tree::visit() method and this new method is that the Tree::visit() method expected an object that can visit tiles, values and nodes. In contrast, the <a class="el" href="#ac3d8c9dd7eda32f2e44bbcdef93457bd" title="Visit all nodes in the tree depth-first and apply a user-supplied functor to each node.">visitNodesDepthFirst()</a> method visits only nodes and expects you to provide iteration over tiles and voxels.</dd></dl>
+<dl class="section user"><dt>Here is an example when migrating from using the deprecated Tree::visit()</dt><dd>method. The main difference between the Tree::visit() method and this new method is that the Tree::visit() method expected an object that can visit tiles, values and nodes. In contrast, the <a class="el" href="#ad6c78f0b7877a026d17d8ab5023f79ba" title="Visit all nodes in the tree depth-first and apply a user-supplied functor to each node.">visitNodesDepthFirst()</a> method visits only nodes and expects you to provide iteration over tiles and voxels.</dd></dl>
 <dl class="section user"><dt>Tree::visit() operator methods:</dt><dd></dd></dl>
 <div class="fragment"><div class="line"><span class="keyword">template</span> &lt;<span class="keyword">typename</span> IterT&gt;</div>
 <div class="line"><span class="keywordtype">bool</span> operator()(IterT &amp;iter)</div>

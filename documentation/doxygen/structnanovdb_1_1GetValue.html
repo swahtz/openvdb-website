@@ -17,6 +17,15 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -143,13 +152,13 @@ struct nanovdb::GetValue&lt; BuildT &gt;</div><p>Below is an example of a struct
 <div class="line">     <a class="code hl_define" href="nanovdb_2nanovdb_2util_2Util_8h.html#a551e5ea2539324048f4b47c00ab67d55">__hostdev__</a> <span class="keyword">static</span> Type get(<span class="keyword">const</span> NanoLower&lt;BuildT&gt;&amp; node, uint32_t n, args...) { }</div>
 <div class="line">     <a class="code hl_define" href="nanovdb_2nanovdb_2util_2Util_8h.html#a551e5ea2539324048f4b47c00ab67d55">__hostdev__</a> <span class="keyword">static</span> Type get(<span class="keyword">const</span> NanoLeaf&lt;BuildT&gt;&amp; leaf,  uint32_t n, args...) { }</div>
 <div class="line">};</div>
-<div class="ttc" id="aclassnanovdb_1_1RootNode_html_ac40844df2c2731ac2dfc202705648db0"><div class="ttname"><a href="classnanovdb_1_1RootNode.html#ac40844df2c2731ac2dfc202705648db0">nanovdb::RootNode&lt; NanoUpper&lt; BuildT &gt; &gt;::Tile</a></div><div class="ttdeci">typename DataType::Tile Tile</div><div class="ttdef"><b>Definition</b> NanoVDB.h:2851</div></div>
-<div class="ttc" id="anamespacenanovdb_html_a537a4d5b445c163b39b264a0788e4acc"><div class="ttname"><a href="namespacenanovdb.html#a537a4d5b445c163b39b264a0788e4acc">nanovdb::NanoRoot</a></div><div class="ttdeci">RootNode&lt; NanoUpper&lt; BuildT &gt; &gt; NanoRoot</div><div class="ttdef"><b>Definition</b> NanoVDB.h:4617</div></div>
-<div class="ttc" id="ananovdb_2nanovdb_2util_2Util_8h_html_a551e5ea2539324048f4b47c00ab67d55"><div class="ttname"><a href="nanovdb_2nanovdb_2util_2Util_8h.html#a551e5ea2539324048f4b47c00ab67d55">__hostdev__</a></div><div class="ttdeci">#define __hostdev__</div><div class="ttdef"><b>Definition</b> Util.h:73</div></div>
-<div class="ttc" id="astructnanovdb_1_1BuildToValueMap_html_a19462713b2aab2dae2c87c15f262c1df"><div class="ttname"><a href="structnanovdb_1_1BuildToValueMap.html#a19462713b2aab2dae2c87c15f262c1df">nanovdb::BuildToValueMap::Type</a></div><div class="ttdeci">T Type</div><div class="ttdef"><b>Definition</b> NanoVDB.h:506</div></div>
-<div class="ttc" id="astructnanovdb_1_1GetValue_html_a829cdad5aa133c0fc589b60fe4c20933"><div class="ttname"><a href="#a829cdad5aa133c0fc589b60fe4c20933">nanovdb::GetValue::LEVEL</a></div><div class="ttdeci">static constexpr int LEVEL</div><div class="ttdef"><b>Definition</b> NanoVDB.h:6131</div></div>
-<div class="ttc" id="astructnanovdb_1_1GetValue_html_ac8321c7f191dd2878bd5f9f3e7d118cb"><div class="ttname"><a href="#ac8321c7f191dd2878bd5f9f3e7d118cb">nanovdb::GetValue::get</a></div><div class="ttdeci">static __hostdev__ Type get(const NanoRoot&lt; BuildT &gt; &amp;root)</div><div class="ttdef"><b>Definition</b> NanoVDB.h:6132</div></div>
-<div class="ttc" id="astructnanovdb_1_1GetValue_html_af8c0c8a917966bd9e12826e9b92f86fb"><div class="ttname"><a href="#af8c0c8a917966bd9e12826e9b92f86fb">nanovdb::GetValue::Type</a></div><div class="ttdeci">typename NanoLeaf&lt; BuildT &gt;::ValueType Type</div><div class="ttdef"><b>Definition</b> NanoVDB.h:6130</div></div>
+<div class="ttc" id="aclassnanovdb_1_1RootNode_html_ac40844df2c2731ac2dfc202705648db0"><div class="ttname"><a href="classnanovdb_1_1RootNode.html#ac40844df2c2731ac2dfc202705648db0">nanovdb::RootNode&lt; NanoUpper&lt; BuildT &gt; &gt;::Tile</a></div><div class="ttdeci">typename DataType::Tile Tile</div><div class="ttdef"><b>Definition</b> NanoVDB.h:2875</div></div>
+<div class="ttc" id="anamespacenanovdb_html_a537a4d5b445c163b39b264a0788e4acc"><div class="ttname"><a href="namespacenanovdb.html#a537a4d5b445c163b39b264a0788e4acc">nanovdb::NanoRoot</a></div><div class="ttdeci">RootNode&lt; NanoUpper&lt; BuildT &gt; &gt; NanoRoot</div><div class="ttdef"><b>Definition</b> NanoVDB.h:4641</div></div>
+<div class="ttc" id="ananovdb_2nanovdb_2util_2Util_8h_html_a551e5ea2539324048f4b47c00ab67d55"><div class="ttname"><a href="nanovdb_2nanovdb_2util_2Util_8h.html#a551e5ea2539324048f4b47c00ab67d55">__hostdev__</a></div><div class="ttdeci">#define __hostdev__</div><div class="ttdef"><b>Definition</b> Util.h:76</div></div>
+<div class="ttc" id="astructnanovdb_1_1BuildToValueMap_html_a19462713b2aab2dae2c87c15f262c1df"><div class="ttname"><a href="structnanovdb_1_1BuildToValueMap.html#a19462713b2aab2dae2c87c15f262c1df">nanovdb::BuildToValueMap::Type</a></div><div class="ttdeci">T Type</div><div class="ttdef"><b>Definition</b> NanoVDB.h:527</div></div>
+<div class="ttc" id="astructnanovdb_1_1GetValue_html_a829cdad5aa133c0fc589b60fe4c20933"><div class="ttname"><a href="#a829cdad5aa133c0fc589b60fe4c20933">nanovdb::GetValue::LEVEL</a></div><div class="ttdeci">static constexpr int LEVEL</div><div class="ttdef"><b>Definition</b> NanoVDB.h:6200</div></div>
+<div class="ttc" id="astructnanovdb_1_1GetValue_html_ac8321c7f191dd2878bd5f9f3e7d118cb"><div class="ttname"><a href="#ac8321c7f191dd2878bd5f9f3e7d118cb">nanovdb::GetValue::get</a></div><div class="ttdeci">static __hostdev__ Type get(const NanoRoot&lt; BuildT &gt; &amp;root)</div><div class="ttdef"><b>Definition</b> NanoVDB.h:6201</div></div>
+<div class="ttc" id="astructnanovdb_1_1GetValue_html_af8c0c8a917966bd9e12826e9b92f86fb"><div class="ttname"><a href="#af8c0c8a917966bd9e12826e9b92f86fb">nanovdb::GetValue::Type</a></div><div class="ttdeci">typename NanoLeaf&lt; BuildT &gt;::ValueType Type</div><div class="ttdef"><b>Definition</b> NanoVDB.h:6199</div></div>
 </div><!-- fragment --></dd></dl>
 <p>Below is an example of the struct used for random set methods </p><dl class="section note"><dt>Note</dt><dd>All member methods and data are mandatory. <div class="fragment"><div class="line"> <span class="keyword">template</span>&lt;<span class="keyword">typename</span> BuildT&gt;</div>
 <div class="line"> <span class="keyword">struct </span>SetOpT {</div>

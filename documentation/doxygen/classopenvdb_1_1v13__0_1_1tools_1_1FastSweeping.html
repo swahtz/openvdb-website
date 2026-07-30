@@ -17,6 +17,15 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -170,7 +179,7 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename SdfGridT, typename ExtValueT = typename SdfGridT::ValueType&gt;<br />
 class openvdb::v13_0::tools::FastSweeping&lt; SdfGridT, ExtValueT &gt;</div><p>Computes signed distance values from an initial iso-surface and optionally performs velocity extension at the same time. This is done by means of a novel sparse and parallel fast sweeping algorithm based on a first order Godunov's scheme. </p>
-<p>Solves: <img class="formulaInl" alt="$|\nabla \phi|^2 = 1 $" src="form_2.png"/></p>
+<p>Solves: \(|\nabla \phi|^2 = 1 \)</p>
 <dl class="section warning"><dt>Warning</dt><dd>Note, it is important to call one of the initialization methods before called the sweep function. Failure to do so will throw a <a class="el" href="classopenvdb_1_1v13__0_1_1RuntimeError.html">RuntimeError</a>. Consider instead call one of the many higher-level free-standing functions defined above! </dd></dl>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a27e16e6dfb2e980d2b9b66c3080b78a8" name="a27e16e6dfb2e980d2b9b66c3080b78a8"></a>

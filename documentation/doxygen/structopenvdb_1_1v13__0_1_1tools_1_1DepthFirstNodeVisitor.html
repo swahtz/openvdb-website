@@ -17,6 +17,15 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -121,15 +130,15 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:afbf202443b9dca7d6df5645ab1ebe661" id="r_afbf202443b9dca7d6df5645ab1ebe661"><td class="memTemplParams" colspan="2">template&lt;typename OpT&gt; </td></tr>
-<tr class="memitem:afbf202443b9dca7d6df5645ab1ebe661 template"><td class="memItemLeft" align="right" valign="top">static size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afbf202443b9dca7d6df5645ab1ebe661">visit</a> (NodeT &amp;node, OpT &amp;op, size_t idx=0)</td></tr>
+<tr class="memitem:a7c04d4733d76bb302ff1868d0e092a61" id="r_a7c04d4733d76bb302ff1868d0e092a61"><td class="memTemplParams" colspan="2">template&lt;typename OpT&gt; </td></tr>
+<tr class="memitem:a7c04d4733d76bb302ff1868d0e092a61 template"><td class="memItemLeft" align="right" valign="top">static size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7c04d4733d76bb302ff1868d0e092a61">visit</a> (NodeT &amp;node, OpT &amp;op, size_t idx=0, bool topDown=true)</td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename NodeT, <a class="el" href="namespaceopenvdb_1_1v13__0.html#a1a68fb76e3d6897fa878760b6bcbda7a">Index</a> LEVEL&gt;<br />
 struct openvdb::v13_0::tools::DepthFirstNodeVisitor&lt; NodeT, LEVEL &gt;</div><p>Visit all nodes that are downstream of a specific node in depth-first order and apply a user-supplied functor to each node. </p>
-<dl class="section note"><dt>Note</dt><dd>This uses the same operator interface as documented in <a class="el" href="namespaceopenvdb_1_1v13__0_1_1tools.html#ac3d8c9dd7eda32f2e44bbcdef93457bd" title="Visit all nodes in the tree depth-first and apply a user-supplied functor to each node.">visitNodesDepthFirst()</a>.</dd>
+<dl class="section note"><dt>Note</dt><dd>This uses the same operator interface as documented in <a class="el" href="namespaceopenvdb_1_1v13__0_1_1tools.html#ad6c78f0b7877a026d17d8ab5023f79ba" title="Visit all nodes in the tree depth-first and apply a user-supplied functor to each node.">visitNodesDepthFirst()</a>.</dd>
 <dd>
-The LEVEL template argument can be used to reduce the traversal depth. For example, calling <a class="el" href="#afbf202443b9dca7d6df5645ab1ebe661">visit()</a> with a RootNode and using NodeT::LEVEL-1 would not visit leaf nodes. </dd></dl>
+The LEVEL template argument can be used to reduce the traversal depth. For example, calling <a class="el" href="#a7c04d4733d76bb302ff1868d0e092a61">visit()</a> with a RootNode and using NodeT::LEVEL-1 would not visit leaf nodes. </dd></dl>
 </div><a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">Member Typedef Documentation</h2>
 <a id="aac9578a84b4540e55c46b4c261922264" name="aac9578a84b4540e55c46b4c261922264"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aac9578a84b4540e55c46b4c261922264">&#9670;&#160;</a></span>ChildNodeType</h2>
@@ -164,8 +173,8 @@ template&lt;typename NodeT, <a class="el" href="namespaceopenvdb_1_1v13__0.html#
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
-<a id="afbf202443b9dca7d6df5645ab1ebe661" name="afbf202443b9dca7d6df5645ab1ebe661"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afbf202443b9dca7d6df5645ab1ebe661">&#9670;&#160;</a></span>visit()</h2>
+<a id="a7c04d4733d76bb302ff1868d0e092a61" name="a7c04d4733d76bb302ff1868d0e092a61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c04d4733d76bb302ff1868d0e092a61">&#9670;&#160;</a></span>visit()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -190,7 +199,12 @@ template&lt;typename OpT&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>idx</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>&#160;)</td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>idx</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>topDown</em></span><span class="paramdefsep"> = </span><span class="paramdefval">true</span>&#160;)</td>
         </tr>
       </table>
   </td>

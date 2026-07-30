@@ -17,6 +17,15 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -112,7 +121,7 @@ $(function(){initNavTree('classApplyFunc.html','',''); });
 <p>This is the complete list of members for <a class="el" href="classApplyFunc.html">ApplyFunc&lt; Fn, Args &gt;</a>, including all inherited members.</p>
 <table class="directory">
   <tr class="even"><td class="entry"><a class="el" href="classApplyFunc.html#aa5752ba3a18ea3e68701f56f8bbfe06b">ApplyFunc</a>(int count, int blockSize, const Fn &amp;fn, Args... args)</td><td class="entry"><a class="el" href="classApplyFunc.html">ApplyFunc&lt; Fn, Args &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classApplyFunc.html#a34f9d9cc5874490491e7078c13c0b94b">call</a>(int start, int end, cxx14::index_sequence&lt; Is... &gt;) const</td><td class="entry"><a class="el" href="classApplyFunc.html">ApplyFunc&lt; Fn, Args &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classApplyFunc.html#ab4d986f087edde7b8d85a22b8dc7193d">call</a>(int start, int end, std::index_sequence&lt; Is... &gt;) const</td><td class="entry"><a class="el" href="classApplyFunc.html">ApplyFunc&lt; Fn, Args &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classApplyFunc.html#a96b02b241c40c490c20d35759561b80d">operator()</a>(int i) const</td><td class="entry"><a class="el" href="classApplyFunc.html">ApplyFunc&lt; Fn, Args &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->

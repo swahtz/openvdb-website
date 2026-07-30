@@ -17,6 +17,15 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -135,10 +144,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a1560289e61ac06f86610cdf10765a5b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run a function on each type instance in the underlying std::tuple. Effectively calls op(std::get&lt;I&gt;(mTuple)) where I = [0,Size). Does not support returning a value.  <br /></td></tr>
 <tr class="memitem:a8bcb5934e10e2786b7985ccb96354bbe" id="r_a8bcb5934e10e2786b7985ccb96354bbe"><td class="memTemplParams" colspan="2">template&lt;class Pred, class OpT&gt; </td></tr>
 <tr class="memitem:a8bcb5934e10e2786b7985ccb96354bbe template"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Platform_8h.html#a857e437e165109054fd5c6ec359a00c2">OPENVDB_FORCE_INLINE</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8bcb5934e10e2786b7985ccb96354bbe">evalFirstPred</a> (Pred pred, OpT op)</td></tr>
-<tr class="memdesc:a8bcb5934e10e2786b7985ccb96354bbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run a function on the first element in the underlying std::tuple that satisfies the provided predicate. Effectively calls op(std::get&lt;I&gt;(mTuple)) when pred(I) returns true, then exits, where I = [0,Size). Does not support returning a value.  <br /></td></tr>
+<tr class="memdesc:a8bcb5934e10e2786b7985ccb96354bbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run a function on the first element in the underlying std::tuple that satisfies the provided predicate. Effectively calls <span class="tt">op(std::get&lt;I&gt;(mTuple))</span> when <span class="tt">pred(I)</span> returns true, then exits, where <span class="tt">I = [0,Size)</span>. Does not support returning a value.  <br /></td></tr>
 <tr class="memitem:a78c64f1158300beb33e77071563372ef" id="r_a78c64f1158300beb33e77071563372ef"><td class="memTemplParams" colspan="2">template&lt;class Pred, class OpT, typename RetT&gt; </td></tr>
 <tr class="memitem:a78c64f1158300beb33e77071563372ef template"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Platform_8h.html#a857e437e165109054fd5c6ec359a00c2">OPENVDB_FORCE_INLINE</a> RetT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a78c64f1158300beb33e77071563372ef">evalFirstPred</a> (Pred pred, OpT op, RetT def)</td></tr>
-<tr class="memdesc:a78c64f1158300beb33e77071563372ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run a function on the first element in the underlying std::tuple that satisfies the provided predicate. Effectively calls op(std::get&lt;I&gt;(mTuple)) when pred(I) returns true, then exits, where I = [0,Size). Supports returning a value, but a default return value must be provided.  <br /></td></tr>
+<tr class="memdesc:a78c64f1158300beb33e77071563372ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run a function on the first element in the underlying std::tuple that satisfies the provided predicate. Effectively calls <span class="tt">op(std::get&lt;I&gt;(mTuple))</span> when <span class="tt">pred(I)</span> returns true, then exits, where <span class="tt">I = [0,Size)</span>. Supports returning a value, but a default return value must be provided.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename... Ts&gt;<br />
@@ -264,12 +273,12 @@ template&lt;class Pred, class OpT&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Run a function on the first element in the underlying std::tuple that satisfies the provided predicate. Effectively calls op(std::get&lt;I&gt;(mTuple)) when pred(I) returns true, then exits, where I = [0,Size). Does not support returning a value. </p>
-<dl class="section note"><dt>Note</dt><dd>This is mainly useful to avoid the overhead of calling std::get<em> on every element when only a single unknown element needs processing.</em></dd></dl>
+<p>Run a function on the first element in the underlying std::tuple that satisfies the provided predicate. Effectively calls <span class="tt">op(std::get&lt;I&gt;(mTuple))</span> when <span class="tt">pred(I)</span> returns true, then exits, where <span class="tt">I = [0,Size)</span>. Does not support returning a value. </p>
+<dl class="section note"><dt>Note</dt><dd>This is mainly useful to avoid the overhead of calling <span class="tt">std::get&lt;I&gt;</span> on every element when only a single unknown element needs processing.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pred</td><td><em> Predicate to run on each index, should return true/false </em></td></tr>
-    <tr><td class="paramname">op</td><td><em> Function to run on the first element that satisfies pred</em></td></tr>
+    <tr><td class="paramname">pred</td><td>Predicate to run on each index, should return true/false </td></tr>
+    <tr><td class="paramname">op</td><td>Function to run on the first element that satisfies pred</td></tr>
   </table>
   </dd>
 </dl>
@@ -326,7 +335,7 @@ template&lt;class Pred, class OpT, typename RetT&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Run a function on the first element in the underlying std::tuple that satisfies the provided predicate. Effectively calls op(std::get&lt;I&gt;(mTuple)) when pred(I) returns true, then exits, where I = [0,Size). Supports returning a value, but a default return value must be provided. </p>
+<p>Run a function on the first element in the underlying std::tuple that satisfies the provided predicate. Effectively calls <span class="tt">op(std::get&lt;I&gt;(mTuple))</span> when <span class="tt">pred(I)</span> returns true, then exits, where <span class="tt">I = [0,Size)</span>. Supports returning a value, but a default return value must be provided. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">pred</td><td>Predicate to run on each index, should return true/false </td></tr>

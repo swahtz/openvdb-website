@@ -17,6 +17,15 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -334,7 +343,7 @@ $(function(){initNavTree('Logger_8h_source.html','',''); });
 <div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span><span class="preprocessor">#endif </span><span class="comment">// OPENVDB_AX_COMPILER_LOGGER_HAS_BEEN_INCLUDED</span></div>
 <div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span> </div>
 <div class="ttc" id="aAST_8h_html"><div class="ttname"><a href="AST_8h.html">AST.h</a></div><div class="ttdoc">Provides the definition for every abstract and concrete derived class which represent a particular ab...</div></div>
-<div class="ttc" id="aPlatform_8h_html_a4054a06b412a2c4f17ad97328fccd2cd"><div class="ttname"><a href="Platform_8h.html#a4054a06b412a2c4f17ad97328fccd2cd">OPENVDB_AX_API</a></div><div class="ttdeci">#define OPENVDB_AX_API</div><div class="ttdef"><b>Definition</b> Platform.h:312</div></div>
+<div class="ttc" id="aPlatform_8h_html_a4054a06b412a2c4f17ad97328fccd2cd"><div class="ttname"><a href="Platform_8h.html#a4054a06b412a2c4f17ad97328fccd2cd">OPENVDB_AX_API</a></div><div class="ttdeci">#define OPENVDB_AX_API</div><div class="ttdef"><b>Definition</b> Platform.h:299</div></div>
 <div class="ttc" id="aclassopenvdb_1_1v13__0_1_1ax_1_1Logger_html_a0553a5995796d78e61923339ff9269d5"><div class="ttname"><a href="classopenvdb_1_1v13__0_1_1ax_1_1Logger.html#a0553a5995796d78e61923339ff9269d5">openvdb::v13_0::ax::Logger::getWarningPrefix</a></div><div class="ttdeci">const char * getWarningPrefix() const</div><div class="ttdoc">Returns the prefix for each warning message.</div></div>
 <div class="ttc" id="aclassopenvdb_1_1v13__0_1_1ax_1_1Logger_html_a06fd79040a382cf4555ebd6d68d040a1"><div class="ttname"><a href="classopenvdb_1_1v13__0_1_1ax_1_1Logger.html#a06fd79040a382cf4555ebd6d68d040a1">openvdb::v13_0::ax::Logger::warnings</a></div><div class="ttdeci">size_t warnings() const</div><div class="ttdoc">Returns the number of warnings that have been encountered.</div><div class="ttdef"><b>Definition</b> Logger.h:111</div></div>
 <div class="ttc" id="aclassopenvdb_1_1v13__0_1_1ax_1_1Logger_html_a0c0ce7563ed7e13cc654063791132369"><div class="ttname"><a href="classopenvdb_1_1v13__0_1_1ax_1_1Logger.html#a0c0ce7563ed7e13cc654063791132369">openvdb::v13_0::ax::Logger::setWarningPrefix</a></div><div class="ttdeci">void setWarningPrefix(const char *prefix=&quot;warning: &quot;)</div><div class="ttdoc">Set a prefix for each warning message.</div></div>
@@ -372,7 +381,7 @@ $(function(){initNavTree('Logger_8h_source.html','',''); });
 <div class="ttc" id="astructopenvdb_1_1v13__0_1_1ax_1_1ast_1_1Node_html"><div class="ttname"><a href="structopenvdb_1_1v13__0_1_1ax_1_1ast_1_1Node.html">openvdb::v13_0::ax::ast::Node</a></div><div class="ttdoc">The base abstract node which determines the interface and required methods for all derived concrete n...</div><div class="ttdef"><b>Definition</b> AST.h:103</div></div>
 <div class="ttc" id="astructopenvdb_1_1v13__0_1_1ax_1_1ast_1_1Tree_html_ac64bafcc9c2bca4bbb87231f9de073c1"><div class="ttname"><a href="structopenvdb_1_1v13__0_1_1ax_1_1ast_1_1Tree.html#ac64bafcc9c2bca4bbb87231f9de073c1">openvdb::v13_0::ax::ast::Tree::ConstPtr</a></div><div class="ttdeci">std::shared_ptr&lt; const Tree &gt; ConstPtr</div><div class="ttdef"><b>Definition</b> AST.h:565</div></div>
 <div class="ttc" id="aversion_8h_8in_html_a00be3835cb8ad1ded8abd821fad20fc0"><div class="ttname"><a href="version_8h_8in.html#a00be3835cb8ad1ded8abd821fad20fc0">OPENVDB_VERSION_NAME</a></div><div class="ttdeci">#define OPENVDB_VERSION_NAME</div><div class="ttdoc">The version namespace name for this library version.</div><div class="ttdef"><b>Definition</b> version.h.in:121</div></div>
-<div class="ttc" id="aversion_8h_8in_html_a2dde157791cd7558cdf886489256ba14"><div class="ttname"><a href="version_8h_8in.html#a2dde157791cd7558cdf886489256ba14">OPENVDB_USE_VERSION_NAMESPACE</a></div><div class="ttdeci">#define OPENVDB_USE_VERSION_NAMESPACE</div><div class="ttdef"><b>Definition</b> version.h.in:218</div></div>
+<div class="ttc" id="aversion_8h_8in_html_a2dde157791cd7558cdf886489256ba14"><div class="ttname"><a href="version_8h_8in.html#a2dde157791cd7558cdf886489256ba14">OPENVDB_USE_VERSION_NAMESPACE</a></div><div class="ttdeci">#define OPENVDB_USE_VERSION_NAMESPACE</div><div class="ttdef"><b>Definition</b> version.h.in:284</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->

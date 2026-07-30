@@ -17,6 +17,15 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -199,6 +208,9 @@ Functions</h2></td></tr>
 <tr class="memdesc:ac906357e63c1a3a9cffceacbf311d022"><td class="mdescLeft">&#160;</td><td class="mdescRight">Simple wrapper for the function defined above, which works with std::containers.  <br /></td></tr>
 <tr class="memitem:a9fa34a074151d9dae08f4fcfcfc164f8" id="r_a9fa34a074151d9dae08f4fcfcfc164f8"><td class="memTemplParams" colspan="2">template&lt;typename Func, typename... Rest&gt; </td></tr>
 <tr class="memitem:a9fa34a074151d9dae08f4fcfcfc164f8 template"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9fa34a074151d9dae08f4fcfcfc164f8">invoke</a> (const Func &amp;taskFunc1, Rest... taskFuncN)</td></tr>
+<tr class="memitem:a057ba19c8e8aaeb137db8d13893dae7c" id="r_a057ba19c8e8aaeb137db8d13893dae7c"><td class="memTemplParams" colspan="2">template&lt;bool Invert = false&gt; </td></tr>
+<tr class="memitem:a057ba19c8e8aaeb137db8d13893dae7c template"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a057ba19c8e8aaeb137db8d13893dae7c">buildMaskPrefixSums</a> (const <a class="el" href="classnanovdb_1_1Mask.html">Mask</a>&lt; 3 &gt; &amp;mask, uint64_t <a class="el" href="#ac06981b465ecffc4663e5b905abca429">prefixSum</a>, uint16_t offsets[512])</td></tr>
+<tr class="memdesc:a057ba19c8e8aaeb137db8d13893dae7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the 512-entry inclusive prefix-sum table for a NanoVDB <a class="el" href="classnanovdb_1_1Mask.html" title="Bit-mask to encode active states and facilitate sequential iterators and a fast codec for I/O compres...">Mask&lt;3&gt;</a> leaf, optionally over the inverted mask.  <br /></td></tr>
 <tr class="memitem:ac06981b465ecffc4663e5b905abca429" id="r_ac06981b465ecffc4663e5b905abca429"><td class="memTemplParams" colspan="2">template&lt;typename T, typename OpT = std::plus&lt;T&gt;&gt; </td></tr>
 <tr class="memitem:ac06981b465ecffc4663e5b905abca429 template"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac06981b465ecffc4663e5b905abca429">prefixSum</a> (std::vector&lt; T &gt; &amp;vec, bool threaded=true, OpT op=OpT())</td></tr>
 <tr class="memdesc:ac06981b465ecffc4663e5b905abca429"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes inclusive prefix sum of a vector.  <br /></td></tr>
@@ -259,6 +271,10 @@ Functions</h2></td></tr>
 <tr class="memitem:a87413e92058cb81b8fe42e102cd36ab2" id="r_a87413e92058cb81b8fe42e102cd36ab2"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a87413e92058cb81b8fe42e102cd36ab2">findHighestOn</a> (uint64_t v)</td></tr>
 <tr class="memdesc:a87413e92058cb81b8fe42e102cd36ab2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the index of the highest, i.e. most significant, on bit in the specified 64 bit word.  <br /></td></tr>
 <tr class="memitem:a0cf31f0377ddc583b6407691b69bdb2f" id="r_a0cf31f0377ddc583b6407691b69bdb2f"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0cf31f0377ddc583b6407691b69bdb2f">countOn</a> (uint64_t v)</td></tr>
+<tr class="memitem:aa05f485d523728abe2e6bb926b496c40" id="r_aa05f485d523728abe2e6bb926b496c40"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa05f485d523728abe2e6bb926b496c40">atomicOr</a> (uint64_t *target, uint64_t mask)</td></tr>
+<tr class="memdesc:aa05f485d523728abe2e6bb926b496c40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Atomically ORs <em class="arg">mask</em> into the 64-bit word at <em class="arg">target</em> (relaxed ordering). Returns the old value. Callable from both host and device code.  <br /></td></tr>
+<tr class="memitem:ac135d88a977e129e28babb21176ebb5f" id="r_ac135d88a977e129e28babb21176ebb5f"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac135d88a977e129e28babb21176ebb5f">atomicAnd</a> (uint64_t *target, uint64_t mask)</td></tr>
+<tr class="memdesc:ac135d88a977e129e28babb21176ebb5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Atomically ANDs <em class="arg">mask</em> into the 64-bit word at <em class="arg">target</em> (relaxed ordering). Returns the old value. Callable from both host and device code.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -427,6 +443,122 @@ template&lt;typename T&gt; </div>
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
+<a id="ac135d88a977e129e28babb21176ebb5f" name="ac135d88a977e129e28babb21176ebb5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac135d88a977e129e28babb21176ebb5f">&#9670;&#160;</a></span>atomicAnd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t atomicAnd </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t *</td>          <td class="paramname"><span class="paramname"><em>target</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t</td>          <td class="paramname"><span class="paramname"><em>mask</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Atomically ANDs <em class="arg">mask</em> into the 64-bit word at <em class="arg">target</em> (relaxed ordering). Returns the old value. Callable from both host and device code. </p>
+
+</div>
+</div>
+<a id="aa05f485d523728abe2e6bb926b496c40" name="aa05f485d523728abe2e6bb926b496c40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa05f485d523728abe2e6bb926b496c40">&#9670;&#160;</a></span>atomicOr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t atomicOr </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t *</td>          <td class="paramname"><span class="paramname"><em>target</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t</td>          <td class="paramname"><span class="paramname"><em>mask</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Atomically ORs <em class="arg">mask</em> into the 64-bit word at <em class="arg">target</em> (relaxed ordering). Returns the old value. Callable from both host and device code. </p>
+
+</div>
+</div>
+<a id="a057ba19c8e8aaeb137db8d13893dae7c" name="a057ba19c8e8aaeb137db8d13893dae7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a057ba19c8e8aaeb137db8d13893dae7c">&#9670;&#160;</a></span>buildMaskPrefixSums()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;bool Invert = false&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void buildMaskPrefixSums </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classnanovdb_1_1Mask.html">Mask</a>&lt; 3 &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>mask</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t</td>          <td class="paramname"><span class="paramname"><em>prefixSum</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t</td>          <td class="paramname"><span class="paramname"><em>offsets</em></span>[512]&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Compute the 512-entry inclusive prefix-sum table for a NanoVDB <a class="el" href="classnanovdb_1_1Mask.html" title="Bit-mask to encode active states and facilitate sequential iterators and a fast codec for I/O compres...">Mask&lt;3&gt;</a> leaf, optionally over the inverted mask. </p>
+<p>When <code class="param">Invert</code> is false (the default), each entry offsets[i] equals the number of active (set) voxels at linearised positions 0..i (inclusive). When <code class="param">Invert</code> is true, offsets[i] equals the number of inactive (unset) voxels at positions 0..i (inclusive) &ndash; equivalently, the result of running the algorithm on the bitwise complement of the mask.</p>
+<p>The algorithm is a three-pass bit-parallel scan that operates entirely on 64 uint64_t values (the 8x8 workspace data[x][y]) without any hardware popcount instruction.</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Invert</td><td>If true, count inactive (0) bits instead of active (1) bits. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mask</td><td>The 8x8x8 leaf value mask (512 bits, 8 uint64_t words). </td></tr>
+    <tr><td class="paramname">prefixSum</td><td>Packed cross-word exclusive offsets: 7 x 9-bit fields, field x-1 = total active voxels in words 0..x-1, for x = 1..7. This is the value stored in the leaf's mPrefixSum member. Always the original (non-inverted) field; the function adjusts it internally when Invert=true. </td></tr>
+    <tr><td class="paramname">offsets</td><td>Output array of 512 uint16_t values. offsets[i] holds the inclusive prefix popcount (of active or inactive bits) at voxel i. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a0cf31f0377ddc583b6407691b69bdb2f" name="a0cf31f0377ddc583b6407691b69bdb2f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0cf31f0377ddc583b6407691b69bdb2f">&#9670;&#160;</a></span>countOn()</h2>
 
@@ -936,6 +1068,7 @@ template&lt;typename T, typename OpT = std::plus&lt;T&gt;&gt; </div>
   <table class="params">
     <tr><td class="paramname">vec</td><td>input and output vector </td></tr>
     <tr><td class="paramname">threaded</td><td>if true multi-threading is used </td></tr>
+    <tr><td class="paramname">op</td><td>binary operation used to combine successive elements (defaults to <code>std::plus&lt;T&gt;</code>) </td></tr>
   </table>
   </dd>
 </dl>

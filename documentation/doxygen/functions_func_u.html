@@ -17,6 +17,15 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -124,7 +133,8 @@ $(function(){initNavTree('functions_func_u.html','',''); });
 <li>unregisterGrid()&#160;:&#160;<a class="el" href="classopenvdb_1_1v13__0_1_1Grid.html#adf3063b7ed272d322fdf4758fa3a70a7">Grid&lt; _TreeType &gt;</a>, <a class="el" href="classopenvdb_1_1v13__0_1_1GridBase.html#aa275e35634a4e443a0804acb5f2cb0ac">GridBase</a></li>
 <li>unregisterMap()&#160;:&#160;<a class="el" href="classopenvdb_1_1v13__0_1_1math_1_1MapRegistry.html#a2271767b937f9bfdb1fbf3f7d0596af7">MapRegistry</a></li>
 <li>unregisterType()&#160;:&#160;<a class="el" href="classopenvdb_1_1v13__0_1_1ax_1_1TypedMetadata.html#a885f39d1666cf6461877ffc11949cb50">TypedMetadata&lt; T &gt;</a>, <a class="el" href="classopenvdb_1_1v13__0_1_1io_1_1DelayedLoadMetadata.html#adda15e5a42f2d79af1d1b214c8eb572e">DelayedLoadMetadata</a>, <a class="el" href="classopenvdb_1_1v13__0_1_1Metadata.html#ac36e5e8693aa2d6456d00c2bc68fd077">Metadata</a>, <a class="el" href="classopenvdb_1_1v13__0_1_1points_1_1AttributeArray.html#ae980f0c6680714a7b9423f04cf38f0a5">AttributeArray</a>, <a class="el" href="classopenvdb_1_1v13__0_1_1points_1_1TypedAttributeArray.html#a885f39d1666cf6461877ffc11949cb50">TypedAttributeArray&lt; ValueType_, Codec_ &gt;</a>, <a class="el" href="classopenvdb_1_1v13__0_1_1TypedMetadata.html#a885f39d1666cf6461877ffc11949cb50">TypedMetadata&lt; T &gt;</a></li>
-<li>unsetItem()&#160;:&#160;<a class="el" href="structopenvdb_1_1v13__0_1_1tree_1_1DenseIteratorBase.html#a195e935d98ed8e14975cfa83eba3d4fc">DenseIteratorBase&lt; MaskIterT, IterT, NodeT, SetItemT, UnsetItemT &gt;</a>, <a class="el" href="structopenvdb_1_1v13__0_1_1tree_1_1LeafNode_1_1DenseIter.html#a79a04ebeb19414ca7c0bbec69836c117">LeafNode&lt; T, Log2Dim &gt;::DenseIter&lt; NodeT, ValueT, TagT &gt;</a>, <a class="el" href="structopenvdb_1_1v13__0_1_1tree_1_1LeafNode_3_01bool_00_01Log2Dim_01_4_1_1DenseIter.html#afbf6364552335e6e9c85e14e983615e6">LeafNode&lt; bool, Log2Dim &gt;::DenseIter&lt; NodeT, ValueT &gt;</a>, <a class="el" href="structopenvdb_1_1v13__0_1_1tree_1_1LeafNode_3_01ValueMask_00_01Log2Dim_01_4_1_1DenseIter.html#afbf6364552335e6e9c85e14e983615e6">LeafNode&lt; ValueMask, Log2Dim &gt;::DenseIter&lt; NodeT, ValueT &gt;</a></li>
+<li>unsetChildNode()&#160;:&#160;<a class="el" href="classopenvdb_1_1v13__0_1_1tree_1_1InternalNode.html#aec7c1f8ba3b65cdaeb6030d5c8b5011f">InternalNode&lt; _ChildNodeType, Log2Dim &gt;</a></li>
+<li>unsetItem()&#160;:&#160;<a class="el" href="structopenvdb_1_1v13__0_1_1tree_1_1DenseIteratorBase.html#a195e935d98ed8e14975cfa83eba3d4fc">DenseIteratorBase&lt; MaskIterT, IterT, NodeT, SetItemT, UnsetItemT &gt;</a>, <a class="el" href="structopenvdb_1_1v13__0_1_1tree_1_1InternalNode_1_1DenseIter.html#a79a04ebeb19414ca7c0bbec69836c117">InternalNode&lt; _ChildNodeType, Log2Dim &gt;::DenseIter&lt; NodeT, ChildT, ValueT, TagT &gt;</a>, <a class="el" href="structopenvdb_1_1v13__0_1_1tree_1_1LeafNode_1_1DenseIter.html#a79a04ebeb19414ca7c0bbec69836c117">LeafNode&lt; T, Log2Dim &gt;::DenseIter&lt; NodeT, ValueT, TagT &gt;</a>, <a class="el" href="structopenvdb_1_1v13__0_1_1tree_1_1LeafNode_3_01bool_00_01Log2Dim_01_4_1_1DenseIter.html#afbf6364552335e6e9c85e14e983615e6">LeafNode&lt; bool, Log2Dim &gt;::DenseIter&lt; NodeT, ValueT &gt;</a>, <a class="el" href="structopenvdb_1_1v13__0_1_1tree_1_1LeafNode_3_01ValueMask_00_01Log2Dim_01_4_1_1DenseIter.html#afbf6364552335e6e9c85e14e983615e6">LeafNode&lt; ValueMask, Log2Dim &gt;::DenseIter&lt; NodeT, ValueT &gt;</a></li>
 <li>unusedGroupOffset()&#160;:&#160;<a class="el" href="classopenvdb_1_1v13__0_1_1points_1_1AttributeSet_1_1Descriptor.html#a42c939a74258b0380e32a68653d31dbe">AttributeSet::Descriptor</a></li>
 <li>unusedGroups()&#160;:&#160;<a class="el" href="classopenvdb_1_1v13__0_1_1points_1_1AttributeSet_1_1Descriptor.html#a07c0f169131de7095bcde88fc7aeb2c3">AttributeSet::Descriptor</a></li>
 <li>update()&#160;:&#160;<a class="el" href="classopenvdb_1_1v13__0_1_1tools_1_1FindActiveValues.html#aa09c1c8df1aabe28a45793a57f97dbe3">FindActiveValues&lt; TreeT &gt;</a></li>

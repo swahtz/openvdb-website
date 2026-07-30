@@ -17,6 +17,15 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -121,6 +130,7 @@ $(function(){initNavTree('PointRasterizeSDF_8h.html','',''); });
 <code>#include &lt;<a class="el" href="Threading_8h_source.html">openvdb/thread/Threading.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="NullInterrupter_8h_source.html">openvdb/util/NullInterrupter.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="Assert_8h_source.html">openvdb/util/Assert.h</a>&gt;</code><br />
+<code>#include &lt;openvdb/simd/Simd.h&gt;</code><br />
 <code>#include &lt;unordered_map&gt;</code><br />
 <code>#include &lt;tbb/task_group.h&gt;</code><br />
 <code>#include &lt;tbb/parallel_reduce.h&gt;</code><br />

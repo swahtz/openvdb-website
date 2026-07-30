@@ -17,6 +17,15 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -141,18 +150,21 @@ $(function(){initNavTree('classnanovdb_1_1Mask.html','',''); });
   <tr class="odd"><td class="entry"><a class="el" href="classnanovdb_1_1Mask.html#ac5ef144fd49d447ce22466ab37a31eec">operator|=</a>(const Mask &amp;other)</td><td class="entry"><a class="el" href="classnanovdb_1_1Mask.html">Mask&lt; LOG2DIM &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classnanovdb_1_1Mask.html#a17fb876458f1f0dd0de74e273bb7f92e">set</a>(uint32_t n, bool on)</td><td class="entry"><a class="el" href="classnanovdb_1_1Mask.html">Mask&lt; LOG2DIM &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classnanovdb_1_1Mask.html#ab28b008317f19d07fad5fc78ff6376b0">set</a>(bool on)</td><td class="entry"><a class="el" href="classnanovdb_1_1Mask.html">Mask&lt; LOG2DIM &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classnanovdb_1_1Mask.html#a41ef30b8914a1ffbeb1eb65d9b292f06">setOff</a>(uint32_t n)</td><td class="entry"><a class="el" href="classnanovdb_1_1Mask.html">Mask&lt; LOG2DIM &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classnanovdb_1_1Mask.html#a44082a977c90fa203f36f1c12553aa74">setOff</a>()</td><td class="entry"><a class="el" href="classnanovdb_1_1Mask.html">Mask&lt; LOG2DIM &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classnanovdb_1_1Mask.html#a085ce787f90c25b2de09cda0398a2c37">setAtomic</a>(uint32_t n, bool on)</td><td class="entry"><a class="el" href="classnanovdb_1_1Mask.html">Mask&lt; LOG2DIM &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classnanovdb_1_1Mask.html#a41ef30b8914a1ffbeb1eb65d9b292f06">setOff</a>(uint32_t n)</td><td class="entry"><a class="el" href="classnanovdb_1_1Mask.html">Mask&lt; LOG2DIM &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classnanovdb_1_1Mask.html#a44082a977c90fa203f36f1c12553aa74">setOff</a>()</td><td class="entry"><a class="el" href="classnanovdb_1_1Mask.html">Mask&lt; LOG2DIM &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classnanovdb_1_1Mask.html#a1a78873e9532a8162ce2e054b3dc4143">setOffAtomic</a>(uint32_t n)</td><td class="entry"><a class="el" href="classnanovdb_1_1Mask.html">Mask&lt; LOG2DIM &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classnanovdb_1_1Mask.html#afbffbd5616a3399e308ce61a38c57595">setOn</a>(uint32_t n)</td><td class="entry"><a class="el" href="classnanovdb_1_1Mask.html">Mask&lt; LOG2DIM &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classnanovdb_1_1Mask.html#a1f5cf096d1d42580e7890639d27bc94e">setOn</a>()</td><td class="entry"><a class="el" href="classnanovdb_1_1Mask.html">Mask&lt; LOG2DIM &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classnanovdb_1_1Mask.html#ada5861103cf05c3f86145e9697e00ae3">setWord</a>(WordT w, uint32_t n)</td><td class="entry"><a class="el" href="classnanovdb_1_1Mask.html">Mask&lt; LOG2DIM &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classnanovdb_1_1Mask.html#ad7dbb5bf2212e8504e70642de9cc4b05">SIZE</a></td><td class="entry"><a class="el" href="classnanovdb_1_1Mask.html">Mask&lt; LOG2DIM &gt;</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classnanovdb_1_1Mask.html#aadc44cc7a7db1a01b9813ffd99c49e32">toggle</a>()</td><td class="entry"><a class="el" href="classnanovdb_1_1Mask.html">Mask&lt; LOG2DIM &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classnanovdb_1_1Mask.html#a9c59e0db2690dd24dffa51d158ede6ba">toggle</a>(uint32_t n)</td><td class="entry"><a class="el" href="classnanovdb_1_1Mask.html">Mask&lt; LOG2DIM &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classnanovdb_1_1Mask.html#aa2fe636ede56e7f5973b0a7a1c182316">WORD_COUNT</a></td><td class="entry"><a class="el" href="classnanovdb_1_1Mask.html">Mask&lt; LOG2DIM &gt;</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classnanovdb_1_1Mask.html#abd448092a83fb59ba7a5ec7f109a5367">wordCount</a>()</td><td class="entry"><a class="el" href="classnanovdb_1_1Mask.html">Mask&lt; LOG2DIM &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classnanovdb_1_1Mask.html#a25ac09e356b23721a0095d8990e9b4da">words</a>()</td><td class="entry"><a class="el" href="classnanovdb_1_1Mask.html">Mask&lt; LOG2DIM &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classnanovdb_1_1Mask.html#ab114d7338570e6f6aabcf92afd640412">words</a>() const</td><td class="entry"><a class="el" href="classnanovdb_1_1Mask.html">Mask&lt; LOG2DIM &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classnanovdb_1_1Mask.html#a1ba80ebb74c73ad158651da8fc157ec3">setOnAtomic</a>(uint32_t n)</td><td class="entry"><a class="el" href="classnanovdb_1_1Mask.html">Mask&lt; LOG2DIM &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classnanovdb_1_1Mask.html#ada5861103cf05c3f86145e9697e00ae3">setWord</a>(WordT w, uint32_t n)</td><td class="entry"><a class="el" href="classnanovdb_1_1Mask.html">Mask&lt; LOG2DIM &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classnanovdb_1_1Mask.html#ad7dbb5bf2212e8504e70642de9cc4b05">SIZE</a></td><td class="entry"><a class="el" href="classnanovdb_1_1Mask.html">Mask&lt; LOG2DIM &gt;</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classnanovdb_1_1Mask.html#aadc44cc7a7db1a01b9813ffd99c49e32">toggle</a>()</td><td class="entry"><a class="el" href="classnanovdb_1_1Mask.html">Mask&lt; LOG2DIM &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classnanovdb_1_1Mask.html#a9c59e0db2690dd24dffa51d158ede6ba">toggle</a>(uint32_t n)</td><td class="entry"><a class="el" href="classnanovdb_1_1Mask.html">Mask&lt; LOG2DIM &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classnanovdb_1_1Mask.html#aa2fe636ede56e7f5973b0a7a1c182316">WORD_COUNT</a></td><td class="entry"><a class="el" href="classnanovdb_1_1Mask.html">Mask&lt; LOG2DIM &gt;</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classnanovdb_1_1Mask.html#abd448092a83fb59ba7a5ec7f109a5367">wordCount</a>()</td><td class="entry"><a class="el" href="classnanovdb_1_1Mask.html">Mask&lt; LOG2DIM &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classnanovdb_1_1Mask.html#a25ac09e356b23721a0095d8990e9b4da">words</a>()</td><td class="entry"><a class="el" href="classnanovdb_1_1Mask.html">Mask&lt; LOG2DIM &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classnanovdb_1_1Mask.html#ab114d7338570e6f6aabcf92afd640412">words</a>() const</td><td class="entry"><a class="el" href="classnanovdb_1_1Mask.html">Mask&lt; LOG2DIM &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->

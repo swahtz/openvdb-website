@@ -69,6 +69,7 @@ var classnanovdb_1_1Grid =
     [ "isStaggered", "classnanovdb_1_1Grid.html#ae9506eb5cb3e2541ce7476ac7d5a7b61", null ],
     [ "isUnknown", "classnanovdb_1_1Grid.html#a6dbe3fa00cd0ef1e9bab58d88afe19de", null ],
     [ "isValid", "classnanovdb_1_1Grid.html#a8642f2bd38ed69600e3609a60b7516a0", null ],
+    [ "isVoxelBVH", "classnanovdb_1_1Grid.html#a7ff07fe4686d5405cd9d6e636a3602a9", null ],
     [ "map", "classnanovdb_1_1Grid.html#a438ec4f3c60ebb472659950ebb0f998e", null ],
     [ "memUsage", "classnanovdb_1_1Grid.html#a3068d7c124ec7a0d3bdc2205cf835657", null ],
     [ "nodeCount", "classnanovdb_1_1Grid.html#a48f81057de86c4bc6dcc32eacd38ff65", null ],

@@ -17,6 +17,15 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
@@ -108,6 +117,9 @@ $(function(){initNavTree('version_8h_8in.html','',''); });
   <div class="headertitle"><div class="title">version.h.in File Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Library and file format version numbers.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="Platform_8h_source.html">openvdb/Platform.h</a>&quot;</code><br />
 <code>#include &lt;cstddef&gt;</code><br />
 <code>#include &lt;cstdint&gt;</code><br />
@@ -141,6 +153,12 @@ Macros</h2></td></tr>
 <tr class="memitem:a729c4c59a11263debb7250fd2646315c" id="r_a729c4c59a11263debb7250fd2646315c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a729c4c59a11263debb7250fd2646315c">OPENVDB_USE_ZLIB</a></td></tr>
 <tr class="memitem:a37848ce33ebef26696a36d9975a1fe1a" id="r_a37848ce33ebef26696a36d9975a1fe1a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a37848ce33ebef26696a36d9975a1fe1a">OPENVDB_USE_DELAYED_LOADING</a></td></tr>
 <tr class="memitem:a4c50fb88617dc453773269235d40a0f0" id="r_a4c50fb88617dc453773269235d40a0f0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4c50fb88617dc453773269235d40a0f0">OPENVDB_ENABLE_ASSERTS</a></td></tr>
+<tr class="memitem:a771a11de8ea14c94afee7c2e75db1015" id="r_a771a11de8ea14c94afee7c2e75db1015"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a771a11de8ea14c94afee7c2e75db1015">OPENVDB_ENABLE_VEC_RELATIONAL_OPERATIONS</a></td></tr>
+<tr class="memitem:ae55a6f7532c2c9a22dce0dd06efd5662" id="r_ae55a6f7532c2c9a22dce0dd06efd5662"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae55a6f7532c2c9a22dce0dd06efd5662">OPENVDB_USE_VCL</a></td></tr>
+<tr class="memitem:a6f84f365970078aa6f5d01d516d924b1" id="r_a6f84f365970078aa6f5d01d516d924b1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6f84f365970078aa6f5d01d516d924b1">OPENVDB_VCL_NAMESPACE</a>&#160;&#160;&#160;openvdb_ext_vcl</td></tr>
+<tr class="memitem:a82d968ba5877270a91ba090ef4bfa9ca" id="r_a82d968ba5877270a91ba090ef4bfa9ca"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a82d968ba5877270a91ba090ef4bfa9ca">OPENVDB_X86_INSTRSET</a>&#160;&#160;&#160;${OPENVDB_X86_INSTRSET}</td></tr>
+<tr class="memitem:aec691d014a39d1c0e5f924ecd30e3337" id="r_aec691d014a39d1c0e5f924ecd30e3337"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aec691d014a39d1c0e5f924ecd30e3337">OPENVDB_USE_AVX</a></td></tr>
+<tr class="memitem:a3e75306bf6e4011db32af418ea979718" id="r_a3e75306bf6e4011db32af418ea979718"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3e75306bf6e4011db32af418ea979718">OPENVDB_USE_SSE42</a></td></tr>
 <tr class="memitem:a9ae309f5f7e4f0e48703fdf3fd0a1df1" id="r_a9ae309f5f7e4f0e48703fdf3fd0a1df1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9ae309f5f7e4f0e48703fdf3fd0a1df1">OPENVDB_USE_EXPLICIT_INSTANTIATION</a></td></tr>
 <tr class="memitem:ae7babe623b8ad4e7e475f538816f8050" id="r_ae7babe623b8ad4e7e475f538816f8050"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae7babe623b8ad4e7e475f538816f8050">OPENVDB_INSTANTIATE</a>&#160;&#160;&#160;extern template <a class="el" href="Platform_8h.html#ae90ddc631630096e31703b376e7bc04d">OPENVDB_TEMPLATE_IMPORT</a></td></tr>
 <tr class="memitem:a442b05a4442dd035a1c03b9d940265df" id="r_a442b05a4442dd035a1c03b9d940265df"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a442b05a4442dd035a1c03b9d940265df">OPENVDB_INSTANTIATE_CLASS</a>&#160;&#160;&#160;extern template class <a class="el" href="Platform_8h.html#ae90ddc631630096e31703b376e7bc04d">OPENVDB_TEMPLATE_IMPORT</a></td></tr>
@@ -205,7 +223,16 @@ Variables</h2></td></tr>
 <tr class="memitem:a92a71ea4cce8e2e9c931d01b5b24b9d1" id="r_a92a71ea4cce8e2e9c931d01b5b24b9d1"><td class="memItemLeft" align="right" valign="top">const uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceopenvdb_1_1v13__0.html#a92a71ea4cce8e2e9c931d01b5b24b9d1">OPENVDB_FILE_VERSION</a> = 225</td></tr>
 <tr class="memdesc:a92a71ea4cce8e2e9c931d01b5b24b9d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current version number of the VDB file format.  <br /></td></tr>
 </table>
-<a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">Macro Definition Documentation</h2>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Library and file format version numbers. </p>
+<p>When the library is built with the latest ABI, its namespace has the form <b>openvdb::vX_Y</b>, where <em>X</em> and <em>Y</em> are the major and minor version numbers.</p>
+<p>The library can be built using an older ABI by changing the value of the <b>OPENVDB_ABI_VERSION_NUMBER</b>. (e.g., via <span class="tt">-DOPENVDB_ABI_VERSION_NUMBER=<em>N</em></span>). In that case, the namespace has the form <b>openvdb::vX_YabiN</b>, where N is the ABI version number.</p>
+<p>The ABI version must be set consistently when building code that depends on OpenVDB.</p>
+<p>The ABI version number defaults to the library major version number, which gets incremented whenever changes are made to the ABI of the Grid class or related classes (Tree, Transform, Metadata, etc.). Setting the ABI version number to an earlier library version number disables grid ABI changes made since that library version.</p>
+<p>The library minor version number gets incremented whenever a change is made to any aspect of the public API (not just the grid API) that necessitates changes to client code. Changes to APIs in private or internal namespaces do not trigger a minor version number increment; such APIs should not be used in client code.</p>
+<p>A patch version number increment indicates a change&mdash;usually a new feature or a bug fix&mdash;that does not necessitate changes to client code but rather only recompilation of that code (because the library namespace incorporates the version number).</p>
+<p>The file format version number gets incremented when it becomes possible to write files that cannot safely be read with older versions of the library. Not all files written in a newer format are incompatible with older libraries, however. And in general, files containing grids of unknown type can be read safely, although the unknown grids will not be accessible. </p>
+</div><a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">Macro Definition Documentation</h2>
 <a id="af5d84e649a9214c7e60ef2fc79e9dcd3" name="af5d84e649a9214c7e60ef2fc79e9dcd3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af5d84e649a9214c7e60ef2fc79e9dcd3">&#9670;&#160;</a></span>OPENVDB_ALL_TREE_INSTANTIATE</h2>
 
@@ -232,6 +259,20 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define OPENVDB_ENABLE_ASSERTS</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a771a11de8ea14c94afee7c2e75db1015" name="a771a11de8ea14c94afee7c2e75db1015"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a771a11de8ea14c94afee7c2e75db1015">&#9670;&#160;</a></span>OPENVDB_ENABLE_VEC_RELATIONAL_OPERATIONS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OPENVDB_ENABLE_VEC_RELATIONAL_OPERATIONS</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -459,6 +500,21 @@ Variables</h2></td></tr>
 </div><!-- fragment -->
 </div>
 </div>
+<a id="aec691d014a39d1c0e5f924ecd30e3337" name="aec691d014a39d1c0e5f924ecd30e3337"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec691d014a39d1c0e5f924ecd30e3337">&#9670;&#160;</a></span>OPENVDB_USE_AVX</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OPENVDB_USE_AVX</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Denotes if OpenVDB was configured with -D OPENVDB_SIMD=AVX. Note that absence of this define does <em>not</em> indicate that no AVX instructions were used (i.e. -mavx could have been manually provided, or manual instruction rolling could be present). This flag primarily indicates the desired ISA. </p>
+
+</div>
+</div>
 <a id="ad9b4094c98dfe2c5e327e97640573397" name="ad9b4094c98dfe2c5e327e97640573397"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad9b4094c98dfe2c5e327e97640573397">&#9670;&#160;</a></span>OPENVDB_USE_BLOSC</h2>
 
@@ -515,6 +571,35 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a3e75306bf6e4011db32af418ea979718" name="a3e75306bf6e4011db32af418ea979718"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e75306bf6e4011db32af418ea979718">&#9670;&#160;</a></span>OPENVDB_USE_SSE42</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OPENVDB_USE_SSE42</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Denotes if OpenVDB was configured with -D OPENVDB_SIMD=AVX|SSE42. Note that absence of this define does <em>not</em> indicate that no SSE42 instructions were used (i.e. -msse4.2 could have been manually provided, or manual instruction rolling could be present). This flag primarily indicates the desired ISA. </p>
+
+</div>
+</div>
+<a id="ae55a6f7532c2c9a22dce0dd06efd5662" name="ae55a6f7532c2c9a22dce0dd06efd5662"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae55a6f7532c2c9a22dce0dd06efd5662">&#9670;&#160;</a></span>OPENVDB_USE_VCL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OPENVDB_USE_VCL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a2dde157791cd7558cdf886489256ba14" name="a2dde157791cd7558cdf886489256ba14"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2dde157791cd7558cdf886489256ba14">&#9670;&#160;</a></span>OPENVDB_USE_VERSION_NAMESPACE</h2>
 
@@ -539,6 +624,20 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define OPENVDB_USE_ZLIB</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6f84f365970078aa6f5d01d516d924b1" name="a6f84f365970078aa6f5d01d516d924b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f84f365970078aa6f5d01d516d924b1">&#9670;&#160;</a></span>OPENVDB_VCL_NAMESPACE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OPENVDB_VCL_NAMESPACE&#160;&#160;&#160;openvdb_ext_vcl</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -621,6 +720,20 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">@OPENVDB_VOLUME_TREE_INSTANTIATIONS@</div>
 </div><!-- fragment -->
+</div>
+</div>
+<a id="a82d968ba5877270a91ba090ef4bfa9ca" name="a82d968ba5877270a91ba090ef4bfa9ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82d968ba5877270a91ba090ef4bfa9ca">&#9670;&#160;</a></span>OPENVDB_X86_INSTRSET</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define OPENVDB_X86_INSTRSET&#160;&#160;&#160;${OPENVDB_X86_INSTRSET}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
 </div>
 </div>
 </div><!-- contents -->
